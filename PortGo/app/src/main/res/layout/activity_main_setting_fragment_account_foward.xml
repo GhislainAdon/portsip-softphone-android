@@ -1,0 +1,120 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main_fragment_setting_account"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/portgo_color_set_gray"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        style="@style/PortActionBarTheme" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/account_item_height"
+                android:background="@color/portgo_color_white"
+                android:orientation="vertical"></LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/fragment_account_foward"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/portgo_color_white"
+                android:divider="@drawable/divider_line"
+                android:orientation="vertical"
+                android:showDividers="middle">
+
+                <RadioButton
+                    android:id="@+id/fragment_account_foward_close"
+                    style="@style/activity_advance_radiobutton"
+                    android:text="@string/lable_fragment_account_foward_close" />
+                <RadioButton
+                    android:id="@+id/fragment_account_foward_all"
+                    style="@style/activity_advance_radiobutton"
+                    android:text="@string/lable_fragment_account_foward_all" />
+                <RadioButton
+                    android:id="@+id/fragment_account_foward_busy"
+                    style="@style/activity_advance_radiobutton"
+                    android:text="@string/lable_fragment_account_foward_busy" />
+
+                <RadioButton
+                    android:id="@+id/fragment_account_foward_noanswer"
+                    style="@style/activity_advance_radiobutton"
+                    android:text="@string/lable_fragment_account_foward_noanswer" />
+            </RadioGroup>
+
+            <RelativeLayout
+                android:id="@+id/fragment_setting_account_redirect_editorll"
+                android:visibility="gone"
+                style="@style/activity_advance_item_ll">
+
+                <TextView
+                    android:id="@+id/fragment_setting_advance_redirectlabel"
+                    style="@style/textAccountLableStyle"
+                    android:paddingLeft="20dip"
+                    android:text="@string/lable_fragment_account_foward_noanswertime" />
+
+                <com.portgo.view.CursorEndEditTextView
+                    android:id="@+id/fragment_setting_account_redirect_editor"
+                    style="@style/blueCursorEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_min_sencod"
+                    android:layout_centerVertical="true"
+                    android:inputType="number"
+                    android:layout_toRightOf="@id/fragment_setting_advance_redirectlabel"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:maxLines="1"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/account_item_height"
+            android:background="@color/portgo_color_white"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/fragment_setting_account_forward_ll"
+                style="@style/activity_advance_item_ll">
+
+                <TextView
+                    android:id="@+id/fragment_setting_advance_forwardlabel"
+                    style="@style/textAccountLableStyle"
+                    android:text="@string/callfoward_to" />
+
+                <com.portgo.view.CursorEndEditTextView
+                    android:id="@+id/fragment_setting_account_forward_editor"
+                    style="@style/blueCursorEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/fragment_setting_advance_forwardlabel"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:maxLines="1"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

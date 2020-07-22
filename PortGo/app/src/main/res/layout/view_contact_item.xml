@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/contact_details_listview"
+    android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="@drawable/list_selector"
+	android:orientation="vertical">
+    <LinearLayout
+	android:layout_width="fill_parent"
+	android:layout_height="@dimen/contact_item_height"
+	android:minHeight="@dimen/contact_item_height"
+	android:orientation="horizontal"
+	android:paddingLeft="@dimen/contact_item_marginLeft"
+	android:paddingRight="@dimen/contact_item_marginLeft"
+	android:gravity="center_vertical"
+	android:descendantFocusability="blocksDescendants">
+	<CheckBox
+		android:id="@+id/contacts_item_radiobox"
+		android:button="@drawable/checkbox_bg"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginRight="@dimen/contact_item_radiobox_marginright"
+		android:focusable="false"
+		android:clickable="false"/>
+    <include layout="@layout/view_avatar" android:id="@+id/user_avatar"
+		android:layout_width="@dimen/contact_useravatar_size"
+		android:layout_height="@dimen/contact_useravatar_size" />
+	<TextView
+		android:id="@+id/contacts_item_textView_displayname"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/contact_item_name_marginleft"
+		android:layout_weight="1"
+		android:textColor="@color/portgo_color_light_black"
+		android:textSize="@dimen/contact_item_namesize"
+		android:gravity="center_vertical"
+		android:ellipsize="end"
+		android:lines="1">
+
+	</TextView>
+	</LinearLayout>
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="1dp"
+		android:background="@color/portgo_color_divide_lightgray"/>
+</LinearLayout>
+

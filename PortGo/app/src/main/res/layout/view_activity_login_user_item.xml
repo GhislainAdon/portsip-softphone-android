@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_login_item_user"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:descendantFocusability="afterDescendants"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/activity_login_item_user_padding_left"
+    android:background="@drawable/activity_login_user_item_background_selector"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/activity_login_item_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:clickable="false"
+        android:textColor="@color/portgo_color_light_black"
+        android:textSize="@dimen/activity_login_item_user_textsize"/>
+
+    <ImageView
+        android:id="@+id/activity_login_item_user_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:src="@drawable/activity_login_user_del" />
+</LinearLayout>

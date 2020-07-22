@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <size
+        android:height="1dp" />
+    <gradient
+    android:startColor="@color/portgo_color_lakeblue"
+    android:centerColor="#ffefefef"
+    android:endColor="@color/portgo_color_light_lakeblue"
+    />
+</shape>

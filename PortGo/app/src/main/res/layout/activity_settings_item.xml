@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" android:orientation="horizontal"
+    android:paddingTop="@dimen/login_setting_item_padding"
+    android:paddingBottom="@dimen/login_setting_item_padding"
+        >
+
+    <ImageView
+        android:layout_marginLeft="@dimen/login_setting_item_padding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/setting_item_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginLeft="@dimen/login_left_magin"
+        android:text="Large Text"
+        android:textColor="@color/portgo_color_darkgray"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:id="@+id/setting_item_description" />
+</LinearLayout>

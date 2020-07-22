@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dialbtn="http://schemas.android.com/apk/res-auto">
+    <ListView
+        android:id="@+id/avcall_video_selector"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/avcall_left_magin"
+        android:layout_marginRight="@dimen/avcall_right_margin"
+        android:padding="5dip"
+        android:background="@drawable/dtmf_bk"
+        android:dividerHeight="@dimen/portgo_devide_height"
+        android:divider="@android:color/white" />
+    <ImageView android:id="@+id/indicate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.0dip" android:src="@drawable/indicate" android:layout_below="@id/avcall_video_selector" />
+</RelativeLayout>

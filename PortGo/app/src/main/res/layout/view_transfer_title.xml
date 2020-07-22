@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textColor="@color/portgo_color_black"
+    android:background="@color/portgo_color_white"
+    android:paddingTop="15dip"
+    android:paddingLeft="25dip"
+    android:paddingRight="25dip"
+    android:text="@string/please_inputorselect_transfer_dest"
+    xmlns:android="http://schemas.android.com/apk/res/android"/>

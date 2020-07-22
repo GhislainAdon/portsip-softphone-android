@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="@android:color/white"
+	android:id="@+id/activity_main_message_fragment_chat">
+	<LinearLayout android:id="@+id/header"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentTop="true"
+		android:orientation="vertical">
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/toolBar"
+			style="@style/PortActionBarTheme"/>
+
+		<LinearLayout
+			android:id="@+id/layout_receiver"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+
+			android:layout_gravity="center_vertical"
+			android:padding="3px" >
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingRight="10dp"
+				android:text="To:" />
+
+			<com.portgo.view.CursorEndEditTextView
+				style="@style/blueCursorEditText"
+				android:id="@+id/chat_receiver"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:ems="10" />
+			<ImageView android:id="@+id/chat_select_contact"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:src="@drawable/login_select_contact"
+				android:minWidth="48dp"
+				android:minHeight="48dp"/>
+
+		</LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/chat_linearLayout_bottom"
+		android:background="@color/portgo_color_toobar_gray"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		android:orientation="horizontal"
+		android:layout_alignParentBottom="true"
+		android:gravity="center"
+		android:layout_gravity="center"
+		android:padding="8px">
+		<com.portgo.view.CursorEndEditTextView android:id="@+id/chat_editText_compose"
+			style="@style/blueCursorEditText"
+			android:background="@null"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_marginLeft="5px"
+			android:gravity="top"
+			android:scrollbars="vertical"
+			android:lines="3"
+			android:maxLength="256"/>
+		<Button android:id="@+id/screen_chat_button_send"
+			android:textSize="16sp"
+			android:layout_marginRight="5px"
+			android:gravity="center"
+			android:layout_gravity="center"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:padding="10dp"
+			android:layout_marginLeft="7px"
+			android:focusable="false"
+			android:focusableInTouchMode="false"
+			android:textColor="@android:color/white"
+			android:background="@drawable/chat_input_bk"
+			android:text="@string/chat_send"/>
+	</LinearLayout>
+
+	<ListView android:id="@+id/screen_chat_listView"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_below="@id/header"
+		android:layout_above="@id/chat_linearLayout_bottom"
+		android:background="@android:color/white"
+		android:clickable="true"
+		android:longClickable="true"
+		android:divider="@color/portgo_color_divide_gray"
+		android:paddingBottom="@dimen/user_bottom_margin"
+		/>
+
+</RelativeLayout>

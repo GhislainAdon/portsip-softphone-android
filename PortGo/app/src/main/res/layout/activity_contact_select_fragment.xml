@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<androidx.appcompat.widget.Toolbar
+		android:id="@+id/toolBar"
+		style="@style/PortActionBarTheme"/>
+	<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:orientation="vertical"
+		android:id="@+id/activity_main_contact_fragment"
+		android:background="@color/portgo_color_gray">
+		<!--include android:id="@+id/titleLayout" layout="@layout/view_tab_header" /-->
+
+		<com.portgo.view.AllExpandListView
+			android:id="@+id/contacts_listView"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_alignParentTop="true"
+			android:background="@color/portgo_color_white"
+			android:groupIndicator="@null"
+			android:dividerHeight="@dimen/portgo_devide_height"
+			android:divider="@color/portgo_color_divide_lightgray"
+			android:childDivider="@drawable/divider_line" />
+
+		<com.portgo.view.HintSideBar
+			android:id="@+id/quick_searchbar"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_gravity="right" />
+
+	</FrameLayout>
+</LinearLayout>

@@ -1,0 +1,515 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        style="@style/PortActionBarTheme" />
+
+    <ScrollView
+        android:id="@+id/activity_main_fragment_setting_advance"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/portgo_color_set_gray"
+        android:orientation="vertical">
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/activity_main_fragment_setting_advance_audio_title"
+                style="@style/activity_main_fragment_setting_title"
+                android:text="@string/category_audio" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/activity_main_fragment_setting_rtpport"
+                    style="@style/activity_main_fragment_setting_advance_rl">
+
+                    <TextView
+                        style="@style/fragment_advance_item_lable_style"
+                        android:text="@string/labe_rtp_start" />
+
+                    <com.portgo.view.CursorEndEditTextView
+                        android:id="@+id/activity_main_fragment_setting_advance_rtp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:background="@null"
+                        android:gravity="right|center_vertical"
+                        android:inputType="number"
+                        android:minWidth="100dip"
+                        android:textCursorDrawable="@drawable/port_edittext_cursor" />
+                </RelativeLayout>
+
+                <include layout="@layout/view_fragment_divider" />
+
+                <RelativeLayout
+                    android:id="@+id/activity_main_fragment_setting_advance_audio_aec"
+                    style="@style/activity_main_fragment_setting_advance_rl">
+
+                    <TextView
+                        style="@style/fragment_advance_item_lable_style"
+                        android:text="@string/labe_aec" />
+
+                    <ToggleButton
+                        android:id="@+id/activity_main_fragment_setting_advance_aec_switch"
+                        style="@style/portgo_toggle_style"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <include layout="@layout/view_fragment_divider" />
+
+                <RelativeLayout
+                    android:id="@+id/activity_main_fragment_setting_advance_audio_vad"
+                    style="@style/activity_main_fragment_setting_advance_rl">
+
+                    <TextView
+                        style="@style/fragment_advance_item_lable_style"
+                        android:text="@string/labe_vad" />
+
+                    <ToggleButton
+                        android:id="@+id/activity_main_fragment_setting_advance_vad_switch"
+                        style="@style/portgo_toggle_style"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <include layout="@layout/view_fragment_divider" />
+
+                <RelativeLayout
+                    android:id="@+id/activity_main_fragment_setting_advance_audio_nr"
+                    style="@style/activity_main_fragment_setting_advance_rl">
+
+                    <TextView
+                        style="@style/fragment_advance_item_lable_style"
+                        android:text="@string/labe_nr" />
+
+                    <ToggleButton
+                        android:id="@+id/activity_main_fragment_setting_advance_nr_switch"
+                        style="@style/portgo_toggle_style"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <include layout="@layout/view_fragment_divider" />
+
+                <RelativeLayout
+                    android:id="@+id/activity_main_fragment_setting_advance_audio_cng"
+                    style="@style/activity_main_fragment_setting_advance_rl">
+
+                    <TextView
+                        style="@style/fragment_advance_item_lable_style"
+                        android:text="@string/labe_cng" />
+
+                    <ToggleButton
+                        android:id="@+id/activity_main_fragment_setting_advance_cng_switch"
+                        style="@style/portgo_toggle_style"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <include layout="@layout/view_fragment_divider" />
+
+                <RelativeLayout
+                    android:id="@+id/activity_main_fragment_setting_advance_audio_agc"
+                    style="@style/activity_main_fragment_setting_advance_rl">
+
+                    <TextView
+                        style="@style/fragment_advance_item_lable_style"
+                        android:text="@string/labe_agc" />
+
+                    <ToggleButton
+                        android:id="@+id/activity_main_fragment_setting_advance_agc_switch"
+                        style="@style/portgo_toggle_style"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/activity_main_fragment_setting_advance_video_title"
+                style="@style/activity_main_fragment_setting_title"
+                android:text="@string/category_video" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/activity_main_fragment_setting_advance_video_resolution"
+                    style="@style/activity_main_fragment_setting_advance_rl"
+                    android:background="@drawable/list_selector">
+
+                    <TextView
+                        style="@style/fragment_advance_item_lable_style"
+                        android:text="@string/labe_video_resolution" />
+
+                    <TextView
+                        android:id="@+id/activity_main_fragment_setting_advance_video_resolution_value"
+                        style="@style/fragment_advance_item_value_style"
+                        android:text="CIF" />
+                </RelativeLayout>
+
+                <include layout="@layout/view_fragment_divider" />
+
+                <RelativeLayout
+                    android:id="@+id/activity_main_fragment_setting_advance_video_fps"
+                    style="@style/activity_main_fragment_setting_advance_rl"
+                    android:background="@drawable/list_selector">
+
+                    <TextView
+                        style="@style/fragment_advance_item_lable_style"
+                        android:text="@string/labe_video_fps" />
+
+                    <TextView
+                        android:id="@+id/activity_main_fragment_setting_advance_video_fps_value"
+                        style="@style/fragment_advance_item_value_style"
+                        android:text="15FPS" />
+                </RelativeLayout>
+
+                <include layout="@layout/view_fragment_divider" />
+
+                <RelativeLayout
+                    android:id="@+id/activity_main_fragment_setting_advance_video_bitrate"
+                    style="@style/activity_main_fragment_setting_advance_rl"
+                    android:background="@drawable/list_selector">
+
+                    <TextView
+                        style="@style/fragment_advance_item_lable_style"
+                        android:text="@string/labe_video_bitrate" />
+
+                    <TextView
+                        android:id="@+id/activity_main_fragment_setting_advance_video_bitrate_value"
+                        style="@style/fragment_advance_item_value_style" />
+                </RelativeLayout>
+
+                <include layout="@layout/view_fragment_divider" />
+
+                <RelativeLayout
+                    android:id="@+id/activity_main_fragment_setting_advance_video_nack"
+                    style="@style/activity_main_fragment_setting_advance_rl">
+
+                    <TextView
+                        style="@style/fragment_advance_item_lable_style"
+                        android:text="@string/labe_video_nack" />
+
+                    <ToggleButton
+                        android:id="@+id/activity_main_fragment_setting_advance_video_nack_switch"
+                        style="@style/portgo_toggle_style"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/activity_main_fragment_setting_advance_srtp_title"
+                style="@style/activity_main_fragment_setting_title"
+                android:text="@string/category_srtp" />
+
+            <RelativeLayout
+                android:id="@+id/activity_main_fragment_setting_advance_srtp"
+                style="@style/activity_main_fragment_setting_advance_rl"
+                android:background="@drawable/list_selector">
+
+                <TextView
+                    style="@style/fragment_advance_item_lable_style"
+                    android:text="@string/labe_srtp" />
+
+                <TextView
+                    android:id="@+id/activity_main_fragment_setting_advance_srtp_value"
+                    style="@style/fragment_advance_item_value_style" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/activity_main_fragment_setting_advance_dtmf_title"
+                style="@style/activity_main_fragment_setting_title"
+                android:text="@string/category_dtmf" />
+
+            <RelativeLayout
+                android:id="@+id/activity_main_fragment_setting_advance_dtmf_type"
+                style="@style/activity_main_fragment_setting_advance_rl"
+                android:background="@drawable/list_selector">
+
+                <TextView
+                    style="@style/fragment_advance_item_lable_style"
+                    android:text="@string/labe_dtmf_type" />
+
+                <TextView
+                    android:id="@+id/activity_main_fragment_setting_advance_dtmf_value"
+                    style="@style/fragment_advance_item_value_style" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_fragment_divider" />
+
+            <RelativeLayout
+                android:id="@+id/activity_main_fragment_setting_advance_dtmf_ringback"
+                style="@style/activity_main_fragment_setting_advance_rl">
+
+                <TextView
+                    style="@style/fragment_advance_item_lable_style"
+                    android:text="@string/labe_dtmf_back" />
+
+                <ToggleButton
+                    android:id="@+id/activity_main_fragment_setting_advance_dtmf_ringback_switch"
+                    style="@style/portgo_toggle_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/activity_main_fragment_setting_advance_prack_title"
+                style="@style/activity_main_fragment_setting_title"
+                android:text="@string/category_miscellaneous" />
+
+            <RelativeLayout
+                android:id="@+id/activity_main_fragment_setting_advance_prack"
+                style="@style/activity_main_fragment_setting_advance_rl">
+
+                <TextView
+                    style="@style/fragment_advance_item_lable_style"
+                    android:text="@string/label_prack" />
+
+                <ToggleButton
+                    android:id="@+id/activity_main_fragment_setting_advance_prack_switch"
+                    style="@style/portgo_toggle_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_fragment_divider"
+                android:visibility="gone"/>
+            <RelativeLayout
+                android:id="@+id/activity_main_fragment_setting_advance_earlymedia"
+                style="@style/activity_main_fragment_setting_advance_rl"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/fragment_advance_item_lable_style"
+                    android:text="@string/label_prack" />
+
+                <ToggleButton
+                    android:id="@+id/activity_main_fragment_setting_advance_earlymedia_switch"
+                    style="@style/portgo_toggle_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_fragment_divider" />
+            <!--<TextView-->
+            <!--android:id="@+id/activity_main_fragment_setting_advance_ims_title"-->
+            <!--style="@style/activity_main_fragment_setting_title"-->
+            <!--android:text="category_ims" />-->
+
+            <RelativeLayout
+                android:id="@+id/activity_main_fragment_setting_advance_ims"
+                style="@style/activity_main_fragment_setting_advance_rl">
+
+                <TextView
+                    style="@style/fragment_advance_item_lable_style"
+                    android:text="@string/label_ims" />
+
+                <ToggleButton
+                    android:id="@+id/activity_main_fragment_setting_advance_ims_switch"
+                    style="@style/portgo_toggle_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <include layout="@layout/view_fragment_divider" />
+            <!---->
+
+            <!--<TextView-->
+            <!--android:id="@+id/activity_main_fragment_setting_advance_sessiontime_title"-->
+            <!--style="@style/activity_main_fragment_setting_title"-->
+            <!--android:text="category_sessiontime" />-->
+
+            <RelativeLayout
+                android:id="@+id/activity_main_fragment_setting_advance_sessiontime"
+                style="@style/activity_main_fragment_setting_advance_rl">
+
+                <TextView
+                    style="@style/fragment_advance_item_lable_style"
+                    android:text="@string/label_sessiontime" />
+
+                <ToggleButton
+                    android:id="@+id/activity_main_fragment_setting_advance_sessiontime_switch"
+                    style="@style/portgo_toggle_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/activity_main_fragment_setting_advance_autorec_title"
+                style="@style/activity_main_fragment_setting_title"
+                android:text="@string/category_autorec" />
+
+            <RelativeLayout
+                android:id="@+id/activity_main_fragment_setting_advance_autorec"
+                style="@style/activity_main_fragment_setting_advance_rl">
+
+                <TextView
+                    style="@style/fragment_advance_item_lable_style"
+                    android:text="@string/label_autorec" />
+
+                <ToggleButton
+                    android:id="@+id/activity_main_fragment_setting_advance_autorec_switch"
+                    style="@style/portgo_toggle_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <include layout="@layout/view_fragment_divider" />
+            <RelativeLayout
+                android:id="@+id/activity_main_fragment_setting_advance_recdirectory"
+                style="@style/activity_main_fragment_setting_advance_rl">
+
+                <TextView
+                    android:id="@+id/activity_main_fragment_setting_advance_recdirectory_label"
+                    style="@style/fragment_advance_item_lable_style"
+                    android:text="@string/title_record" />
+
+                <TextView android:visibility="gone"
+                    android:id="@+id/activity_main_fragment_setting_advance_recdirectory_value"
+                    style="@style/fragment_advance_item_value_style"
+                    android:layout_toRightOf="@id/activity_main_fragment_setting_advance_recdirectory_label"
+                    android:paddingLeft="10dip"
+                    android:maxLines="2"
+                    android:drawableRight="@null"/>
+
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/activity_main_fragment_setting_advance_ring_title"
+                style="@style/activity_main_fragment_setting_title"
+                android:text="@string/category_ring" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout style="@style/activity_main_fragment_setting_advance_rl">
+
+                    <TextView
+                        style="@style/fragment_advance_item_lable_style"
+                        android:text="@string/label_enable_ring" />
+
+                    <ToggleButton
+                        android:id="@+id/activity_main_fragment_setting_advance_ring_switch"
+                        style="@style/portgo_toggle_style"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <include layout="@layout/view_fragment_advance_divider" />
+
+                <RelativeLayout style="@style/activity_main_fragment_setting_advance_rl">
+
+                    <TextView
+                        style="@style/fragment_advance_item_lable_style"
+                        android:text="@string/label_enable_vibrate" />
+
+                    <ToggleButton
+                        android:id="@+id/activity_main_fragment_setting_advance_vibrate_switch"
+                        style="@style/portgo_toggle_style"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true" />
+                </RelativeLayout>
+
+                <include layout="@layout/view_fragment_advance_divider" />
+
+                <RelativeLayout
+                    android:id="@+id/activity_main_fragment_setting_advance_callring"
+                    style="@style/activity_main_fragment_setting_advance_rl"
+                    android:background="@drawable/list_selector">
+
+                    <TextView
+                        style="@style/fragment_advance_item_lable_style"
+                        android:text="@string/label_call_ring" />
+
+                    <TextView
+                        android:id="@+id/activity_main_fragment_setting_advance_callring_value"
+                        style="@style/fragment_advance_item_value_style" />
+                </RelativeLayout>
+
+                <include layout="@layout/view_fragment_advance_divider" />
+
+                <RelativeLayout
+                    android:id="@+id/activity_main_fragment_setting_advance_imring"
+                    style="@style/activity_main_fragment_setting_advance_rl"
+                    android:background="@drawable/list_selector">
+
+                    <TextView
+                        style="@style/fragment_advance_item_lable_style"
+                        android:text="@string/label_im_ring" />
+
+                    <TextView
+                        android:id="@+id/activity_main_fragment_setting_advance_imring_value"
+                        style="@style/fragment_advance_item_value_style"
+                        android:drawableRight="@drawable/linkman_group_more_ico" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            ///////////--
+            <TextView
+                android:id="@+id/activity_main_fragment_setting_advance_intergrate_title"
+                style="@style/activity_main_fragment_setting_title"
+                android:visibility="gone"
+                android:text="@string/category_intergrate" />
+
+            <RelativeLayout
+                android:id="@+id/activity_main_fragment_setting_intergrate"
+                style="@style/activity_main_fragment_setting_advance_rl">
+
+                <TextView
+                    android:id="@+id/fragment_setting_advance_dialer_intergrate"
+                    style="@style/fragment_advance_item_lable_style"
+                    android:text="@string/label_dialer_intergrate" />
+
+                <ToggleButton
+                    android:id="@+id/fragment_setting_advance_dialer_intergrate_switch"
+                    style="@style/portgo_toggle_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <include layout="@layout/view_fragment_divider" android:visibility="gone"/>
+            <RelativeLayout
+                android:id="@+id/activity_main_fragment_setting_advance_default_account"
+                style="@style/activity_main_fragment_setting_advance_rl">
+
+                <TextView
+                    android:id="@+id/fragment_setting_advance_default_account"
+                    style="@style/fragment_advance_item_lable_style"
+                    android:text="@string/label_default_account" />
+
+                <ToggleButton
+                    android:id="@+id/fragment_setting_advance_default_account_switch"
+                    style="@style/portgo_toggle_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" />
+
+            </RelativeLayout>
+            ///////--
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/scroll_padding_bottom"
+                android:background="@null" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

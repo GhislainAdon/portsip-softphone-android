@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/activity_main_contact_fragment_edit"
+    android:background="@android:color/white">
+	<androidx.appcompat.widget.Toolbar
+		android:id="@+id/toolBar"
+		style="@style/PortActionBarTheme"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_main_contact_fragment_edit_paddingleft">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:background="@color/portgo_color_lightgray">
+			<LinearLayout	style="@style/contact_edit_item_ll_style">
+					<TextView
+						style="@style/contact_edit_item_title_style"
+						android:text="@string/string_familyname" />
+					<com.portgo.view.CursorEndEditTextView
+						style="@style/blueCursorActionNextEditText"
+						android:id="@+id/activity_main_contact_fragment_edit_familyname"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_gravity="bottom"
+						android:background="@null"/>
+				</LinearLayout>
+			<LinearLayout	style="@style/contact_edit_item_ll_style">
+				<TextView
+					style="@style/contact_edit_item_title_style"
+					android:text="@string/string_givingname" />
+				<com.portgo.view.CursorEndEditTextView
+					style="@style/blueCursorActionNextEditText"
+					android:id="@+id/activity_main_contact_fragment_edit_givingname"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:layout_gravity="bottom"
+					android:background="@null"/>
+			</LinearLayout>
+
+			<LinearLayout	style="@style/contact_edit_item_ll_style">
+					<TextView
+						style="@style/contact_edit_item_title_style"
+						android:text="@string/string_company"/>
+					<com.portgo.view.CursorEndEditTextView
+						style="@style/blueCursorActionNextEditText"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_gravity="bottom"
+						android:id="@+id/activity_main_contact_fragment_edit_usercompany"
+						android:background="@null"/>
+			</LinearLayout>
+			<LinearLayout style="@style/contact_edit_item_ll_style">
+					<TextView
+						style="@style/contact_edit_item_title_style"
+						android:text="@string/string_dept"/>
+					<com.portgo.view.CursorEndEditTextView
+						style="@style/blueCursorActionNextEditText"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_gravity="bottom"
+						android:id="@+id/activity_main_contact_fragment_edit_userdepartment"
+						android:background="@null"/>
+			</LinearLayout>
+
+			<LinearLayout style="@style/contact_edit_item_ll_style">
+					<TextView
+						style="@style/contact_edit_item_title_style"
+						android:text="@string/string_job"/>
+					<com.portgo.view.CursorEndEditTextView
+						style="@style/blueCursorEditText"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_gravity="bottom"
+						android:id="@+id/activity_main_contact_fragment_edit_usertitle"
+						android:background="@null"/>
+			</LinearLayout>
+
+		</LinearLayout>
+	<com.portgo.view.SlideDeleteListView
+        android:id="@+id/activity_main_contact_fragment_sips"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+        android:divider="@color/portgo_color_lightgray"
+        android:dividerHeight="@dimen/portgo_devide_height"
+        android:headerDividersEnabled="true"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/portgo_devide_height"
+            android:background="@color/portgo_color_divide_lightgray"/>
+        <LinearLayout android:layout_width="match_parent"
+            android:id="@+id/ll_contact_fragment_edit_im"
+            android:layout_height="@dimen/min_item_height"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/contact_fragment_edit_im_lable"
+                android:textColor="@color/portgo_color_blue"/>
+
+            <TextView android:id="@+id/contact_fragment_edit_im"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/midcontent_right_more_ico"
+                android:layout_marginRight="@dimen/fragment_marginRight"
+                android:layout_marginLeft="@dimen/fragment_marginLeft"
+                android:textColor="@color/portgo_color_black"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/portgo_devide_height"
+            android:background="@color/portgo_color_divide_lightgray"/>
+    <com.portgo.view.SlideDeleteListView
+        android:id="@+id/activity_main_contact_fragment_phones"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/activity_main_contact_fragment_phones_margin_top"
+        android:divider="@color/portgo_color_lightgray"
+        android:dividerHeight="@dimen/portgo_devide_height"
+        android:headerDividersEnabled="true"/>
+	<TextView
+		android:id="@+id/activity_main_contact_fragment_delete"
+		android:gravity="center_vertical"
+		android:layout_marginTop="50dp"
+		android:layout_width="wrap_content"
+		android:layout_height="@dimen/min_item_height"
+		android:text="@string/contact_fragment_edit_delete"
+		android:textColor="@color/portgo_color_red"
+		android:minWidth="48dp"
+		android:drawableBottom="@drawable/vertical_divider"/>
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/scroll_padding_bottom"
+				android:background="@null"
+				/>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/contact_detail_item_height">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/activity_main_contact_fragment_detail_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/contact_detail_item_stylesize"
+            android:layout_marginTop="@dimen/contact_detail_item_style_margintop"
+            android:layout_marginBottom="@dimen/contact_detail_item_style_marginbottom"
+            android:textColor="@color/portgo_color_black"/>
+
+        <TextView
+            android:id="@+id/activity_main_contact_fragment_detail_nubmer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/contact_detail_item_numbersize"
+            android:textColor="@color/portgo_color_light_black" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/activity_main_contact_fragment_detail_sendmsg"
+            android:src="@drawable/contact_mid_single_msg_ico"
+            style="@style/activity_contact_detail_single_style"/>
+        <ImageView
+            android:id="@+id/activity_main_contact_fragment_detail_audiocall"
+            android:src="@drawable/contact_mid_single_audio_ico"
+            style="@style/activity_contact_detail_single_style"/>
+        <ImageView
+            android:id="@+id/activity_main_contact_fragment_detail_videocall"
+            android:src="@drawable/contact_mid_single_video_ico"
+            style="@style/activity_contact_detail_single_style"/>
+    </LinearLayout>
+</RelativeLayout>
+

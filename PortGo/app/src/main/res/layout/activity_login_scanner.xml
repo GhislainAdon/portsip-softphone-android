@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@drawable/login_bg">
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_weight="3"
+        android:layout_height="wrap_content">
+        <ProgressBar
+            android:id="@+id/loading_process_dialog"
+            android:layout_gravity="center"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:indeterminate="true"
+            android:indeterminateDrawable="@drawable/circle_line" />
+        <LinearLayout
+            android:id="@+id/login_input_dlg"
+            android:layout_width="@dimen/activity_login_dlg_width"
+            android:layout_height="@dimen/activity_login_dlg_height"
+            android:layout_gravity="center"
+            android:background="@drawable/longin_back_groud"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/activity_login_dlg_margin_width"
+            android:paddingRight="@dimen/activity_login_dlg_margin_width">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_login_logo_margin_bottom"
+            android:layout_marginTop="@dimen/activity_login_logo_margin_top">
+        <ImageView
+            android:id="@+id/activity_login_logo"
+            android:layout_width="@dimen/activity_login_logo_width"
+            android:layout_height="@dimen/activity_login_logo_height"
+            android:layout_centerInParent="true"
+
+            android:src="@drawable/login_logo"
+            tools:ignore="ContentDescription" />
+
+            <ImageView
+                android:id="@+id/activity_login_scanner"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/qr_scan" />
+        </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/activity_login_username_rl"
+                android:layout_width="match_parent"
+                android:layout_height="50dip">
+                <ImageView
+                    android:id="@+id/activity_login_delusername"
+                    style="@style/activity_login_img_delete"/>
+                <com.portgo.view.DropDownListTextView
+                    android:id="@+id/activity_login_username"
+                    style="@style/activity_login_edittext"
+                    android:layout_toLeftOf="@id/activity_login_delusername"
+                    android:completionThreshold="1"
+                    android:ems="10"
+                    android:hint="@string/activity_login_username_hint"
+                    android:inputType="textPersonName"
+                    android:popupBackground="@drawable/activity_login_user_popbackground" />
+				<View
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+            		android:layout_height="1dp"
+            		android:background="@color/portgo_color_divide_lightgray"/>
+            </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_login_pwd_rl"
+            android:layout_width="match_parent"
+            android:layout_height="50dip">
+
+            <ImageView
+                android:id="@+id/activity_login_delpwd"
+                style="@style/activity_login_img_delete"/>
+            <com.portgo.view.CursorEndEditTextView
+                android:id="@+id/activity_login_pwd"
+                android:layout_toLeftOf="@id/activity_login_delpwd"
+                style="@style/activity_login_edittext"
+                android:ems="10"
+                android:hint="@string/activity_login_pwd_hint"
+                android:inputType="textPassword" />
+			<View android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+				android:layout_height="1dp"
+				android:background="@color/portgo_color_divide_lightgray"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_domain"
+            android:layout_width="match_parent"
+            android:layout_height="50dip">
+            <ImageView
+                android:id="@+id/activity_login_deldomain"
+                style="@style/activity_login_img_delete"/>
+            <com.portgo.view.CursorEndEditTextView
+                android:id="@+id/activity_login_domain"
+                style="@style/activity_login_edittext"
+                android:layout_toLeftOf="@id/activity_login_deldomain"
+                android:ems="10"
+                android:hint="@string/activity_login_domain_hint"
+                android:inputType="textUri" />
+            <View android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_height="1dp"
+                android:background="@color/portgo_color_divide_lightgray"/>
+        </RelativeLayout>
+
+
+        <CheckBox
+            android:id="@+id/activity_login_rememberme"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_login_item_margin"
+            android:button="@null"
+            android:drawableLeft="@drawable/activity_login_checkbox_bk"
+            android:checked="false"
+            android:drawablePadding="10dp"
+            android:onClick="onClick"
+            android:textSize="@dimen/activity_login_text_size"
+            android:textColor="@color/portgo_color_darkgray"
+            android:text="@string/activity_login_rememberme" />
+
+        <TextView
+            android:id="@+id/activity_login_login"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_login_btregist_height"
+            android:background="@drawable/activity_login_btregister_bk"
+            android:layout_marginTop="@dimen/activity_login_item_margin"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:clickable="true"
+            android:text="@string/str_login"
+            android:textColor="@android:color/white" />
+        <LinearLayout
+            android:id="@+id/ll_activity_login_advance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/portgo_color_blue"
+            android:layout_marginTop="@dimen/activity_login_item_margin"
+            android:gravity="center">
+        <TextView
+            android:id="@+id/activity_login_advance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/portgo_color_white"
+            android:clickable="true"
+            android:gravity="bottom"
+            android:onClick="onClick"
+            android:layout_marginBottom="1px"
+            android:text="@string/activity_login_advance"
+            android:textColor="@color/portgo_color_blue" />
+        </LinearLayout>
+    </LinearLayout>
+    </FrameLayout>
+
+    <TextView
+        android:layout_gravity="bottom|center_horizontal"
+        android:id="@+id/login_powerby"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="@color/portgo_color_white"
+        android:text="@string/login_introduction"/>
+</LinearLayout>

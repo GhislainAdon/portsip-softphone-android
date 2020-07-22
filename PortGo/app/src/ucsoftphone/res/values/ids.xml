@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="action_audiovideo" type="id"></item>
+    <item name="action_record" type="id"></item>
+    <item name="action_transfer" type="id"></item>
+    <item name="action_digits" type="id"></item>
+    <item name="action_switchcamera" type="id"></item>
+    <item name="action_closecamera" type="id"></item>
+    <item name="action_hold" type="id"></item>
+    <item name="action_add_conference" type="id"></item>
+    <item name="message_content" type="id"></item>
+
+    <item type="id" name="zxing_decode"/>
+    <item type="id" name="zxing_preview_failed"/>
+    <item type="id" name="zxing_decode_failed"/>
+    <item type="id" name="zxing_decode_succeeded"/>
+    <item type="id" name="zxing_possible_result_points"/>
+    <item type="id" name="zxing_back_button"/>
+    <item type="id" name="zxing_prewiew_size_ready"/>
+    <item type="id" name="zxing_camera_error"/>
+    <item type="id" name="zxing_camera_closed"/>
+</resources>

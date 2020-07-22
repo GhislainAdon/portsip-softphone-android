@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View  xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="1px"
+	android:layout_marginLeft="@dimen/activity_main_fragment_setting_advance_marginLeft"
+	android:layout_marginRight="@dimen/activity_main_fragment_setting_advance_marginRight"
+	android:background="@color/portgo_color_gray"/>

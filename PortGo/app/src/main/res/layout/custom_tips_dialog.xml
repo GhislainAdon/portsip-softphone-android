@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:gravity="center_vertical"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+	<TextView
+		android:id="@+id/dialog_title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:textColor="@color/portgo_color_black"
+		android:layout_marginLeft="@dimen/fragment_marginLeft"
+        android:padding="10dip"
+		android:textSize="16sp"/>
+
+	<TextView
+		android:minHeight="70dip"
+		android:textSize="14sp"
+		android:layout_height="wrap_content"
+		android:layout_width="match_parent"
+		android:textColor="@color/portgo_color_light_black"
+		android:padding="@dimen/fragment_marginLeft"
+		android:id="@+id/dialog_tips"/>
+	<View android:layout_height="1dip"
+		android:layout_width="match_parent"
+		android:background="@color/portgo_color_lightgray"/>
+	<Button
+		android:id="@+id/dialog_ok"
+		android:focusable="true"
+		android:focusableInTouchMode="true"
+		android:background="@drawable/button_background"
+		android:text="@android:string/ok"
+		android:padding="10dip"
+		android:textColor="@color/portgo_color_black"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" />
+
+</LinearLayout>

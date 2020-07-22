@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group android:id="@+id/group_message_normal"
+        >
+
+        <item android:id="@+id/menu_search"
+            android:title="@android:string/search_go"
+            android:icon="@drawable/nav_srech_ico_def"
+            app:showAsAction="always|withText"/>
+        <item android:id="@+id/menu_message_presence"
+            android:title="@string/string_presence"
+            android:visible="false"
+            app:showAsAction="always"
+            app:actionProviderClass="com.portgo.view.IconTipsMenu" />
+        <item
+            android:id="@+id/menu_message_new"
+            android:icon="@drawable/message_nav_ico_new_message"
+            app:showAsAction="always|withText"
+            android:title="@string/string_new"/>
+    </group>
+
+    <group android:id="@+id/group_message_select"
+        android:visible="false">
+        <item
+            android:id="@+id/menu_message_select"
+            app:showAsAction="always|withText"
+            android:title="@string/select_all"/>
+        <item
+            android:id="@+id/menu_message_clear"
+            app:showAsAction="always|withText"
+            android:title="@string/clear_all"/>
+    </group>
+
+</menu>

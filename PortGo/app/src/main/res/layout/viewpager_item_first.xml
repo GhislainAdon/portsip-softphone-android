@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="20dip"
+    android:paddingRight="20dip"
+    android:useDefaultMargins="true">
+    <!--((GridLayout.LayoutParams) this.getLayoutParams()).columnSpec =-->
+    <!--GridLayout.spec(GridLayout.UNDEFINED, 1f);-->
+    <include android:id="@+id/viewpage_action_audio"
+        layout="@layout/viewpager_item"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_gravity="center"/>
+    <include android:id="@+id/viewpage_action_digits"
+        layout="@layout/viewpager_item"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_gravity="center"/>
+    <include android:id="@+id/viewpage_action_add_conference"
+        layout="@layout/viewpager_item"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_gravity="center"/>
+    <include android:id="@+id/viewpage_action_hold"
+        layout="@layout/viewpager_item"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"
+        android:layout_gravity="center"/>
+</GridLayout>

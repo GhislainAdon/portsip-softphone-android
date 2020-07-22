@@ -1,0 +1,98 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/activity_main_fragment_setting_account"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:orientation="vertical"
+	android:background="@color/portgo_color_set_gray">
+	<androidx.appcompat.widget.Toolbar
+		android:id="@+id/toolBar"
+		style="@style/PortActionBarTheme"/>
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/portgo_color_white">
+
+		<RelativeLayout style="@style/activity_main_fragment_setting_advance_rl">
+			<TextView
+				android:id="@+id/activity_main_fragment_callrulelable_name"
+				style="@style/textAccountLableStyle"
+				android:text="@string/activity_main_fragment_callrulelable_name"/>
+			<com.portgo.view.CursorEndEditTextView
+				android:id="@+id/activity_main_fragment_callrule_name_editor"
+				style="@style/blueCursorActionNextEditText"
+				android:gravity="right"
+				android:layout_toRightOf="@id/activity_main_fragment_callrulelable_name"
+				android:layout_centerVertical="true"
+				android:background="@null"
+				android:hint="@string/activity_main_fragment_callrule_name_hint"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:maxLines="1"
+				android:textSize="16sp" />
+		</RelativeLayout>
+		<include layout="@layout/view_fragment_advance_divider"></include>
+		<RelativeLayout style="@style/activity_main_fragment_setting_advance_rl">
+			<TextView
+				android:id="@+id/activity_main_fragment_callrulelable_match"
+				style="@style/textAccountLableStyle"
+				android:text="@string/activity_main_fragment_callrulelable_match_prefix"/>
+			<com.portgo.view.CursorEndEditTextView
+				android:id="@+id/activity_main_fragment_callrule_match_editor"
+				style="@style/blueCursorActionNextEditText"
+				android:gravity="right"
+				android:layout_toRightOf="@id/activity_main_fragment_callrulelable_match"
+				android:hint="@string/activity_main_fragment_callrule_match_hint"
+				android:layout_centerVertical="true"
+				android:background="@null"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:maxLines="1"
+				android:textSize="16sp" />
+		</RelativeLayout>
+		<include layout="@layout/view_fragment_advance_divider"></include>
+		<RelativeLayout style="@style/activity_main_fragment_setting_advance_rl">
+			<TextView
+				android:id="@+id/activity_main_fragment_callrulelable_remove"
+				style="@style/textAccountLableStyle"
+				android:text="@string/activity_main_fragment_callrulelable_remove_prefix"/>
+			<com.portgo.view.CursorEndEditTextView
+				android:id="@+id/activity_main_fragment_callrule_remove_editor"
+				style="@style/blueCursorActionNextEditText"
+				android:gravity="right"
+				android:layout_toRightOf="@id/activity_main_fragment_callrulelable_remove"
+				android:hint="@string/activity_main_fragment_callrule_remove_hint"
+				android:layout_centerVertical="true"
+				android:background="@null"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:maxLines="1"
+				android:textSize="16sp" />
+		</RelativeLayout>
+		<include layout="@layout/view_fragment_advance_divider"></include>
+		<RelativeLayout style="@style/activity_main_fragment_setting_advance_rl">
+			<TextView
+				android:id="@+id/activity_main_fragment_callrulelable_add"
+				style="@style/textAccountLableStyle"
+				android:text="@string/activity_main_fragment_callrulelable_add_prefix"/>
+
+			<com.portgo.view.CursorEndEditTextView
+				android:id="@+id/activity_main_fragment_callrule_add_editor"
+				style="@style/blueCursorEditText"
+				android:layout_toRightOf="@id/activity_main_fragment_callrulelable_add"
+				android:hint="@string/activity_main_fragment_callrule_add_hint"
+				android:gravity="right"
+				android:layout_centerVertical="true"
+				android:background="@null"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:maxLines="1"
+				android:textSize="16sp" />
+
+		</RelativeLayout>
+	</LinearLayout>
+	<ListView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"></ListView>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/avcall_local_video"
+        android:layout_width="90dip"
+        android:layout_height="90dip"
+        android:minHeight="90dp"
+        android:minWidth="90dp"
+        android:background="@color/portgo_color_darkgray"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:layout_alignParentTop="true"
+    android:gravity="center" >
+    <com.portsip.PortSIPVideoRenderer
+    android:id="@+id/local_render"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" />
+</LinearLayout>
+

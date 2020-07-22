@@ -1,0 +1,99 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/portgo_color_black"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="4">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        style="@style/PortActionBarTheme" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/record_play_wave"
+            android:orientation="vertical"
+            android:layout_height="256dip"
+            android:layout_width="256dip"
+            android:layout_gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/fragment_marginRight"
+            android:layout_marginLeft="@dimen/fragment_marginLeft"
+            android:gravity="center">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/record_play_current_time"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/portgo_color_lightgray"
+                    android:textSize="@dimen/recordfile_timesize"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/portgo_color_lightgray"
+                    android:textSize="@dimen/recordfile_timesize"
+                    android:id="@+id/record_play_total_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            <SeekBar
+                android:id="@+id/play_seek"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/record_play_total_time"
+                android:layout_toRightOf="@id/record_play_current_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxHeight="2dip"
+                android:minHeight="2dip"
+
+                android:progressDrawable="@drawable/portgo_seekbar"
+                android:thumb="@drawable/portgo_thumb"
+                android:layout_marginBottom="@dimen/recordfile_play_marginRight"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="@dimen/recordfile_play_marginRight"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/play_pre"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/record_play_pre" />
+
+                <ImageView
+                    android:id="@+id/play_pause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/recordfile_play_marginRight"
+                    android:layout_marginRight="@dimen/recordfile_play_marginRight"
+                    android:src="@drawable/record_play_ico" />
+
+                <ImageView
+                    android:id="@+id/play_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/record_play_next" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

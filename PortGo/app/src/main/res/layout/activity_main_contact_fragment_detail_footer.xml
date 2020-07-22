@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/activity_main_contact_fragment_footer"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/portgo_color_lightgray"
+	android:layout_marginBottom="@dimen/activity_main_fragment_setting_advance_marginRight">
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_marginBottom="1px"
+		android:background="@color/portgo_color_white">
+		<TextView
+			style="@style/contact_detail_item_title_style"
+			android:text="@string/string_familyname"/>
+		<TextView
+            android:id="@+id/fragment_detail_familyname"
+			style="@style/contact_detail_item_content_style" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:minHeight="@dimen/min_item_height"
+		android:layout_marginBottom="1px"
+		android:background="@color/portgo_color_white">
+		<TextView
+			android:text="@string/string_givingname"
+			style="@style/contact_detail_item_title_style"/>
+		<TextView
+            android:id="@+id/fragment_detail_givingname"
+			style="@style/contact_detail_item_content_style" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_marginBottom="1px"
+		android:minHeight="@dimen/min_item_height"
+		android:background="@color/portgo_color_white">
+		<TextView
+			android:text="@string/string_company"
+			style="@style/contact_detail_item_title_style"/>
+		<TextView
+            android:id="@+id/fragment_detail_compony"
+			style="@style/contact_detail_item_content_style" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_marginBottom="1px"
+		android:minHeight="@dimen/min_item_height"
+		android:background="@color/portgo_color_white">
+		<TextView
+			android:text="@string/string_dept"
+			style="@style/contact_detail_item_title_style" />
+		<TextView
+            android:id="@+id/fragment_detail_department"
+			style="@style/contact_detail_item_content_style" />
+	</LinearLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_marginBottom="1px"
+		android:minHeight="@dimen/min_item_height"
+		android:background="@color/portgo_color_white">
+		<TextView
+			android:text="@string/string_job"
+			style="@style/contact_detail_item_title_style"/>
+		<TextView
+            android:id="@+id/fragment_detail_job"
+			style="@style/contact_detail_item_content_style" />
+	</LinearLayout>
+
+    <RelativeLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_marginBottom="1px"
+		android:minHeight="@dimen/min_item_height"
+		android:background="@color/portgo_color_white">
+		<TextView
+            android:id="@+id/fragment_detail_favorite_description"
+			android:layout_alignParentLeft="true"
+            style="@style/contact_detail_item_title_style"/>
+		<CheckBox
+            android:id="@+id/fragment_detail_favorite"
+			android:layout_centerVertical="true"
+			android:layout_alignParentRight="true"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:button="@drawable/linkman_more_collect_selector"/>
+	</RelativeLayout>
+</LinearLayout>

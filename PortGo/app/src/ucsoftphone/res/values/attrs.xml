@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DialPadViewStyle">
+        <attr name="keyNumber" format="string" />
+        <attr name="keyNumberTextSize" format="dimension" />
+        <attr name="keyLetters" format="string" />
+        <attr name="keyTextSize" format="dimension" />
+        <attr name="letterTextSize" format="dimension" />
+        <attr name="keyNumberColor" format="reference" />
+        <attr name="keyLetterColor" format="color" />
+        <attr name="keyNumberBackground" format="color" />
+        <attr name="innerBackground" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="WaveLineView">
+        <attr name="wlvBackgroundColor" format="color"/>
+        <attr name="wlvLineColor" format="color"/>
+        <attr name="wlvThickLineWidth" format="dimension"/>
+        <attr name="wlvFineLineWidth" format="dimension"/>
+        <attr name="wlvMoveSpeed" format="float"/>
+        <attr name="wlvSamplingSize" format="integer"/>
+        <attr name="wlvSensibility" format="integer"/>
+</declare-styleable>
+
+    <declare-styleable name="GridViewStyle">
+        <attr name="clumn" format="integer" />
+        <attr name="row" format="integer" />
+        <attr name="width_Weight" format="integer" />
+        <attr name="height_Weight" format="integer" />
+        <attr name="horizontal_as_standard" format="boolean" />
+        <attr name="full_Screen" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="PhoneItemView">
+        <!-- Identifier for the image that represents the Imageview's content. -->
+        <attr name="actionSrc" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedImageView">
+        <attr name="riv_corner_radius" format="dimension" />
+        <attr name="riv_corner_radius_top_left" format="dimension" />
+        <attr name="riv_corner_radius_top_right" format="dimension" />
+        <attr name="riv_corner_radius_bottom_left" format="dimension" />
+        <attr name="riv_corner_radius_bottom_right" format="dimension" />
+        <attr name="riv_border_width" format="dimension" />
+        <attr name="riv_border_color" format="color" />
+        <attr name="riv_mutate_background" format="boolean" />
+        <attr name="riv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+        <attr name="riv_tile_mode">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_x">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_y">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+    </declare-styleable>
+
+    ////////////////////////old
+    <declare-styleable name="PortCustomWidgetDialBtn">
+        <attr name="focusDrawble" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="PortCustomWidgetProgress">
+        <attr name="character" format="string"/>
+
+        <attr name="boardwidth" format="dimension" />
+        <attr name="boardcolor" format="color" />
+        <attr name="animstart" format="float" />
+        <attr name="animend" format="float" />
+        <attr name="centerdrawble" format="reference" />
+        <attr name="rotationdrawble" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="PortCustomWidgetPortSelector">
+        <attr name="min_port" format="integer" />
+        <attr name="max_port" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="VideoPress">
+        <attr name="minTime" format="integer" />
+        <attr name="maxTime" format="integer" />
+        <attr name="innerCircleColor" format="color" />
+        <attr name="annulusColor" format="color" />
+        <attr name="progressColor" format="color" />
+        <attr name="circleWidth" format="dimension" />
+        <attr name="excicleMagnification" format="float" />
+        <attr name="innerCircleShrinks" format="float" />
+    </declare-styleable>
+</resources>

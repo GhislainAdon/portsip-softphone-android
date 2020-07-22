@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_online">Online</string>
+    <string name="app_offline">Offline</string>
+    <string name="app_login">Einloggen</string>
+    <string name="app_incall">Anruf</string>
+    //Login
+    
+    <string name="activity_login_advance">Erweitert</string>
+    <string name="activity_login_username_hint">Benutzername</string>
+    <string name="activity_login_pwd_hint">Passwort</string>
+    <string name="activity_login_rememberme">Merken</string>
+    <string name="login_input_tips">Bitte alle Pflichtfelder ausfüllen</string>
+    <string name="login_login_tips">Einloggen...</string>
+    <string name="network_not_availabe">Netzwerk nicht verfügbar!</string>
+    <string name="scanner_tilte">QR-Code-Scanner</string>
+    <string name="turn_on_flashlight">Blitzlicht einschalten</string>
+    <string name="turn_off_flashlight">Blitzlicht ausschalten</string>
+    <string name="msg_camera_framework_bug">Kamera lässt sich nicht öffnen.</string>
+
+    /////about
+    
+    <string name="title_about">Über</string>
+    <string name="activity_about_ver">V8.0.0</string>
+    <string name="activity_about_homeurl">https://www.portsip.com</string>
+    <string name="activity_about_sdk_ver">Built basiert auf SDK</string>
+    <string name="activity_about_company"></string>
+    <string name="activity_about_company_copyright"></string>
+
+    //////////advance
+    
+    <string name="activity_advance_category_displayname">ANZEIGENAME</string>
+    <string name="activity_advance_category_additional">ERWEITERTE KONTO-EINSTELLUNGEN</string>
+    <string name="activity_advance_category_proxy">OUTBOUND PROXY</string>
+    <string name="activity_advance_category_transport">TRANSPORT-PROTOKOLL</string>
+    <string name="activity_advance_category_stun" translatable="false">STUN</string>                             
+    <string name="activity_advance_category_impresence" translatable="false">IM AND PRESENCE</string>            
+    <string name="activity_advance_category_tlscert" translatable="false">TLS CERT MANAGEMENT</string>           
+    <string name="category_allowvoip">MOBILES NETZWERK</string>
+    <string name="title_allowvoip">Mobiles Netzwerk</string>
+    <string name="minmax_limit">min:90 max:3600</string>
+    <string name="activity_advance_title_displayname">Anzeigen als</string>
+    <string name="activity_advance_title_tlscert" translatable="false">Verify TLS Cert</string>
+    <string name="activity_advance_title_proxy_server">Outbound Proxy</string>
+    <string name="activity_advance_title_proxy_authname">Authentifizierungsname</string>
+    <string name="activity_advance_title_transport_udp" translatable="false">UDP</string>
+    <string name="activity_advance_title_transport_tcp" translatable="false">TCP</string>
+    <string name="activity_advance_title_transport_tls" translatable="false">TLS</string>
+    <string name="activity_advance_title_transport_pers_udp" translatable="false">PERS_UDP</string>
+    <string name="activity_advance_title_transport_pers_tcp" translatable="false">PERS_TCP</string> 
+    <string name="activity_advance_title_proxy_tips">[Standardwert=Domain]</string>
+    <string name="activity_advance_title_author_tips">[Standardwert=Benutzername]</string>
+    <string name="activity_advance_title_disname_tips">[Standardwert=Benutzername]</string>
+    <string name="activity_advance_title_stun_enable">STUN verwenden</string>
+    <string name="activity_advance_title_stun_server">Server</string>
+    <string name="activity_advance_title_stun_port">Port</string>
+    <string name="activity_advance_title_presence_enable">Proxy vorhanden</string>
+    <string name="activity_advance_title_publish_refresh">Intervall Statusaktualisierung (Sekunden)</string>
+    <string name="activity_advance_title_sub_refresh">Intervall SIP-Anmeldenachricht (Sekunden)</string>
+    <string name="activity_advance_title_enable_log">Protokollierung aktivieren</string>
+    <string name="activity_advance_title_about">Über</string>
+    <string name="toomanycalls">Maximal zwei Gespräche gleichzeitig erlaubt.</string>
+
+    //tab
+    
+    <string name="portgo_title_contact">Kontakte</string>
+    <string name="portgo_title_history">Anrufe</string>
+    <string name="portgo_title_numberpad">Wähltastatur</string>
+    <string name="portgo_title_message">Nachrichten</string>
+    <string name="portgo_title_setting">Einstellungen</string>
+    <string name="contact_tab_all">Alle</string>
+    <string name="contact_tab_favorite">Favoriten</string>
+    <string name="contact_tab_friend">Freunde</string>
+    <!--编辑状态-->
+    <string name="contact_select_contact">Bitte Kontakt(e) auswählen</string>
+    <string name="contact_selected_contact">"%d Kontakt(e) ausgewählt"</string>
+    <!--编辑状态-->
+    <string name="contact_clear">Auswahl entfernen</string>
+    <string name="contact_all">Alle auswählen</string>
+    <string name="permission_help_title">Berechtigung</string>
+    <string name="permission_help_content">Erlaube %1$s: \n\nKontakte lesen/schreiben
+\nMikrofon- und Kameraaufnahme\nSpeichernutzung\nÜber andere Apps einblenden</string>
+    <string name="permission_help_quit">Schließen</string>
+    <string name="permission_help_setting">Einstellung</string>
+    <string name="refer_title">Verweisen</string>
+    <string name="refer_tips">%1$s Weiterleitungsanfragen nach %2$s</string>
+
+    //contact detail
+    
+    <string name="contact_detail">Details</string>
+    <string name="activity_main_contact_fragment_detail_edit">Bearbeiten</string>
+    <string name="activity_main_contact_fragment_detail_addfavorite">Zu den Favoriten hinzufügen</string>
+    <string name="activity_main_contact_fragment_detail_rmfavorite">Aus den Favoriten entfernen</string>
+    <string name="friend_detail">Details</string>
+    <string name="hisroty_fragment_detail_newcontact">Neuer Kontakt</string>
+    <string name="hisroty_fragment_detail_addtocontact">Zu vorhandenen Kontakt hinzufügen</string>
+
+    //contact edit
+    
+    <string name="edit_fragment_editcontact">Kontakt bearbeiten</string>
+    <string name="edit_fragment_editfriend">Freund bearbeiten</string>
+    <string name="edit_fragment_addcontact">Kontakt erstellen</string>
+    <string name="edit_fragment_addfriend">Freund erstellen</string>
+    <string name="edit_fragment_finish">Speichern</string>
+    <string name="select_no_number">Keine</string>
+    <string name="request_friend_im">Bitte mindestens ein SIP-Konto eingeben und für IM/SMS wählen</string>
+    <string name="invalidate_contact_data">Fehlerhafte Kontaktdaten, Fehler beim Speichern.</string>
+    <string name="activity_main_contact_no_name">Max Mustermann</string>
+    <string name="activity_main_contact_fragment_edit_sipim">IM/SMS</string>
+    <string name="activity_main_contact_fragment_edit_addphone">Telefonnummer hinzufügen</string>
+    <string name="activity_main_contact_fragment_edit_addsip">VoIP-Nummer hinzufügen</string>
+    <string name="contact_fragment_edit_delete">Kontakt löschen</string>
+    <string name="contact_name_null">Kontaktname darf nicht leer sein</string>
+    <string name="contact_fragment_edit_numtype">Bitte den Telefontyp auswählen</string>
+    <string name="activity_main_contact_fragment_edit_newType">Personalisierte Beschriftung</string>
+    <string name="phone_selected">Empfänger auswählen</string>
+    <string name="invalidate_phone_number">Bitte mindestens eine gültige Nummer auswählen</string>
+
+    ////////////
+    
+    <string name="tab_history_all">Alle</string>
+    <string name="tab_history_unreceived">Verpasste</string>
+
+    //call detail
+    
+    <string name="phone_type_sip">VoIP-Anruf</string>
+    <string name="phone_type_phone">Mobil</string>
+    <string name="title_historydetail">Details</string>
+    <string name="history_fragment_detail_newcontact">Neuer Kontakt</string>
+    <string name="history_fragment_detail_showmore">Mehr anzeigen</string>
+    <string name="history_fragment_detail_showless">Zusammenklappen</string>
+    <string name="callin">Eingehend</string>
+    <string name="callout">Abgehend</string>
+    <string name="unconnect">Abgebrochen</string>
+    <string name="history_fragment_detail_not_favorite">Favoriten</string>
+    <string name="history_fragment_detail_in_favorite">Favoriten</string>
+
+    //
+
+
+    //codec
+    
+    <string name="title_codec">Codecs</string>
+    <string name="activity_main_fragment_setting_codec_edit_finish">Fertig</string>
+    <string name="activity_main_fragment_setting_codec_edit_edit">Bearbeiten</string>
+    <string name="setting_fragment_codec_premum_desc">Als Premium-Funktion verfügbar</string>
+
+    //setting
+    
+    <string name="set_status">Status</string>
+    <string name="set_account">Konto</string>
+    <string name="set_balance">Guthaben</string>
+    <string name="set_set">Erweitert</string>
+    <string name="set_codecs">Codecs</string>
+    <string name="set_about">Über</string>
+    <string name="set_premium">Premium-Funktionen</string>
+
+    //
+    
+    <string name="title_premium">Premium</string>
+    <string name="premium_price">$9.99</string>
+    <string name="not_premium">Kauf fehlgeschlagen.</string>
+
+    //account
+    
+    <string name="title_account">Konto</string>
+    <string name="activity_main_fragment_setting_account_username">Benutzername</string>
+    <string name="activity_main_fragment_setting_account_userpsw">Passwort</string>
+    <string name="activity_main_fragment_setting_account_userbalance">Guthaben</string>
+    <string name="activity_main_fragment_setting_account_sipserver">SIP-Server</string>
+    <string name="activity_main_fragment_setting_account_sipport">Port-Nummer</string>
+    <string name="activity_main_fragment_setting_account_siptranstype">Transport-Protokoll</string>
+    <string name="activity_main_fragment_setting_account_userdomain">Domainname</string>
+    <string name="activity_main_fragment_setting_account_userdisname">Anzeigen als</string>
+    <string name="activity_main_fragment_setting_account_userauth">Authentifizierungsname</string>
+    <string name="activity_main_fragment_setting_account_unregister">Ausloggen</string>
+    <string name="empty_numaber_tips">Bitte eine Rufnummer eingeben</string>
+    <string name="empty_voicemail_tips">Bitte zuerst die Mailboxnummer einstellen (Einstellungen-Konto)!</string>
+    
+    
+    //rule
+    
+    <string name="activity_main_fragment_callrulelable_name">Name</string>
+    <string name="activity_main_fragment_callrulelable_match_prefix">Übereinstimmende Vorwahl</string>
+    <string name="activity_main_fragment_callrulelable_remove_prefix">Zu entfernende Vorwahl</string>
+    <string name="activity_main_fragment_callrulelable_add_prefix">Hinzuzufügende Vorwahl</string>
+    <string name="activity_main_fragment_callrule_name_hint">Beschreibung</string>
+    <string name="activity_main_fragment_callrule_match_hint">z.B. +49</string>
+    <string name="activity_main_fragment_callrule_add_hint">z.B. 0</string>
+    <string name="activity_main_fragment_callrule_remove_hint">z.B. +49</string>
+
+
+
+
+    //foward
+
+    
+    <string name="category_callfoward">Anrufweiterleitung</string>
+    <string name="labe_callfoward">Anrufweiterleitung</string>
+    <string name="callfoward_to">Weiterleitung nach:</string>
+    <string name="labe_voicemail">Mailbox:</string>
+    <string name="string_voicemail">Mailbox</string>
+    <string name="lable_fragment_account_foward_noanswer">Wenn unbeantwortet</string>
+    <string name="title_forward">Anrufweiterleitung</string>
+    <string name="lable_fragment_account_foward_close">Nie weiterleiten</string>
+    <string name="lable_fragment_account_foward_all">Immer weiterleiten</string>
+    <string name="lable_fragment_account_foward_busy">Wenn besetzt</string>
+    <string name="lable_fragment_account_nodistrub">Nicht stören</string>
+    <string name="nodisturb_tips">Wenn \"Nicht stören\" eingeschaltet ist, werden keine Anrufe und Nachrichten empfangen!</string>
+    <string name="lable_fragment_account_foward_noanswertime">Rufannahmezeit (in s):</string>
+    <string name="hint_fragment_setting_advance_redirect">min:max:</string>
+    <string name="hint_min_sencod">Der kleinstmögliche Wert ist 3 Sekunden</string>
+    <string name="category_premium">Premium-Funktionen</string>
+    <string name="fragment_setting_advance_premium_title">H.264-, AMR-WB-Codec</string>
+    <string name="fragment_setting_advance_premium_desc">H.264 Video-Codec mit hoher Qualität und geringer Bandbreite
+\nBeste HD-Audioqualität unter ungünstigen Netzwerkverbindungen mit AMR-WB.</string>
+    <string name="fragment_setting_advance_premium_sync">Premium-Funktionen synchronisieren</string>
+    <string name="fragment_setting_advance_sync_desc">Wenn Sie bereits eine Premium-Funktion erworben haben und diese nicht als installiert erscheint, drücken Sie die Taste oben, um mit dem App-Store zu synchronisieren</string>
+
+    //Advanced
+    
+    <string name="title_preference">Erweitert</string>
+    <string name="category_allowvoip_detail">Wenn aktiviert, kann die App auch ohne WLAN-Verbindung mit einem mobilen Datentarif verwendet werden</string>
+    <string name="category_audio">AUDIO-OPTIONEN</string>
+    <string name="labe_rtp_start">RTP-Start-Port</string>
+    <string name="labe_aec">Echokompensation</string>
+    <string name="labe_vad">Lautloserkennung</string>
+    <string name="labe_nr">Rauschunterdrückung</string>
+    <string name="labe_cng">Komfortrauschen</string>
+    <string name="labe_agc">Automatische Lautstärkeregelung</string>
+    <string name="category_video">VIDEO-OPTIONEN</string>
+    <string name="labe_video_bitrate">Bitrate</string>
+    <string name="labe_video_resolution">Auflösung</string>
+    <string name="labe_video_fps">Bildwiederholfrequenz</string>
+    <string name="labe_video_nack">NACK (RFC4585)</string>
+    <string name="category_srtp">ANRUFVERSCHLÜSSELUNG SRTP</string>
+    <string name="labe_srtp">Anrufverschlüsselung SRTP</string>
+    <string name="category_dtmf">DTMF</string>
+    <string name="labe_dtmf_type">DTMF-Typ</string>
+    <string name="labe_dtmf_back">DTMF-Töne wiedergeben</string>
+    <string name="category_miscellaneous">ERWEITERTE SIP-EINSTELLUNGEN</string>
+    <string name="label_prack">PRACK aktivieren</string>
+    <string name="label_earlymedia">Early Media aktivieren</string>
+    <string name="label_ims">IMS aktivieren</string>
+    <string name="label_sessiontime">Passive Session Timer</string>
+    <string name="category_autorec">AUTOMATISCHE AUFNAHME</string>
+    <string name="label_autorec">Automatischer Gesprächsmitschnitt</string>
+    <string name="label_rec_dir">Pfad zu den Aufnahmen</string>
+    <string name="category_ring">KLINGELTON/BENACHRICHTIGUNGEN</string>
+    <string name="label_call_ring">Klingelton</string>
+    <string name="label_im_ring">SMS-Benachrichtigungen</string>
+    <string name="label_enable_ring">Klingelton EIN</string>
+    <string name="label_enable_vibrate">Vibrieren</string>
+    <string name="category_intergrate">Dialer-Integration</string>
+    <string name="label_dialer_intergrate">Integration in den nativen Android-Dialer</string>
+    <string name="label_default_account">Den nativen Android-Dialer ersetzen</string>
+    
+    //message
+    
+    <string name="unknow_message_format">Unbekanntes Nachrichtenformat</string>
+    <string name="subscrib_tips">Anmelde-Nachricht von %1$s:%2$s erhalten</string>
+    <string name="message_tips">Nachricht von %1$s erhalten.</string>
+    <string name="please_select">Bitte wählen</string>
+    <string name="select_sum">"%d ausgewählt"</string>
+    <string name="clear_all">"Löschen"</string>
+    <string name="select_all">"Alles auswählen"</string>
+    <string name="already_read">"Gelesen"</string>
+    <string name="chat_transfer">Weiterleiten</string>
+    <string name="chat_transfer_style">Weiterleiten als</string>
+    <string name="chat_transfer_failed">Fehler beim Weiterleiten</string>
+    <string name="chat_transfer_success">Weiterleiten erfolgreich</string>
+    <string name="message_search_hint">Nachrichten suchen</string>
+    <!--
+    <string name="please_select_contact">Please select contact(s)</string>-->
+    <string name="send_to">Ziel:</string>
+    <string name="chat_send">Senden</string>
+    <string name="missed_call">&#160;Anruf(e) verpasst</string>
+    <string name="voice_too_short">Mailboxnachricht zu kurz!</string>
+    <string name="string_uptips">Zum Beenden loslassen</string>
+    <string name="string_downtips">Halten und sprechen</string>
+    <string name="string_permission_error">Aufnahme möglicherweise wegen einer fehlenden Berechtigung gescheitert</string>
+    <string name="string_unknow_error">Unbekannter Fehler</string>
+    <string name="string_incall_error">Während eines Anrufes können keine Video- oder Audio-Nachrichten gesendet werden</string>
+    <string name="string_flip_tips">Zum Abbrechen nach oben wischen</string>
+    <string name="string_release_tips">Zum Abbrechen loslassen</string>
+
+
+    //Calling
+    
+    <string name="call_failed_tips">Fehler beim Anruf</string>
+    <string name="fragment_dialing_digits_hide">Verstecken</string>
+    <string name="tring">Anrufen...</string>
+    <string name="please_inputorselect_transfer_dest">Bitte Empfänger eingeben bzw. auswählen</string>
+    <string name="please_inputorselect_correct_dest">Bitte gültige(n) Empfänger eingeben</string>
+    <string name="changeto_video">Video</string>
+    <string name="changeto_audio">Audio</string>
+    <string name="show_dialpad">Wähltastatur</string>
+    <string name="add_call">Hinzufügen</string>
+    <string name="create_conference">Konferenz</string>
+    <string name="destory_conference">Verwerfen</string>
+    <string name="resume_call">Fortsetzen</string>
+    <string name="hold_call">Pause</string>
+    <string name="close_camera">Aus</string>
+    <string name="open_camera">An</string>
+    <string name="switch_camera">Umschalten</string>
+    <string name="start_record">Aufnahme</string>
+    <string name="record_cannot_find">Datei verschoben oder gelöscht!</string>
+    <string name="stop_record">Stop</string>
+    <string name="transfer_call">Verbinden</string>
+    <string name="remote_hold">Entfernt</string>
+    
+    //im
+    
+    <string name="select_im_address">IM senden nach</string>
+    <string name="select_im_addresstips">Die gewählte SIP-Adresse wird für IM und Online-Messaging verwendet.
+Zu den Kontakten können SIP-Adressen hinzugefügt werden.</string>
+    <string name="select_im_tilte">SIP-Adresse für Online-Messaging und IM</string>
+    <string name="contact_fragment_edit_im_lable">IM/SMS</string>
+    <!--subscribe-->
+    <string name="subscribe_title">Neue Freunde</string>
+    <string name="no_subscrib_message">Keine Freundschaftsanfrage</string>
+    <!--about-->
+    <string name="about_netaddr"></string>
+    <string name="about_introduction"></string>
+    <string name="invalidate_qrcode">Fehlerhafter QR-Code</string>
+    <string name="permission_decline">Ablehnen</string>
+    <string name="permission_accept">Akzeptieren</string>
+    ////////////////////
+    
+    <string name="callrules_tilte">Wählpläne</string>
+    <string name="add_callrule_tilte">Neuer Wählplan</string>
+    <string name="null_name">Name darf nicht leer sein</string>
+    <string name="null_matchprefix">Übereinstimmende Vorwahl darf nicht leer sein</string>
+    <string name="null_add_removeprefix">Hinzuzufügende und zu entfernende Vorwahl dürfen nicht gleichzeitig leer sein</string>
+    <string name="wrong_removeprefix">Zu entfernende Vorwahl muss ein Teil der übereinstimmenden Vorwahl sein</string>
+    <string name="scanning">"Scannen..."</string>
+    <string name="rec_fail">"Identifizierungsfehler"</string>
+    /////////////
+
+    
+    <string name="prefrence_record_filepath">Speicherpfad für die Aufnahmen</string>
+    <string name="prefrence_record_filepath_title">Speicherpfad für die Aufnahmen</string>
+    <string name="can_not_openfile">Datei lässt sich nicht öffnen!</string>
+    <string name="title_record">Aufnahmen</string>
+    ////////////////////
+
+    
+    <string name="dtmf_select_title">DTMF-Töne senden</string>
+    <!-- dtmf发送方式选择页面标题-->
+    <string name="fps_select_title">Bildwiederholfrequenz</string>
+    <!-- 视频帧率选择页面标题-->
+    <string name="vbr_select_title">Bitrate</string>
+    <!-- 视频码流选择页面标题-->
+    <string name="vr_select_title">Auflösung</string>
+    <!-- 视频分辨率选择页面标题-->
+    <string name="srtp_select_title">Anruf-Verschlüsselung</string>
+    <!-- 通话加密方式选择页面标题-->
+    <string name="status_title">Anwesenheitsstatus</string>
+    <string name="status_online">Online</string>
+    <string name="status_away">Abwesend</string>
+    <string name="status_busy">Beschäftigt</string>
+    <string name="status_nodistrub">Bitte nicht stören</string>
+    <string name="status_offline">Offline</string>
+
+
+
+    ////////////////////////
+
+    
+    
+    <string name="str_login">Einloggen</string>
+    <string name="day_today">Heute</string>
+    <string name="day_yesterday">Gestern</string>
+    <string name="this_week">Diese Woche</string>
+    <string name="this_month">Diesen Monat</string>
+    <string name="string_company">Firma</string>
+    <string name="string_dept">Abteilung</string>
+    <string name="string_job">Titel</string>
+    <string name="string_familyname">Nachname</string>
+    <string name="string_givingname">Vorname</string>
+    <string name="string_edit">Bearbeiten</string>
+    <string name="string_Message">Nachricht</string>
+    <string name="string_Delete">Löschen</string>
+    <string name="string_Forward">Weiterleiten</string>
+    <string name="string_Copy">Kopie</string>
+    <string name="string_More">Mehr</string>
+    <string name="string_resend">senden</string>
+    <string name="string_down">herunterladen</string>
+    <string name="string_audio">Audio</string>
+    <string name="string_Video">Video</string>
+    <string name="string_image_message">Bild-Nachricht</string>
+    <string name="string_audio_message">Audio-Nachricht</string>
+    <string name="string_video_message">Video-Nachricht</string>
+    <string name="string_camera">Kamera</string>
+    <string name="string_abulmn">Album</string>
+    <string name="audio_option">AUDIO</string>
+    <string name="video_option">VIDEO</string>
+    <string name="string_accept">Akzeptieren</string>
+    <string name="string_reject">Ablehnen</string>
+    <string name="string_accepted">Akzeptiert</string>
+    <string name="string_rejected">Abgelehnt</string>
+    <string name="string_installed">Installiert</string>
+    <string name="string_Audio_Call">Audio-Anruf</string>
+    <string name="string_Video_Call">Video-Anruf</string>
+    <string name="string_all">Alle auswählen</string>
+    <string name="string_finish">Fertig</string>
+    <string name="string_clear">Entfernen</string>
+    <string name="string_new">Neu</string>
+    <string name="string_add">Hinzufügen</string>
+    <string name="string_save">Speichern</string>
+    <string name="string_tips">Tipps</string>
+    <string name="string_sure">Fertig</string>
+    <string name="string_preview">Vorschau</string>
+    <string name="string_sdcard">Smartphonespeicher</string>
+    <string name="string_pv">Fotos/Videos</string>
+    <string name="please_login_tips">Bitte zuerst einloggen</string>
+    <string name="str_set_avarta">Foto hinzufügen</string>
+    <string name="seach_result_empty">Leere Aufnahme!</string>
+    <string name="inlongin_tips">Einloggen, bitte warten...</string>
+    <string name="input_number_tips">Bitte eine Rufnummer eingeben</string>
+    <string name="register_failed_tips">Registrierung fehlgeschlagen.</string>
+    <string name="select_friend">Auswählen</string>
+    <string name="add_friend">Neu</string>
+    <string name="del_friend">Löschen</string>
+    <string name="select_favorite">Auswählen</string>
+    <string name="add_favorite">Hinzufügen</string>
+    <string name="del_favorite">Löschen</string>
+    <string name="quit">Beenden</string>
+    <!--do not translate-->
+    <!--命令，不要翻译-->
+    <string name="cmd_presence_online" translatable="false">Available</string>
+    <string name="cmd_presence_away" translatable="false">Away</string>
+    <string name="cmd_presence_nodisturb" translatable="false">Do not disturb</string>
+    <string name="cmd_presence_busy" translatable="false">Busy</string>
+    <string name="cmd_presence_offline" translatable="false">offline</string>
+
+    <string name="string_presence" translatable="false">Presence</string>                                          //给新来的订阅消息菜单使用，不会显示出来，keep
+    <string name="local_invisible_directory" translatable="false">invisible_directory</string>                   //给数据库使用的，keep
+    <string name="default_directory" translatable="false">default_directory</string>                               //给数据库使用的，keep
+    
+        <!--DTMF界面，按键数字 不翻译-->
+    <string name="activity_main_fragment_dial_1" translatable="false">1</string>
+    <string name="activity_main_fragment_dial_2" translatable="false">2</string>
+    <string name="activity_main_fragment_dial_3" translatable="false">3</string>
+    <string name="activity_main_fragment_dial_4" translatable="false">4</string>
+    <string name="activity_main_fragment_dial_5" translatable="false">5</string>
+    <string name="activity_main_fragment_dial_6" translatable="false">6</string>
+    <string name="activity_main_fragment_dial_7" translatable="false">7</string>
+    <string name="activity_main_fragment_dial_8" translatable="false">8</string>
+    <string name="activity_main_fragment_dial_9" translatable="false">9</string>
+    <string name="activity_main_fragment_dial_star" translatable="false">*</string>
+    <string name="activity_main_fragment_dial_0" translatable="false">0</string>
+    <string name="activity_main_fragment_dial_sharp" translatable="false">#</string>
+
+
+    ////
+
+
+
+    
+    <string name="string_select">"Auswählen"</string>
+    <string name="string_file">Datei</string>
+    <string name="string_empty">Leer</string>
+    <string name="string_huge">Riesig</string>
+    <string name="timeformat_md">MM-dd</string>
+</resources>

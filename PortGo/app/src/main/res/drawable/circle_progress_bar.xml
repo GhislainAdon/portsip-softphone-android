@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/portgo_color_blue" />
+            <size android:height="@dimen/detail_round_btn_radius" android:width="@dimen/detail_round_btn_radius" />
+        </shape>
+    </item>
+    <item android:left="8.0dip" android:top="8.0dip" android:right="8.0dip" android:bottom="8.0dip">
+        <shape android:shape="oval">
+            <corners android:radius="@dimen/detail_round_btn_radius" />
+            <solid android:color="@color/portgo_color_white" />
+            <size android:height="@dimen/detail_round_btn_radius" android:width="@dimen/detail_round_btn_radius" />
+        </shape>
+    </item>
+</layer-list>

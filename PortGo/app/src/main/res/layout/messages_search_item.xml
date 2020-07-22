@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:paddingLeft="@dimen/fragment_marginLeft"
+	android:paddingRight="@dimen/fragment_marginRight"
+	android:minHeight="@dimen/message_item_height"
+	android:background="@drawable/list_selector">
+    <CheckBox
+        android:layout_alignParentLeft="true"
+        android:id="@+id/message_item_radiobox"
+		android:layout_marginRight="10dip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+		android:button="@drawable/checkbox_bg"
+        android:visibility="gone"
+        android:focusable="false"
+        android:clickable="false" />
+	<include layout="@layout/view_avatar"
+		android:id="@+id/message_item_useravatar"
+        android:layout_toRightOf="@id/message_item_radiobox"
+		android:layout_centerVertical="true"
+		android:layout_width="@dimen/message_avatar_size"
+		android:layout_height="@dimen/message_avatar_size"/>
+
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="1px"
+		android:layout_toRightOf="@id/message_item_useravatar"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+		android:gravity="center_vertical"
+		android:layout_centerVertical="true"
+		android:orientation="vertical"
+		android:paddingBottom="10px"
+		android:paddingLeft="10dip"
+		android:paddingRight="1px"
+		android:paddingTop="5px"
+		android:weightSum="2">
+
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/messages_item_textView_date"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/portgo_color_msg_time"
+                android:textSize="@dimen/message_time_textsize" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@id/messages_item_textView_date">
+                <TextView
+                    android:id="@+id/messages_item_textView_remote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:drawablePadding="5dp"
+                    android:textColor="@color/portgo_color_msg_textcolor"
+                    android:textSize="@dimen/message_name_textsize" />
+            </LinearLayout>
+		</RelativeLayout>
+
+        <TextView
+            android:id="@+id/messages_item_textView_content"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dip"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textSize="@dimen/message_content_textsize"
+            android:textColor="@color/portgo_color_msg_textcolor"></TextView>
+	</LinearLayout>
+
+</RelativeLayout>

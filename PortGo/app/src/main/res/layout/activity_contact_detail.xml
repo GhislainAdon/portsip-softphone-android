@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/user_avatar_top_margin"
+        android:layout_marginLeft="@dimen/user_avatar_left_right_margin"
+        android:layout_marginRight="@dimen/user_avatar_left_right_margin">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_avatar"
+            android:src="@drawable/user_avatar"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/user_detail_left_margin"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/detail_description"
+            android:background="@drawable/user_info_detail" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/user_top_margin"
+        android:layout_marginBottom="@dimen/user_bottom_margin">
+        <View android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="2"
+            android:visibility="invisible"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_send_message"
+            android:src="@drawable/user_message_selector" />
+        <View android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:id="@+id/gap_send_message"
+            android:layout_weight="1"
+            android:visibility="invisible"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_audio_call"
+            android:src="@drawable/user_phone_selector" />
+        <View android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"
+            android:visibility="invisible"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/detail_video_call"
+            android:src="@drawable/user_video_selector" />
+        <View android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="2"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/contact_details_listview"
+        android:divider="@color/portgo_color_divide_gray"
+        android:dividerHeight="@dimen/portgo_devide_height"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:choiceMode="singleChoice"
+        android:listSelector="@color/portgo_color_divide_gray" />
+
+</LinearLayout>

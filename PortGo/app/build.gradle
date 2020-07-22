@@ -1,0 +1,135 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    defaultConfig {
+        applicationId "com.portgo"
+
+        minSdkVersion 23
+        targetSdkVersion 28
+        versionCode 961
+        versionName '9.6.1'
+        flavorDimensions "versionCode"
+        buildConfigField "boolean", "SUPPORTPUSH", "true"
+
+        buildConfigField "boolean", "HASVIDEO", "true"//false
+        buildConfigField "boolean", "HASIM", "true"//false
+        buildConfigField "boolean", "HASSIPTAILER", "true"
+        buildConfigField "boolean", "HASPRESENCE", "true"
+
+        buildConfigField "boolean", "ENABLEVIDEO", "true"
+        buildConfigField "boolean", "ENABLEIM", "true"
+
+        buildConfigField "String", "PROVIDER_DATA", "\"com.portsip.portgo.data\""
+        buildConfigField "String", "PROVIDER_CONTACT", "\"com.portsip.portgo.contacts\""
+        buildConfigField "String", "PORT_ACTION_CALL", "\"com.portsip.portgo.action.CALL\""
+        buildConfigField "String", "PORT_ACTION_REJECT", "\"com.portsip.portgo.action.REJECT\""
+        buildConfigField "String", "PORT_ACTION_ACCEPT", "\"com.portsip.portgo.action.ACCEPT\""
+        buildConfigField "String", "PORT_ACTION_REGIEST", "\"com.portsip.portgo.action.REGIEST\""
+        buildConfigField "String", "PORT_ACTION_UNREGIEST", "\"com.portsip.portgo.action.UNREGIEST\""
+        buildConfigField "String", "PORT_ACTION_TOKEN", "\"com.portsip.portgo.action.TOKEN\""
+        buildConfigField "String", "PORT_ACTION_AUDIODEVICE", "\"com.portsip.portgo.action.AUDIODEVICE\""
+        buildConfigField "String", "PORT_ACTION_AUTOLOGIN", "\"com.portsip.portgo.action.AUTOLOGIN\""
+        buildConfigField "String", "PORT_ACTION_DIALERVIEW", "\"com.portsip.portgo.action.DIALERVIEW\""
+        buildConfigField "String", "PORT_ACTION_ALTERVIEW", "\"com.portsip.portgo.action.ALTERVIEW\""
+
+        buildConfigField "String", "_dddXFEFEFE", "\"9ANDyR03NTVFM0MxQUMzODMwMTg4QjMzNDBCRDI1Q0EyMEFGQkBBMkU0OTZFRkFGNEIwRjI4Qjg4MjNBOEY3NEI2NjJGMkAyQzFCRjEzMTcyRjk5MjUzNUQ0RkMyRUNBOTc3M0NFNEBFRjQ1RUQ0N0NGMzU2RDBBNEQ5Mjk4MzRBMTM2NjZBOQ\""
+        buildConfigField "String", "_dddXafdsaf", "\"PortSIP UC Client\""
+
+    }
+    sourceSets {
+        main {
+            manifest.srcFile 'src/main/AndroidManifest.xml'
+        }
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            versionNameSuffix "-debug"
+            minifyEnabled false
+            zipAlignEnabled true
+            shrinkResources false
+        }
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            minifyEnabled true
+            zipAlignEnabled true
+            shrinkResources false
+            debuggable false
+            jniDebuggable false
+
+        }
+        productFlavors {
+            ucsoftphone {
+
+                buildConfigField "boolean", "HASVIDEO", "true"
+                buildConfigField "boolean", "HASIM", "true"
+
+                buildConfigField "boolean", "HASSIPTAILER", "false"
+                buildConfigField "boolean", "HASPRESENCE", "true"
+
+                buildConfigField "boolean", "ENABLEVIDEO", "true"
+                buildConfigField "boolean", "ENABLEIM", "true"
+                manifestPlaceholders = [PROVIDER_DATA         : "com.portsip.ucsoftphone.data",
+                                        PROVIDER_CONTACT      : "com.portsip.ucsoftphone.contacts",
+                                        PORT_ACTION_CALL      : "com.portsip.ucsoftphone.action.CALL",
+                                        PORT_ACTION_REJECT    : "com.portsip.ucsoftphone.action.REJECT",
+                                        PORT_ACTION_ACCEPT    : "com.portsip.ucsoftphone.action.ACCEPT",
+                                        PORT_ACTION_REGIEST   : "com.portsip.ucsoftphone.action.REGIEST",
+                                        PORT_ACTION_UNREGIEST : "com.portsip.ucsoftphone.action.UNREGIEST",
+                                        PORT_ACTION_TOKEN     : "com.portsip.ucsoftphone.action.TOKEN",
+                                        PORT_ACTION_AUTOLOGIN : "com.portsip.ucsoftphone.action.AUTOLOGIN",
+                                        PORT_ACTION_DIALERVIEW: "com.portsip.ucsoftphone.action.DIALERVIEW",
+                                        PORT_ACTION_ALTERVIEW : "com.portsip.ucsoftphone.action.ALTERVIEW"]
+
+                buildConfigField "String", "PROVIDER_DATA", "\"com.portsip.ucsoftphone.data\""
+                buildConfigField "String", "PROVIDER_CONTACT", "\"com.portsip.ucsoftphone.contacts\""
+                buildConfigField "String", "PORT_ACTION_CALL", "\"com.portsip.ucsoftphone.action.CALL\""
+                buildConfigField "String", "PORT_ACTION_REJECT", "\"com.portsip.ucsoftphone.action.REJECT\""
+                buildConfigField "String", "PORT_ACTION_ACCEPT", "\"com.portsip.ucsoftphone.action.ACCEPT\""
+                buildConfigField "String", "PORT_ACTION_REGIEST", "\"com.portsip.ucsoftphone.action.REGIEST\""
+                buildConfigField "String", "PORT_ACTION_UNREGIEST", "\"com.portsip.ucsoftphone.action.UNREGIEST\""
+                buildConfigField "String", "PORT_ACTION_TOKEN", "\"com.portsip.ucsoftphone.action.TOKEN\""
+                buildConfigField "String", "PORT_ACTION_AUDIODEVICE", "\"com.portsip.ucsoftphone.action.AUDIODEVICE\""
+                buildConfigField "String", "PORT_ACTION_AUTOLOGIN", "\"com.portsip.ucsoftphone.action.AUTOLOGIN\""
+                buildConfigField "String", "PORT_ACTION_DIALERVIEW", "\"com.portsip.ucsoftphone.action.DIALERVIEW\""
+                buildConfigField "String", "PORT_ACTION_ALTERVIEW", "\"com.portsip.ucsoftphone.action.ALTERVIEW\""
+            }
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.firebase:firebase-messaging:20.0.0'
+    implementation files('libs/portsipucsdk.jar')
+    implementation 'com.github.bumptech.glide:glide:4.5.0'
+    implementation 'com.squareup.okhttp3:okhttp:3.7.0'
+    implementation 'com.squareup.okio:okio:1.12.0'
+    implementation 'com.googlecode.mp4parser:isoparser:1.1.21'
+    implementation 'com.google.zxing:core:3.3.0'
+
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+
+    ucsoftphoneApi 'com.google.gms:google-services:3.0.0'
+    ucsoftphoneApi 'com.google.firebase:firebase-messaging:17.4.0'
+
+}
+
+apply plugin: 'com.google.gms.google-services'
+

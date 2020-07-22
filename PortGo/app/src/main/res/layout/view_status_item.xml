@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/portgo_color_white"
+    android:minHeight="@dimen/status_item_height"
+    android:gravity="center_vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_height="wrap_content" android:layout_width="wrap_content"
+        android:id="@+id/status_icon"
+        android:layout_marginLeft="@dimen/fragment_marginLeft"/>
+    <TextView
+        android:id="@+id/status_description"
+        android:layout_weight="1"
+        style="@style/text_style_status"
+        android:background="@null"
+        android:text="@string/status_online" />
+    <CheckBox
+        android:layout_marginRight="@dimen/fragment_marginRight"
+        android:clickable="false"
+        android:id="@+id/status_checkbox"
+        android:button="@drawable/checktext_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

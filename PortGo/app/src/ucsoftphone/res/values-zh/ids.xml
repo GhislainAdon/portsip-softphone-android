@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="action_audiovideo" type="id"></item>
+    <item name="action_record" type="id"></item>
+    <item name="action_transfer" type="id"></item>
+    <item name="action_digits" type="id"></item>
+    <item name="action_switchcamera" type="id"></item>
+    <item name="action_closecamera" type="id"></item>
+    <item name="action_hold" type="id"></item>
+    <item name="action_add_conference" type="id"></item>
+</resources>

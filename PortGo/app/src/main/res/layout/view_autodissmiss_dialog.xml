@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:minHeight="48dip"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/tvremote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_magin_bottom"
+        android:layout_marginTop="@dimen/default_magin_top"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/callitem_list_textsize" />
+
+    <TextView
+        android:id="@+id/tvtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_magin_bottom"
+        android:layout_marginTop="@dimen/default_magin_top"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/callitem_list_textsize" />
+
+    <TextView
+        android:id="@+id/tvevent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/default_magin_bottom"
+        android:layout_marginTop="@dimen/default_magin_top"
+        android:gravity="center"
+        android:minWidth="160dp"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/callitem_list_textsize" />
+
+</LinearLayout>

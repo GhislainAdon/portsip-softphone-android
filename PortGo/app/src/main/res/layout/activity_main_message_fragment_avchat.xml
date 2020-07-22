@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.portgo.view.KeyboardDetectorRelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="@android:color/white"
+	android:id="@+id/activity_main_message_fragment_avchat">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_alignParentTop="true"
+		style="@style/PortActionBarTheme"/>
+    <LinearLayout android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolBar"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/activity_main_message_fragment_chat_layout_receiver"
+            android:layout_width="fill_parent"
+            android:layout_height="49dip"
+            android:gravity="center_vertical"
+            android:paddingRight="@dimen/fragment_marginRight"
+            android:paddingLeft="@dimen/fragment_marginLeft">
+
+            <com.portgo.view.CursorEndEditTextView
+                style="@style/blueCursorEditText"
+                android:background="@null"
+                android:id="@+id/activity_main_message_fragment_chat_receiver"
+                android:textSize="@dimen/textsize_16sp"
+                android:hint="@string/send_to"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10" />
+            <ImageView android:id="@+id/activity_main_message_fragment_chat_select_contact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/message_add_man_ico"
+                android:padding="5dp"/>
+        </LinearLayout>
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp" android:background="@color/portgo_color_divide_gray"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/input_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" />
+	<ListView
+		android:id="@+id/screen_chat_listView"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_above="@id/input_container"
+		android:layout_below="@id/header"
+		android:background="@android:color/white"
+		android:clickable="true"
+		android:divider="@color/portgo_color_divide_gray"
+		android:listSelector="#00000000"
+		android:cacheColorHint="#00000000"
+		android:longClickable="true"
+		android:paddingBottom="@dimen/user_bottom_margin" />
+
+</com.portgo.view.KeyboardDetectorRelativeLayout>

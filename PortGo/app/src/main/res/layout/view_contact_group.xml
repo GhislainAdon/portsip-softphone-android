@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/contact_group_item_height"
+    android:orientation="horizontal"
+    android:background="@color/portgo_color_gray"
+    android:gravity="center_vertical">
+    <ImageView
+        android:id="@+id/group_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/view_list_header_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/portgo_color_black"
+        android:textSize="@dimen/contact_group_textsize"
+        android:paddingLeft="@dimen/contact_group_title_paddingLeft">
+    </TextView>
+</LinearLayout>

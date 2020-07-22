@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="avatar_setandedit">
+        <item name="TAKEPHOTO">拍照</item>
+        <item name="CHOOSEPHOTO">从相册选择</item>
+        <item name="EDITPHOTO">编辑</item>
+        <item name="DELETEPHOTO">删除</item>
+    </string-array>
+
+    <string-array name="srtp_type">
+        <item name="srtp_type_none">从不</item>
+        <item name="srtp_type_force">始终</item>
+        <item name="srtp_type_pers">可选</item>
+    </string-array>
+
+    <string-array name="avatar_set">
+        <item name="TAKEPHOTO">拍照</item>
+        <item name="CHOOSEPHOTO">从相册选择</item>
+    </string-array>
+
+    <string-array name="transfer">
+        <item name="transfer_together">合并转发</item>
+        <item name="transfer_seprate">逐条转发</item>
+    </string-array>
+
+//以下不需翻译
+    <string-array name="transports_type" translatable="false">
+        <item name="trans_udp">UDP</item>
+        <item name="trans_tls">TLS</item>
+        <item name="trans_tcp">TCP</item>
+        <item name="trans_pers">PERS_UDP</item>
+        <item name="trans_pers">PERS_TCP</item>
+    </string-array>
+
+    <string-array name="keynumber_values" translatable="false">
+        <item name="activity_main_fragment_dial_1">1</item>
+        <item name="activity_main_fragment_dial_2">2</item>
+        <item name="activity_main_fragment_dial_3">3</item>
+        <item name="activity_main_fragment_dial_4">4</item>
+        <item name="activity_main_fragment_dial_5">5</item>
+        <item name="activity_main_fragment_dial_6">6</item>
+        <item name="activity_main_fragment_dial_7">7</item>
+        <item name="activity_main_fragment_dial_8">8</item>
+        <item name="activity_main_fragment_dial_9">9</item>
+        <item name="activity_main_fragment_dial_star">*</item>
+        <item name="activity_main_fragment_dial_0">0</item>
+        <item name="activity_main_fragment_dial_sharp">#</item>
+    </string-array>
+
+    <string-array name="keyletter_values" translatable="false">
+        <item name="activity_main_fragment_dial_1_letters"></item>
+        <item name="activity_main_fragment_dial_2_letters">abc</item>
+        <item name="activity_main_fragment_dial_3_letters">def</item>
+        <item name="activity_main_fragment_dial_4_letters">ghi</item>
+        <item name="activity_main_fragment_dial_5_letters">jkl</item>
+        <item name="activity_main_fragment_dial_6_letters">mno</item>
+        <item name="activity_main_fragment_dial_7_letters">pqrs</item>
+        <item name="activity_main_fragment_dial_8_letters">tuv</item>
+        <item name="activity_main_fragment_dial_9_letters">wxyz</item>
+        <item name="activity_main_fragment_dial_star_letters"></item>
+        <item name="activity_main_fragment_dial_0_letters">+</item>
+        <item name="activity_main_fragment_dial_sharp_letters"></item>
+    </string-array>
+
+    <string-array name="transports_value" translatable="false">
+        <item name="trans_udp">0</item>
+        <item name="trans_tls">1</item>
+        <item name="trans_tcp">2</item>
+        <item name="trans_pers">3</item>
+    </string-array>
+
+    <string-array name="videoresolution_type" translatable="false">
+        <item name="qcif">QCIF</item>
+        <item name="cif">CIF</item>
+        <item name="720p">720P</item>
+    </string-array>
+
+    <string-array name="videofps_type" translatable="false">
+        <item name="5fps">5 FPS</item>
+        <item name="10fps">10 FPS</item>
+        <item name="15fps">15 FPS</item>
+        <item name="20fps">20 FPS</item>
+        <item name="30fps">30 FPS</item>
+    </string-array>
+
+    <string-array name="dtmf_type" translatable="false">
+        <item name="dtmf_type_2833">RFC 2833</item>
+        <item name="dtmf_type_info">SIP INFO</item>
+    </string-array>
+    <!--音频编码，有先后顺序 编码器名字 默认开关 编码器id 编码器优先级-->
+    <string-array name="audio_codecs" translatable="false">
+        <item name="MEDIA_G729">G.729 true 18 0 false</item>
+        <item name="MEDIA_PCMA">PCMA true 8 1 false</item>
+        <item name="MEDIA_PCMU">PCMU true 0 2 false</item>
+        <item name="MEDIA_GSM">GSM false 3 3 false</item>
+        <item name="MEDIA_G722">G.722 false 9 4 false</item>
+        <item name="MEDIA_ILBC">iLBC false 97 5 false</item>
+        <item name="MEDIA_AMR">AMR false 98 6 false</item>
+        <item name="MEDIA_AMRWB">AMR-WB false 99 7 false</item>
+        <item name="MEDIA_SPEEX">Speex false 100 8 false</item>
+        <item name="MEDIA_SPEEXWB">Speex-WB false 102 9 false</item>
+        <item name="MEDIA_OPUS">Opus true 105 10 false</item>
+    </string-array>
+
+    <!--视频编码，有先后顺序-->
+    <string-array name="video_codecs" translatable="false">
+        <item name="MEDIA_H264">H.264 true 125 0 false</item>
+        <item name="MEDIA_VP8">VP8 true 120 1 false</item>
+        <item name="MEDIA_VP9">VP9 true 122 2 false</item>
+    </string-array>
+
+    <integer-array name="videoresolution_value">
+        <item name="qcif">11534480</item>//高16位为宽，低16位存高
+        <item name="cif">23068960</item>
+        <item name="720p">83886800</item>
+    </integer-array>
+
+    <integer-array name="videobits_value">
+        <item name="128bps">128</item>
+        <item name="256bps">256</item>
+        <item name="512bps">512</item>
+        <item name="1kbps">1024</item>
+        <item name="2kbps">2048</item>
+    </integer-array>
+
+    <integer-array name="videofps_value">
+        <item name="5fps">5</item>
+        <item name="10fps">10</item>
+        <item name="15fps">15</item>
+        <item name="20fps">20</item>
+        <item name="30fps">30</item>
+    </integer-array>
+
+    <integer-array name="dtmf_value">
+        <item name="dtmf_type_2833">0</item>
+        <item name="dtmf_type_info">1</item>
+    </integer-array>
+
+    <integer-array name="srtp_value">
+        <item name="srtp_type_none">0</item>
+        <item name="srtp_type_force">1</item>
+        <item name="srtp_type_pers">2</item>
+    </integer-array>
+</resources>

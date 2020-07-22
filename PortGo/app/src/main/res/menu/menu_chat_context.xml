@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_chat_context_copy"
+        app:showAsAction="always|withText"
+        android:visible="false"
+        android:title="@android:string/copy"/>
+    <item
+        android:id="@+id/menu_chat_context_delete"
+        app:showAsAction="always|withText"
+        android:title="@string/string_Delete"/>
+    <item
+        android:id="@+id/menu_chat_context_transfer"
+        app:showAsAction="always|withText"
+        android:visible="false"
+        android:title="@string/string_Forward"/>
+    <item
+        android:id="@+id/menu_chat_context_download"
+        app:showAsAction="always|withText"
+        android:visible="false"
+        android:title="@string/string_down"/>
+    <item
+        android:id="@+id/menu_chat_context_send"
+        android:visible="false"
+        app:showAsAction="always|withText"
+        android:title="@string/string_resend"/>
+    <item
+        android:id="@+id/menu_chat_context_more"
+        android:visible="false"
+        app:showAsAction="always|withText"
+        android:title="@string/string_More"/>
+    <!--<item-->
+        <!--android:id="@+id/menu_chat_context_more"-->
+        <!--app:showAsAction="always|withText"-->
+        <!--android:title="@string/string_More"/>-->
+</menu>

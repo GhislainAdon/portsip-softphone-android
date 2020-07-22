@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        style="@style/PortActionBarTheme" />
+
+    <ScrollView
+        android:id="@+id/activity_main_fragment_setting_advance"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/portgo_color_set_gray"
+        android:orientation="vertical">
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/activity_main_fragment_setting_title"
+                android:text="@string/category_premium" />
+
+            <RelativeLayout
+                android:id="@+id/fragment_setting_advance_premium"
+                style="@style/activity_main_fragment_setting_advance_rl"
+                android:background="@drawable/list_selector">
+
+                <TextView
+                    style="@style/fragment_advance_item_lable_style"
+                    android:text="@string/fragment_setting_advance_premium_title" />
+
+                <TextView
+                    android:id="@+id/fragment_setting_advance_premium_value"
+                    style="@style/fragment_advance_item_value_style"
+                    android:drawableRight="@null"/>
+            </RelativeLayout>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/fragment_premium_desc_marginTop"
+                android:layout_marginBottom="@dimen/fragment_premium_desc_marginTop"
+                android:layout_marginLeft="@dimen/fragment_marginLeft"
+                android:layout_marginRight="@dimen/fragment_marginRight"
+                android:text="@string/fragment_setting_advance_premium_desc" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dip"
+                android:background="@color/portgo_color_white" />
+
+            <TextView
+                android:id="@+id/fragment_setting_advance_premium_sync"
+                android:layout_height="@dimen/account_item_height"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:textColor="@color/portgo_color_blue"
+                android:background="@drawable/list_selector"
+                android:layout_marginTop="@dimen/fragment_premium_desc_marginTop"
+                android:text="@string/fragment_setting_advance_premium_sync" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/fragment_premium_desc_marginTop"
+                android:layout_marginLeft="@dimen/fragment_marginLeft"
+                android:layout_marginRight="@dimen/fragment_marginRight"
+                android:text="@string/fragment_setting_advance_sync_desc" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/scroll_padding_bottom"
+                android:background="@null" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

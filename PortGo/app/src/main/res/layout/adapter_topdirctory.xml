@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_folder_name"
+    android:layout_width="match_parent"
+    android:layout_height="38dp"
+    android:layout_marginLeft="@dimen/contact_item_marginLeft"
+    android:gravity="center_vertical"
+    android:singleLine="true"
+    android:textColor="@android:color/black"
+    android:textSize="20sp" />
+
+

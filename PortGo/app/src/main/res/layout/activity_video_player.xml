@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:id="@+id/video_player_root">
+
+<SurfaceView
+    android:visibility="invisible"
+    android:id="@+id/video_player_surfaceview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true" />
+
+<ImageView
+    android:layout_alignParentTop="true"
+    android:layout_alignParentLeft="true"
+    android:layout_margin="20dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/video_player_back"
+    android:src="@drawable/photograph_back"/>
+<RelativeLayout
+    android:id="@+id/video_player_tools"
+    android:visibility="invisible"
+    android:layout_alignParentBottom="true"
+    android:layout_margin="@dimen/fragment_incoming_action_margin_bottom"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/video_player_current_time"
+        android:layout_centerVertical="true"
+        android:textColor="@color/portgo_color_lightgray"
+        android:textSize="@dimen/recordfile_timesize"
+        android:layout_alignParentStart="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/video_player_total_time"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:textColor="@color/portgo_color_lightgray"
+        android:textSize="@dimen/recordfile_timesize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <SeekBar
+        android:id="@+id/video_player_seek"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/video_player_total_time"
+        android:layout_toRightOf="@id/video_player_current_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxHeight="2dip"
+        android:minHeight="2dip"
+
+        android:progressDrawable="@drawable/portgo_seekbar"
+        android:thumb="@drawable/portgo_thumb"
+        android:layout_marginBottom="@dimen/recordfile_play_marginRight"/>
+</RelativeLayout>
+</RelativeLayout>

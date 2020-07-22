@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="160dp"
+    android:padding="2dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@color/portgo_color_darkgray">
+    <RelativeLayout
+        android:id="@+id/llAudio"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_gravity="center">
+        <ImageView
+            android:id="@+id/mini_view_dialing_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/call_audio_answer_ico" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mini_view_dialing_callstatus"
+            android:layout_below="@id/mini_view_dialing_type"
+            android:layout_centerHorizontal="true"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/mini_view_dialing_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white" />
+            <com.portgo.view.TextViewClock
+                android:id="@+id/mini_view_dialing_connecttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/flVideo">
+
+        <com.portsip.PortSIPVideoRenderer
+            android:id="@+id/mini_remote_render"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.portsip.PortSIPVideoRenderer
+            android:layout_gravity="top|right"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/mini_local_render" />
+    </FrameLayout>
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow android:id="@+id/tableRow2"
+    android:background="@color/portgo_color_blue"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@+id/TextView01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        style="@style/loginAdvanceTextView" />
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+    <ImageView android:id="@+id/ImageView01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/login_arrow_right" />
+</TableRow>

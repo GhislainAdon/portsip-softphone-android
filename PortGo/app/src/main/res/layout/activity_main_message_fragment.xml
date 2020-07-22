@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/portgo_color_white"
+	android:orientation="vertical"
+	android:id="@+id/activity_main_message_fragment">
+	<androidx.appcompat.widget.Toolbar
+		android:layout_alignParentTop="true"
+		android:id="@+id/toolBar"
+		style="@style/PortActionBarTheme"/>
+    <include layout="@layout/view_bottombar"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
+	<com.portgo.view.SlideMenuListView
+		android:layout_below="@+id/toolBar"
+        android:layout_above="@+id/bottom_toolbar"
+		android:id="@+id/messages_listView"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:listSelector="@android:color/transparent"
+		android:layout_marginTop="3px"
+		android:divider="@drawable/divider_line"
+		android:footerDividersEnabled="true"/>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="prefrence_dtmf_type_default">0</integer>
+    <integer name="prefrence_video_fps_default">3</integer>
+    <integer name="prefrence_video_bitrate_default">3</integer>
+    <integer name="prefrence_srtp_default">0</integer>
+    <integer name="prefrence_video_resolution_default">1</integer>
+    <integer name="prefrence_rtpport_default">10000</integer>
+    <integer name="forward_time_noanswer_min">3</integer>
+    <integer name="forward_time_noanswer_default">10</integer>
+    <integer name="config_max_display_photo_dim">1024</integer>
+    <integer name="config_max_thumbnail_photo_dim">256</integer>
+
+
+    <integer name="presence_pub_time">300</integer>
+    <integer name="presence_sub_time">300</integer>
+
+    <integer name="presence_sub_time_min">90</integer>
+    <integer name="presence_sub_time_max">3600</integer>
+    <integer name="detail_avatar_textsize">32</integer>
+    <integer name="setting_avatar_textsize">32</integer>
+    <integer name="contact_avatar_textsize">21</integer>
+    <integer name="slide_item_titlesize">14</integer>
+
+</resources>

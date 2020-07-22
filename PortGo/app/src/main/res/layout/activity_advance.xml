@@ -1,0 +1,307 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screen_aboutus"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        style="@style/PortActionBarTheme"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/portgo_color_set_gray">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/activity_advance_item_height"
+            android:orientation="vertical">
+//////////////////////
+            <TextView
+                style="@style/activity_advance_textview_category"
+                android:text="@string/activity_advance_category_additional"/>
+            <LinearLayout style="@style/activity_advance_item_ll">
+                <TextView
+                    style="@style/activity_advance_textview_title"
+                    android:text="@string/activity_advance_title_displayname"/>
+
+                <com.portgo.view.CursorEndEditTextView
+                    android:id="@+id/activity_advance_displayname"
+                    style="@style/activity_advance_edittext"
+                    android:hint="@string/activity_advance_title_disname_tips"
+                    android:maxLength="@integer/displayname_input_len" />
+            </LinearLayout>
+            <include layout="@layout/view_fragment_divider"/>
+                <LinearLayout
+                    android:id="@+id/activity_advance_ll_category_outbound"
+                    style="@style/activity_advance_item_ll">
+                    <TextView
+                        style="@style/activity_advance_textview_title"
+                        android:text="@string/activity_advance_title_proxy_server"/>
+
+                    <com.portgo.view.CursorEndEditTextView
+                        android:id="@+id/activity_advance_proxy_server"
+                        style="@style/activity_advance_edittext"
+                        android:hint="@string/activity_advance_title_proxy_tips" />
+                </LinearLayout>
+                <include layout="@layout/view_fragment_divider"/>
+                <LinearLayout style="@style/activity_advance_item_ll">
+                    <TextView
+                        style="@style/activity_advance_textview_title"
+                        android:text="@string/activity_advance_title_proxy_authname"/>
+
+                    <com.portgo.view.CursorEndEditTextView
+                        android:id="@+id/activity_advance_proxy_authname"
+                        style="@style/activity_advance_edittext"
+                        android:hint="@string/activity_advance_title_author_tips" />
+                </LinearLayout>
+            <include layout="@layout/view_fragment_divider"/>
+            <LinearLayout style="@style/activity_advance_item_ll">
+                <TextView
+                    style="@style/activity_advance_textview_title"
+                    android:text="@string/labe_voicemail"/>
+
+                <com.portgo.view.CursorEndEditTextView
+                    android:id="@+id/activity_advance_voicemail"
+                    style="@style/activity_advance_edittext" />
+            </LinearLayout>
+            ////////////
+            <!--<TextView-->
+                <!--style="@style/activity_advance_textview_category"-->
+                <!--android:text="@string/activity_advance_category_displayname"/>-->
+
+            <!--<LinearLayout style="@style/activity_advance_item_ll">-->
+                <!--<TextView-->
+                    <!--style="@style/activity_advance_textview_title"-->
+                    <!--android:text="@string/activity_advance_title_displayname"/>-->
+
+                <!--<com.portgo.view.CursorEndEditTextView-->
+                    <!--android:id="@+id/activity_advance_displayname"-->
+                    <!--style="@style/activity_advance_edittext"-->
+                    <!--android:hint="@string/activity_advance_title_disname_tips" />-->
+            <!--</LinearLayout>-->
+            <!--<TextView-->
+                <!--style="@style/activity_advance_textview_category"-->
+                <!--android:text="@string/activity_advance_category_proxy"/>-->
+            <!--<LinearLayout style="@style/activity_advance_category_ll"-->
+                <!--android:orientation="vertical">-->
+            <!--<LinearLayout style="@style/activity_advance_item_ll">-->
+                <!--<TextView-->
+                    <!--style="@style/activity_advance_textview_title"-->
+                    <!--android:text="@string/activity_advance_title_proxy_server"/>-->
+
+                <!--<com.portgo.view.CursorEndEditTextView-->
+                    <!--android:id="@+id/activity_advance_proxy_server"-->
+                    <!--style="@style/activity_advance_edittext"-->
+                    <!--android:hint="@string/activity_advance_title_proxy_tips" />-->
+            <!--</LinearLayout>-->
+            <!--<include layout="@layout/view_fragment_divider"/>-->
+            <!--<LinearLayout style="@style/activity_advance_item_ll">-->
+                <!--<TextView-->
+                    <!--style="@style/activity_advance_textview_title"-->
+                    <!--android:text="@string/activity_advance_title_proxy_authname"/>-->
+
+                <!--<com.portgo.view.CursorEndEditTextView-->
+                    <!--android:id="@+id/activity_advance_proxy_authname"-->
+                    <!--style="@style/activity_advance_edittext"-->
+                    <!--android:hint="@string/activity_advance_title_author_tips" />-->
+            <!--</LinearLayout>-->
+        <!--</LinearLayout>-->
+            //////////
+        <LinearLayout
+            android:id="@+id/activity_advance_ll_category_transport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                style="@style/activity_advance_textview_category"
+                android:text="@string/activity_advance_category_transport" />
+
+            <RadioGroup
+                android:id="@+id/activity_advance_transport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@drawable/divider_line"
+                android:showDividers="middle"
+                android:background="@color/portgo_color_white"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/activity_advance_transport_udp"
+                    style="@style/activity_advance_radiobutton"
+                    android:text="@string/activity_advance_title_transport_udp" />
+                <RadioButton
+                    android:id="@+id/activity_advance_transport_tls"
+                    style="@style/activity_advance_radiobutton"
+                    android:text="@string/activity_advance_title_transport_tls" />
+
+                <RadioButton
+                    android:id="@+id/activity_advance_transport_tcp"
+                    style="@style/activity_advance_radiobutton"
+                    android:text="@string/activity_advance_title_transport_tcp" />
+
+                <RadioButton
+                    android:id="@+id/activity_advance_transport_pers_udp"
+                    style="@style/activity_advance_radiobutton"
+                    android:text="@string/activity_advance_title_transport_pers_udp" />
+                <RadioButton
+                    android:id="@+id/activity_advance_transport_pers_tcp"
+                    style="@style/activity_advance_radiobutton"
+                    android:text="@string/activity_advance_title_transport_pers_tcp" />
+            </RadioGroup>
+            </LinearLayout>
+            <TextView
+                style="@style/activity_advance_textview_category"
+                android:text="@string/activity_advance_category_tlscert"/>
+            <LinearLayout style="@style/activity_advance_category_ll">
+                <LinearLayout style="@style/activity_advance_item_ll">
+                    <TextView
+                        style="@style/activity_advance_textview_title"
+                        android:layout_weight="1"
+                        android:text="@string/activity_advance_title_tlscert"/>
+                    <ToggleButton
+                        android:id="@+id/activity_advance_enabletlscert"
+                        style="@style/portgo_toggle_style"/>
+                </LinearLayout>
+                <include layout="@layout/view_fragment_divider"/>
+            </LinearLayout>
+
+            <TextView
+                style="@style/activity_advance_textview_category"
+                android:text="@string/activity_advance_category_stun"/>
+            <LinearLayout style="@style/activity_advance_category_ll">
+            <LinearLayout style="@style/activity_advance_item_ll">
+                <TextView
+                    style="@style/activity_advance_textview_title"
+                    android:layout_weight="1"
+                    android:text="@string/activity_advance_title_stun_enable"/>
+                <ToggleButton
+                    android:id="@+id/activity_advance_enablestun"
+                    android:checked="true"
+                    style="@style/portgo_toggle_style"/>
+            </LinearLayout>
+            <include layout="@layout/view_fragment_divider"/>
+            <LinearLayout style="@style/activity_advance_item_ll">
+                <TextView
+                    style="@style/activity_advance_textview_title"
+                    android:text="@string/activity_advance_title_stun_server"/>
+                <com.portgo.view.CursorEndEditTextView
+                    android:id="@+id/activity_advance_stun_server"
+                    style="@style/activity_advance_edittext"/>
+            </LinearLayout>
+            <include layout="@layout/view_fragment_divider"/>
+            <LinearLayout style="@style/activity_advance_item_ll">
+                <TextView
+                    style="@style/activity_advance_textview_title"
+                    android:text="@string/activity_advance_title_stun_port"/>
+                <com.portgo.view.CursorEndEditTextView
+                    android:id="@+id/activity_advance_stun_port"
+                    style="@style/activity_advance_edittext"/>
+            </LinearLayout>
+        </LinearLayout>
+
+            <TextView
+                style="@style/activity_advance_textview_category"
+                android:text="@string/activity_advance_category_impresence"
+                android:visibility="gone"/>
+            <LinearLayout style="@style/activity_advance_category_ll"
+                android:visibility="gone">
+                <LinearLayout style="@style/activity_advance_item_ll">
+                    <TextView
+                        style="@style/activity_advance_textview_title"
+                        android:layout_weight="1"
+                        android:text="@string/activity_advance_title_presence_enable"/>
+                    <ToggleButton
+                        android:id="@+id/activity_advance_enableagent"
+                        android:checked="true"
+                        style="@style/portgo_toggle_style"/>
+                </LinearLayout>
+                <include layout="@layout/view_fragment_divider"/>
+                <LinearLayout style="@style/activity_advance_item_ll">
+                    <TextView
+                        style="@style/activity_advance_textview_title"
+                        android:text="@string/activity_advance_title_publish_refresh"/>
+                    <com.portgo.view.CursorEndEditTextView
+                        android:id="@+id/activity_advance_pub_refresh"
+                        android:hint="@string/minmax_limit"
+                        style="@style/activity_advance_edittext_refresh"/>
+                </LinearLayout>
+                <include layout="@layout/view_fragment_divider"/>
+                <LinearLayout style="@style/activity_advance_item_ll">
+                    <TextView
+                        style="@style/activity_advance_textview_title"
+                        android:text="@string/activity_advance_title_sub_refresh"/>
+                    <com.portgo.view.CursorEndEditTextView
+                        android:id="@+id/activity_advance_sub_refresh"
+                        android:hint="@string/minmax_limit"
+                        style="@style/activity_advance_edittext_refresh"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/activity_advance_mobile_title"
+                style="@style/activity_main_fragment_setting_title"
+                android:text="@string/category_allowvoip"/>
+            <RelativeLayout
+                style="@style/activity_main_fragment_setting_advance_rl">
+
+                <TextView
+                    android:gravity="center_vertical"
+                    style="@style/activity_advance_textview_title"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/title_allowvoip"/>
+
+                <ToggleButton
+                    android:id="@+id/activity_advance_mobile_switch"
+                    style="@style/portgo_toggle_style"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/activity_advance_mobile_introdction"
+                style="@style/activity_main_fragment_setting_title"
+                android:layout_marginTop="8dip"
+                android:text="@string/category_allowvoip_detail"/>
+
+
+            <LinearLayout style="@style/activity_advance_item_ll"
+                android:layout_marginTop="@dimen/activity_advance_category_margin_top">
+
+                <TextView
+                    style="@style/activity_advance_textview_title"
+                    android:layout_weight="1"
+                    android:text="@string/activity_advance_title_enable_log" />
+
+                <ToggleButton
+                    android:id="@+id/activity_advance_enablelog"
+                    style="@style/portgo_toggle_style"/>
+            </LinearLayout>
+
+
+            <LinearLayout style="@style/activity_advance_item_ll"
+                android:id="@+id/activity_advance_about"
+                android:onClick="onAdvanceAboutClick"
+                android:background="@drawable/list_selector"
+                android:layout_marginTop="@dimen/activity_advance_category_margin_top">
+                <TextView
+                    style="@style/activity_advance_textview_title"
+                    android:layout_weight="1"
+                    android:text="@string/activity_advance_title_about"/>
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dip"
+                    android:paddingRight="10dip"
+                    android:src="@drawable/login_advance_about_more" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/scroll_padding_bottom"
+                android:background="@null"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

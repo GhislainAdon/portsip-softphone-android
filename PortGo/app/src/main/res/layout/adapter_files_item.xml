@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:paddingTop="5dp"
+    android:paddingLeft="10dp"
+    android:paddingBottom="5dp"
+    android:background="@color/portgo_color_white">
+
+    <ImageView android:id="@+id/iv_fileicon"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:scaleType="fitCenter"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+
+        android:layout_toRightOf="@id/iv_fileicon"
+        android:layout_toLeftOf="@id/v_split"
+        android:layout_marginLeft="@dimen/contact_item_marginLeft"
+        android:layout_marginRight="@dimen/contact_item_marginLeft"
+        android:orientation="vertical">
+        <TextView android:id="@+id/tv_filename"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:singleLine="true"
+            android:textColor="@color/portgo_color_black"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/tv_filedesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:gravity="top"
+            android:textColor="@color/portgo_color_lightgray"
+            android:paddingTop="2dp"
+            android:textSize="12sp"/>/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/v_split"
+        android:layout_toLeftOf="@id/iv_select"
+        android:layout_marginRight="5dp"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_width="1dp"
+        android:background="@color/portgo_color_darkgray"/>
+
+    <ImageView
+        android:id="@+id/iv_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_image_un_select" />
+</RelativeLayout>

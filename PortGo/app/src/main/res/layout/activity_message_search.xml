@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:id="@+id/activity_main_message_fragment">
+	<androidx.appcompat.widget.Toolbar
+		android:id="@+id/toolBar"
+		style="@style/PortActionBarTheme"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/messages_listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:listSelector="@android:color/transparent"
+            android:layout_marginTop="3px"
+            android:divider="@drawable/divider_line"
+            android:footerDividersEnabled="true"/>
+        <TextView
+            android:id="@+id/messages_empty"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="@string/seach_result_empty"
+            android:textColor="@color/portgo_color_darkgray"
+            android:background="@color/portgo_color_white"/>
+    </FrameLayout>
+</LinearLayout>

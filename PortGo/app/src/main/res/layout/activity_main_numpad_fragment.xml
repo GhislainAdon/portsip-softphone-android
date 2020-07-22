@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:portgo="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="@android:color/white">
+	<androidx.appcompat.widget.Toolbar
+		android:id="@+id/toolBar"
+        style="@style/PortActionBarTheme"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/fragment_marginRight"
+        android:background="@color/portgo_color_stupid_black">
+        <ImageView
+            android:id="@+id/dialpad_selectnumber"
+            android:visibility="gone"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@drawable/dial_add_new_man_ico"/>
+
+        <ImageView
+            android:id="@+id/dialpad_deletenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:src="@drawable/numpad_del_selector"/>
+
+        <com.portgo.view.CursorEndEditTextView
+            android:id="@+id/dialpad_phonenumber"
+            style="@style/blueCursorEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/numpand_input_marginleft"
+            android:layout_marginRight="@dimen/numpand_input_marginright"
+            android:layout_toLeftOf="@id/dialpad_deletenumber"
+            android:layout_toRightOf="@id/dialpad_selectnumber"
+            android:background="@null"
+            android:lines="1"
+            android:singleLine="true"
+            android:textColor="@color/portgo_color_white"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:ignore="TextFields" />
+
+    </RelativeLayout>
+
+
+        <!--</FrameLayout>-->
+        <com.portgo.view.MyGridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:id="@+id/dialpad_digits"
+            android:inAnimation="@anim/grow_from_bottom"
+            android:outAnimation="@anim/shrink_from_bottom"
+            android:background="@color/portgo_color_dial"
+            portgo:clumn="3"
+            portgo:row="5"
+            portgo:width_Weight="9"
+            portgo:height_Weight="5"
+            portgo:horizontal_as_standard="true"
+            portgo:full_Screen="true">
+
+            <include layout="@layout/view_numpad_number"
+                android:id="@+id/activity_main_fragment_dial_1"/>
+            <include layout="@layout/view_numpad_number"
+                android:id="@+id/activity_main_fragment_dial_2"/>
+            <include layout="@layout/view_numpad_number"
+                android:id="@+id/activity_main_fragment_dial_3"/>
+            <include layout="@layout/view_numpad_number"
+                android:id="@+id/activity_main_fragment_dial_4"/>
+            <include layout="@layout/view_numpad_number"
+                android:id="@+id/activity_main_fragment_dial_5"/>
+            <include layout="@layout/view_numpad_number"
+                android:id="@+id/activity_main_fragment_dial_6"/>
+            <include layout="@layout/view_numpad_number"
+                android:id="@+id/activity_main_fragment_dial_7"/>
+            <include layout="@layout/view_numpad_number"
+                android:id="@+id/activity_main_fragment_dial_8"/>
+            <include layout="@layout/view_numpad_number"
+                android:id="@+id/activity_main_fragment_dial_9"/>
+            <include layout="@layout/view_numpad_numbergray"
+                android:id="@+id/activity_main_fragment_dial_star"/>
+            <include layout="@layout/view_numpad_number"
+                android:id="@+id/activity_main_fragment_dial_0"/>
+            <include layout="@layout/view_numpad_numbergray"
+                android:id="@+id/activity_main_fragment_dial_sharp"/>
+            <LinearLayout
+                android:id="@+id/activity_main_fragment_dial_vm_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:descendantFocusability="beforeDescendants"
+                android:gravity="center"
+                android:clickable="true"
+                android:background="@drawable/numpad_text_selector"
+                android:orientation="vertical">
+            <ImageView
+                android:id="@+id/activity_main_fragment_dial_vm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="6dp"
+                android:src="@drawable/dial_voicemail_ico"
+                android:scaleType="fitXY"
+                tools:ignore="ContentDescription" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/portgo_color_white"
+                    android:text="VM"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/activity_main_fragment_dial_audio_ll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:descendantFocusability="beforeDescendants"
+                android:gravity="center"
+                android:background="@drawable/numpad_text_selector"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/activity_main_fragment_dial_audio"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="15dp"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/dial_audiocall_btn"
+                    tools:ignore="ContentDescription" />
+            </LinearLayout>
+            <ImageView
+                android:id="@+id/activity_main_fragment_dial_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/numpad_text_selector"
+                android:src="@drawable/dial_video_ico"
+                android:scaleType="center"
+                android:clickable="true"
+                tools:ignore="ContentDescription" />
+        </com.portgo.view.MyGridLayout>
+</LinearLayout>

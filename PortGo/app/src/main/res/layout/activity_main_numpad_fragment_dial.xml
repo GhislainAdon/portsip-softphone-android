@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:gravity="center"
+	android:background="@android:color/white">
+	<LinearLayout
+		android:orientation="vertical"
+		android:id="@+id/key_background"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:clickable="true"
+		android:gravity="center"
+		android:background="@drawable/activity_main_numpad_fragment_dialbutton_selector">
+
+		<TextView
+			android:id="@+id/key_number"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:gravity="bottom"
+			android:textColor="@android:color/black"
+			android:textSize="@dimen/activity_main_fragment_dial_textsize_large" />
+	<TextView
+		android:id="@+id/key_letters"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:gravity="top"
+		android:layout_marginTop="-8dp"
+		android:textSize="@dimen/activity_main_fragment_dial_textsize_small"
+		android:textColor="@color/portgo_color_gray" />
+	</LinearLayout>
+</LinearLayout>

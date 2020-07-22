@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="wifi_default">true</bool>
+    <bool name="debug_default">false</bool>
+
+    <bool name="start_at_boottime_default">true</bool>
+    <bool name="prefrence_voipcall_default">true</bool>
+    <bool name="prefrence_aec_default">true</bool>
+    <bool name="prefrence_nr_default">true</bool>
+    <bool name="prefrence_vad_default">true</bool>
+    <bool name="prefrence_agc_default">true</bool>
+    <bool name="prefrence_cng_default">true</bool>
+    <bool name="prefrence_dtmf_backtone_default">true</bool>
+    <bool name="prefrence_froward_call_default">true</bool>
+    <bool name="prefrence_video_nack_default">true</bool>
+    <bool name="prefrence_prack_default">false</bool>
+    <bool name="prefrence_pst_default">false</bool>
+    <bool name="prefrence_ims_default">false</bool>
+    <bool name="prefrence_record_default">false</bool>
+
+    <bool name="prefrence_ring_default">true</bool>
+    <bool name="prefrence_vibrate_default">false</bool>
+
+    <bool name="prefrence_native_dialer">false</bool>
+    <bool name="prefrence_native_dialer_activity">false</bool>
+    <!--是否启用联系人聚合-->
+    <bool name="contact_aggregate">true</bool>
+    <bool name="profile_aggregate">true</bool>
+
+    <bool name="presence_agent">true</bool>
+    <bool name="tls_cert">false</bool>
+
+</resources>

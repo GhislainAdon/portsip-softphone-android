@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_marginRight="@dimen/message_text_margin_right">
+
+    <com.portgo.view.RoundedImageView
+        android:id="@+id/message_video_received"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="@dimen/chat_text_padding_v"
+        android:paddingLeft="@dimen/chat_text_padding_h"
+        android:paddingRight="@dimen/chat_text_padding_h"
+        android:paddingTop="@dimen/chat_text_padding_v"
+        app:riv_corner_radius="5dp" />
+
+    <ImageView
+        android:id="@+id/message_video_receivedplay"
+        android:layout_margin="10dp"
+        android:scaleType="fitXY"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:src="@drawable/call_resume_ico_def"
+        android:visibility="invisible" />
+</FrameLayout>

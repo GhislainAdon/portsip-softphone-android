@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:longClickable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <TextView android:id="@+id/message_gap"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/chat_item_gap"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/message_time"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:background="@drawable/message_time_bk"
+        android:textColor="@color/portgo_color_darkgray"
+        android:layout_marginTop="@dimen/chat_time_margin_top"
+        android:layout_marginBottom="@dimen/chat_time_margin_bottom"
+        android:paddingRight="@dimen/message_time_padding_h"
+        android:paddingLeft="@dimen/message_time_padding_h"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <CheckBox
+            android:id="@+id/message_select"
+            android:layout_marginLeft="@dimen/fragment_marginLeft"
+            android:layout_alignParentLeft="true"
+            android:button="@drawable/checkbox_bg"
+            android:visibility="invisible"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:focusable="false"/>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/fragment_marginRight"
+            android:layout_toRightOf="@id/message_select"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical"
+            android:paddingLeft="@dimen/message_text_margin_left">
+            <!--<View-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"/>-->
+            <FrameLayout
+                android:id="@+id/fl_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/message_failed"
+                    android:scaleType="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sending_failed_ico"/>
+                <ProgressBar
+                    android:id="@+id/message_processing"
+                    android:layout_gravity="center_vertical"
+                    style="@android:style/Widget.ProgressBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/message_content"
+                android:gravity="right|center_vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:orientation="vertical"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

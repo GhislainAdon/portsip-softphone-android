@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+	android:orientation="horizontal"
+	android:paddingLeft="@dimen/fragment_marginLeft"
+	android:paddingRight="@dimen/fragment_marginRight"
+	android:minHeight="@dimen/contact_item_height"
+	android:layout_height="wrap_content"
+	android:id="@+id/contact_details_listview"
+	android:gravity="center_vertical"
+	android:background="@drawable/list_selector"
+	android:descendantFocusability="blocksDescendants">
+	<CheckBox
+		android:id="@+id/friend_item_radiobox"
+		android:button="@drawable/checkbox_bg"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/contact_item_radiobox_marginright"
+        android:focusable="false"
+        android:clickable="false"
+		/>
+	<include layout="@layout/view_avatar"
+		android:layout_width="@dimen/contact_useravatar_size"
+		android:layout_height="@dimen/contact_useravatar_size"/>
+
+    <RelativeLayout
+		android:layout_marginLeft="@dimen/contact_item_name_marginleft"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+		<TextView
+			android:id="@+id/friend_item_textView_presence"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:layout_margin="4dp"
+			android:drawablePadding="5dip"
+			android:ellipsize="end"
+			android:lines="1"
+			android:textColor="@color/portgo_color_darkgray"
+			android:textSize="@dimen/friend_detail_staussize" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+			android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@id/friend_item_textView_presence">
+            <TextView
+                android:text="John Doe"
+                android:id="@+id/friend_item_textView_displayname"
+                android:layout_width="wrap_content"
+                android:layout_weight="3"
+                android:textColor="@color/portgo_color_darkgray"
+                android:textSize="@dimen/friend_detail_namesize"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="2dp"
+                android:ellipsize="end"
+                android:lines="1"/>
+
+            <!--<TextView-->
+                <!--android:text="John Doe"-->
+                <!--android:id="@+id/friend_item_textView_status"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:textColor="@color/portgo_color_darkgray"-->
+                <!--android:textSize="@dimen/friend_detail_staussize"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:gravity="center_vertical"-->
+                <!--android:layout_margin="4dp"-->
+                <!--android:ellipsize="end"-->
+                <!--android:lines="1"/>-->
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

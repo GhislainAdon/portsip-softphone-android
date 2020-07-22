@@ -1,0 +1,30 @@
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/accountitem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="blocksDescendants"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="8dp">
+            <TextView
+                android:id="@+id/account_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="TextView"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:focusable="false"/>
+
+            <TextView
+                android:id="@+id/account_item_value"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:singleLine="true"
+                android:textSize="16sp"
+                android:gravity="right"
+                android:textColor="@android:color/darker_gray"
+                android:focusable="false"/>
+    </LinearLayout>

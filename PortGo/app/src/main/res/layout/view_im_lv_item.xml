@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="@dimen/textsize_16sp"
+    android:paddingRight="@dimen/fragment_marginRight"
+    android:paddingLeft="@dimen/fragment_marginLeft"
+    android:gravity="center_vertical"
+    android:minHeight="@dimen/min_item_height"
+    android:background="@color/portgo_color_white"
+    android:checkMark="@drawable/checktext_bg">
+</CheckedTextView>

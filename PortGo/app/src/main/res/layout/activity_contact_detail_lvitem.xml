@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/user_avatar_left_right_margin"
+    android:paddingRight="@dimen/user_avatar_left_right_margin"
+    android:paddingTop="@dimen/detail_top_bottom_padding"
+    android:paddingBottom="@dimen/detail_top_bottom_padding">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/portgo_color_blue"
+        android:maxLines="1"
+        android:id="@+id/tx_title"
+        android:layout_weight="3" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/user_avatar_left_right_margin"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:maxLines="1"
+        android:textColor="@color/portgo_color_blue"
+        android:id="@+id/tx_content"
+        android:layout_weight="1" />
+</LinearLayout>

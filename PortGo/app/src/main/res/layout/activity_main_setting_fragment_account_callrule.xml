@@ -1,0 +1,18 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/activity_main_fragment_setting_account"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+    android:orientation="vertical"
+	android:background="@color/portgo_color_set_gray">
+	<androidx.appcompat.widget.Toolbar
+		android:id="@+id/toolBar"
+		style="@style/PortActionBarTheme"/>
+	<com.portgo.view.DragListView
+        android:id="@+id/lv_fragment_callrules"
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/portgo_color_white"/>
+</LinearLayout>

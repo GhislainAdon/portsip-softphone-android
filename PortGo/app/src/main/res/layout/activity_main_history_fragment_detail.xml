@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:id="@+id/activity_main_contact_fragment_detail">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            style="@style/PortActionBarTheme"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/portgo_color_gray_blue"
+        android:paddingTop="@dimen/fragment_detail_useravatar_margin_top"
+        android:paddingBottom="@dimen/fragment_detail_useravatar_margin_bt">
+        <include layout="@layout/view_avatar"
+            android:id="@+id/activity_main_contact_fragment_detail_useravatar"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="@dimen/contact_detail_useravatar_size"
+            android:layout_height="@dimen/contact_detail_useravatar_size"/>
+
+        <TextView
+            android:id="@+id/activity_main_contact_fragment_detail_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/contact_detail_namesize"
+            android:layout_below="@id/activity_main_contact_fragment_detail_useravatar"
+            android:layout_marginBottom="@dimen/contact_detail_username_marginbottom"
+            android:layout_marginTop="@dimen/contact_detail_username_margintop" />
+
+        <TextView
+            android:id="@+id/activity_main_contact_fragment_detail_status"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/activity_main_contact_fragment_detail_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dip"
+            android:textSize="@dimen/contact_detail_statussize" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llquicklink"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/contact_detail_subtoolbar_height"
+        android:orientation="horizontal"
+        android:background="@color/portgo_color_toobar_gray"
+        android:weightSum="3">
+        <TextView
+            android:id="@+id/fragment_detail_message"
+            style="@style/activity_contact_detail_mid_style"
+            android:text="@string/string_Message"
+            android:drawableTop="@drawable/contact_mid_msg_ico"/>
+        <TextView
+            android:id="@+id/fragment_detail_audio"
+            style="@style/activity_contact_detail_mid_style"
+            android:text="@string/string_Audio_Call"
+            android:drawableTop="@drawable/contact_mid_audio_ico"/>
+        <TextView
+            android:id="@+id/fragment_detail_video"
+            style="@style/activity_contact_detail_mid_style"
+            android:text="@string/string_Video_Call"
+            android:drawableTop="@drawable/contact_mid_video_ico"/>
+
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.portgo.view.MeasureExpandListView
+                android:id="@+id/activity_main_history_fragment_call_detail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fragment_marginLeft"
+                android:layout_marginRight="@dimen/fragment_marginRight"
+                android:divider="@android:color/transparent"
+                android:groupIndicator="@null"
+                android:scrollbars="vertical"
+                android:smoothScrollbar="true">
+
+            </com.portgo.view.MeasureExpandListView>
+
+            <com.portgo.view.ExpandListView
+                android:id="@+id/activity_main_history_fragment_phones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_main_fragment_setting_advance_marginLeft"
+                android:layout_marginRight="@dimen/activity_main_fragment_setting_advance_marginRight" />
+                <include layout="@layout/view_fragment_advance_divider"/>
+            <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/scroll_padding_bottom"
+            android:background="@null"
+            />
+            </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

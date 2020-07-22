@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+    android:orientation="horizontal"
+	android:gravity="center_vertical"
+    android:id="@+id/activity_main_contact_fragment_edit_footer"
+    android:background="@android:color/white">
+	<ImageView
+		android:id="@+id/contact_linkman_editor_add_phone"
+		android:layout_height="@dimen/activity_main_contact_fragment_edit_addphone_size"
+		android:layout_width="@dimen/activity_main_contact_fragment_edit_addphone_size"
+		android:layout_marginRight="@dimen/contact_edit_actionicon_marginright"
+		android:src="@drawable/contact_mid_edit_add_ico" />
+	<TextView
+		android:id="@+id/contact_linkman_editor_lable_add_phone"
+		android:layout_width="wrap_content"
+		android:layout_height="@dimen/contact_edit_item_height"
+		android:gravity="center_vertical"
+		android:text="@string/activity_main_contact_fragment_edit_addphone"/>
+</LinearLayout>

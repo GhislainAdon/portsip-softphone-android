@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@drawable/round_corner_rectangle"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/viewpager_item_image"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        style="@style/radioButtonAdvance"
+        android:src="@drawable/calling_audio_selector"
+        android:scaleType="fitXY" />
+    <TextView
+        android:id="@+id/viewpager_item_title"
+        android:layout_marginTop="2dip"
+        android:textColor="@color/portgo_color_white"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:text="@string/changeto_audio"
+        android:layout_height="wrap_content" />
+</LinearLayout>

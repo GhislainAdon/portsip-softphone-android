@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/message_sent_text_content"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:minHeight="@dimen/chat_item_height"
+    android:minWidth="@dimen/chat_content_minwidth"
+    android:gravity="left|center_vertical"
+    android:paddingLeft="@dimen/chat_text_padding_h"
+    android:paddingRight="@dimen/chat_text_padding_h"
+    android:paddingTop="@dimen/chat_text_padding_v"
+    android:paddingBottom="@dimen/chat_text_padding_v"
+    android:textSize="@dimen/chat_content_textsize"
+    android:textColor="@color/portgo_color_black"
+    android:layout_marginLeft="@dimen/message_text_margin_failed"/>

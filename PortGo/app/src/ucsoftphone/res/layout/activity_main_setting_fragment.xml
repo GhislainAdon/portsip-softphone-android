@@ -1,0 +1,115 @@
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" android:orientation="vertical"
+        android:background="@color/portgo_color_white">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            style="@style/PortActionBarTheme"/>
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/activity_advance_padding_left"
+                    android:layout_marginLeft="@dimen/fragment_marginLeft"
+                    android:layout_marginRight="@dimen/fragment_marginRight"
+                    android:gravity="center">
+                    <include layout="@layout/view_avatar"
+                        android:layout_width="@dimen/fragment_setting_avatar_size"
+                        android:layout_height="@dimen/fragment_setting_avatar_size"/>
+
+                    <TextView
+                        android:id="@+id/activity_main_fragment_setting_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/fragment_username_margintop"
+                        android:layout_marginBottom="@dimen/fragment_username_marginbottom"
+                        android:gravity="center_vertical" />
+                    <TextView
+                        android:id="@+id/fragment_setting_status_description"
+                        android:layout_marginBottom="@dimen/fragment_username_marginbottom"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical" />
+
+                <TextView
+                    android:id="@+id/fragment_setting_status"
+                    android:text="@string/app_online"
+                    android:textColor="@color/portgo_color_black"
+                    android:layout_marginBottom="@dimen/fragment_setting_listview_margintop"
+                    android:textSize="@dimen/setting_item_statusvalue_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:drawablePadding="5dp"
+                    android:drawableLeft="@drawable/mid_content_status_online_ico"
+                    android:layout_centerVertical="true"/>
+
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/fragment_set_line_style" android:id="@+id/line_set_balance" android:visibility="gone">
+                    <ImageView style="@style/fragment_set_icon_style" android:src="@drawable/set_balance_ico"/>
+                    <TextView android:text="@string/set_balance"  style="@style/fragment_set_title_style"/>
+                    <TextView android:id="@+id/tx_set_balance" android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" android:paddingRight="@dimen/fragment_marginRight"
+                        android:textColor="@color/portgo_color_green"
+                        android:textSize="@dimen/setting_item_balance_size"/>
+                </LinearLayout>
+
+                <View  xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/portgo_devide_height"
+                    android:background="@color/portgo_color_divide_lightgray"/>
+                <LinearLayout
+                    android:id="@+id/line_set_user"
+                    style="@style/fragment_set_line_style"
+                    android:layout_marginTop="1px">
+
+                    <ImageView
+                        style="@style/fragment_set_icon_style"
+                        android:src="@drawable/set_user_ico" />
+
+                    <TextView
+                        style="@style/fragment_set_title_style"
+                        android:drawableRight="@drawable/midcontent_right_more_ico"
+                        android:text="@string/set_account" />
+                </LinearLayout>
+                <include layout="@layout/view_fragment_divider"/>
+                <LinearLayout style="@style/fragment_set_line_style" android:id="@+id/line_set_code">
+                    <ImageView style="@style/fragment_set_icon_style" android:src="@drawable/set_codes_ico"/>
+                    <TextView android:text="@string/set_codecs" style="@style/fragment_set_title_style"
+                        android:drawableRight="@drawable/midcontent_right_more_ico"/>
+                </LinearLayout>
+
+
+
+                <include layout="@layout/view_fragment_divider"/>
+                <LinearLayout style="@style/fragment_set_line_style" android:id="@+id/line_set_set">
+                    <ImageView style="@style/fragment_set_icon_style" android:src="@drawable/set_set_ico"/>
+                    <TextView android:text="@string/set_set"  style="@style/fragment_set_title_style"
+                        android:drawableRight="@drawable/midcontent_right_more_ico"/>
+                </LinearLayout>
+
+                <include layout="@layout/view_fragment_divider"/>
+                <LinearLayout style="@style/fragment_set_line_style" android:id="@+id/line_set_about">
+                    <ImageView style="@style/fragment_set_icon_style" android:src="@drawable/set_about_ico"/>
+                    <TextView android:text="@string/set_about" style="@style/fragment_set_title_style"
+                        android:drawableRight="@drawable/midcontent_right_more_ico"/>
+                </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/scroll_padding_bottom"
+                        android:background="@null"
+                        />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>

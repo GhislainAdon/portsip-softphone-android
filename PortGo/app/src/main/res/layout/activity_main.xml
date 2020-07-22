@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<FrameLayout
+		android:id="@+id/activity_main_bottombar"
+		android:layout_alignParentBottom="true"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<RadioGroup
+			android:id="@+id/activity_main_tabs"
+			android:orientation="horizontal"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:weightSum="5"
+			android:background="@color/portgo_color_toobar_gray"
+			android:paddingTop="1dp"
+			android:tabStripEnabled="false">
+			<RadioButton
+				android:id="@+id/activity_main_tab_contacts"
+				style="@style/activity_main_tab"
+				android:drawableTop="@drawable/tab_contacts_selector"
+				android:text="@string/portgo_title_contact"
+				/>
+			<RadioButton
+				android:id="@+id/activity_main_tab_history"
+				style="@style/activity_main_tab_message"
+				android:drawableTop="@drawable/tab_history_selector"
+				android:text="@string/portgo_title_history"
+				 />
+			<RadioButton
+				android:id="@+id/activity_main_tab_numbers"
+				style="@style/activity_main_tab"
+				android:drawableTop="@drawable/tab_pad_selector"
+				android:checked="true"
+				android:text="@string/portgo_title_numberpad"/>
+			<RadioButton
+				android:id="@+id/activity_main_tab_message"
+				style="@style/activity_main_tab_message"
+				android:drawableTop="@drawable/tab_message_selector"
+				android:text="@string/portgo_title_message"/>
+			<RadioButton
+				android:id="@+id/activity_main_tab_setting"
+				style="@style/activity_main_tab"
+				android:drawableTop="@drawable/tab_setting_selector"
+				android:text="@string/portgo_title_setting"/>
+		</RadioGroup>
+	</FrameLayout>
+	<!--<LinearLayout-->
+		<!--android:layout_width="match_parent"-->
+		<!--android:layout_height="wrap_content"-->
+		<!--android:layout_alignTop="@id/activity_main_bottombar"-->
+		<!--android:weightSum="5">-->
+		<!--<View android:layout_weight="3"-->
+			<!--android:layout_width="0px"-->
+			<!--android:background="@color/portgo_color_green"-->
+			<!--android:layout_height="wrap_content"/>-->
+		<!--<ImageView-->
+			<!--android:id="@+id/main_tab_new_message"-->
+			<!--android:layout_width="0px"-->
+			<!--android:layout_height="wrap_content"-->
+			<!--android:layout_weight="1"-->
+			<!--android:gravity="right|top"-->
+			<!--android:scaleType="fitEnd"-->
+			<!--android:layout_marginTop="5dip"-->
+			<!--android:src="@drawable/app_icon"-->
+			<!--android:background="@color/portgo_color_red"-->
+			<!--android:text="1"-->
+			<!--android:textColor="#ffffff"-->
+			<!--android:textSize="10sp" />-->
+		<!--<View android:layout_weight="1"-->
+			<!--android:layout_width="0px"-->
+			<!--android:layout_height="wrap_content"/>-->
+	<!--</LinearLayout>-->
+	<FrameLayout
+	    android:id="@+id/activity_main_tabcontent"
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_above="@id/activity_main_bottombar" >
+	</FrameLayout>
+</RelativeLayout>

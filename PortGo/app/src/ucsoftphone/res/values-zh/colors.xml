@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="portgo_color_blue">#0cb1f5</color>
+    <color name="portgo_tool_color_blue">#ff0cb1f5</color><!--标题黑-->
+    <color name="portgo_color_blue_click">#ff1DbFff</color><!--登录按钮点击色-->
+    <color name="portgo_color_avatar_blue">#ff00abf2</color><!--登录按钮点击色-->
+    <color name="portgo_color_fuck_blue">#FFBCDBF8</color>
+
+    <color name="portgo_color_black">#FF2e2e2e</color><!--标题黑-->
+    <color name="portgo_color_light_black">#FF595959</color><!--内容黑-->
+    <color name="portgo_color_heivy_black">#FF1b1a1a</color><!--内容黑-->
+    <color name="portgo_color_green">#FF00ba7b</color>
+    <color name="portgo_color_red">#FFff3b30</color>
+    <color name="portgo_color_lakeblue">#ff152e43</color> <!--拨号盘主色-->
+    <color name="portgo_color_light_lakeblue">#ff17334a</color><!--拨号盘按下-->
+
+    <color name="portgo_color_dial">#ff323235</color> <!--拨号盘主色-->
+    <color name="portgo_color_dial_press">#ff323235</color><!--拨号盘按下-->
+
+    <color name="portgo_color_dtmf">#ff19191b</color> <!--拨号盘主色-->
+    <color name="portgo_color_dtmf_bk">#802b2c33</color> <!--拨号盘主色-->
+
+    <color name="portgo_color_darkgray">#ff929292</color> <!--次级灰用在需要弱化的图形和文字上-->
+    <color name="portgo_color_lightgray">#ffcccccc</color><!--很少数一部分灰-->
+
+    <color name="portgo_color_toobar_gray">#fff4f3f3</color><!--导航条，底部工具条底图灰-->
+    <color name="portgo_color_light_blue">#ffDBF3FE</color><!--除指定外的，所有其他界面灰色底图-->
+
+    <color name="portgo_color_search_gray">#ffe6e6e6</color><!--搜索底图灰-->
+
+    <color name="portgo_color_gray">#fff8f8f8</color><!--除指定外的，所有其他界面灰色底图-->
+
+    <color name="portgo_color_set_gray">#ffefeff4</color><!--设置界面底图灰-->
+    <color name="portgo_color_unavalable_gray">#ffe0e0e0</color><!--设置界面底图灰-->
+
+    <color name="portgo_color_white">#fffcfcfc</color>
+    <color name="portgo_color_stupid_black">#ff434451</color>
+
+    <color name="portgo_color_divide_lightgray">#fff0f0f0</color>
+    <color name="portgo_color_divide_gray">#ffd0d0d0</color>
+
+    <color name="portgo_color_gray_blue">#ff667d91</color>
+    <color name="portgo_color_msgsend_blue">#80DFF6FF</color>
+
+    <color name="portgo_color_msg_name">#ff757474</color>
+    <color name="portgo_color_msg_time">#ff969696</color>
+    <color name="portgo_color_dtmf_divide_color">#ff373737</color>
+
+    <color name="portgo_color_msg_textcolor">#ff393839</color>
+    <color name="portgo_color_list_default">#fffcfcfc</color>
+    <color name="portgo_color_list_focus">#ff1DbFff</color>
+    <color name="portgo_color_list_click">#ff1DbFff</color>
+    <color name="portgo_color_list_select">#ff1DbFff</color>
+</resources>

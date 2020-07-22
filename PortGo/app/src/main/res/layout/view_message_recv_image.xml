@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_marginRight="@dimen/message_text_margin_right">
+
+    <com.portgo.view.RoundedImageView
+        android:id="@+id/message_image_recv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingBottom="@dimen/chat_text_padding_v"
+        android:paddingLeft="@dimen/chat_text_padding_h"
+        android:paddingRight="@dimen/chat_text_padding_h"
+        android:paddingTop="@dimen/chat_text_padding_v"
+        app:riv_corner_radius="5dp" />
+</FrameLayout>

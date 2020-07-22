@@ -1,0 +1,253 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/activity_main_fragment_setting_account"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:orientation="vertical"
+	android:background="@color/portgo_color_set_gray">
+	<androidx.appcompat.widget.Toolbar
+		android:id="@+id/toolBar"
+		style="@style/PortActionBarTheme"/>
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_marginTop="@dimen/account_item_height"
+            android:background="@color/portgo_color_white">
+	
+			<RelativeLayout
+				style="@style/activity_main_fragment_setting_advance_rl">
+				<TextView
+					style="@style/textAccountLableStyle"
+					android:id="@+id/activity_main_fragment_setting_account_disname_lable"
+					android:text="@string/activity_main_fragment_setting_account_userdisname"/>
+	
+				<TextView
+					android:layout_toRightOf="@id/activity_main_fragment_setting_account_disname_lable"
+					android:id="@+id/activity_main_fragment_setting_account_disname"
+					style="@style/textAccountStyle"/>
+			</RelativeLayout>
+			<include layout="@layout/view_fragment_divider" />
+			<RelativeLayout
+				android:id="@+id/activity_main_fragment_setting_account_uri_rl"
+				style="@style/activity_main_fragment_setting_advance_rl">
+				<TextView
+					android:id="@+id/activity_main_fragment_setting_account_urilable"
+					style="@style/textAccountLableStyle"
+					android:text="@string/activity_main_fragment_setting_account_sipserver"/>
+
+				<TextView
+					android:id="@+id/activity_main_fragment_setting_account_uri"
+					android:layout_toRightOf="@id/activity_main_fragment_setting_account_urilable"
+					style="@style/textAccountStyle"/>
+			</RelativeLayout>
+			<include layout="@layout/view_fragment_divider" />
+			<RelativeLayout
+				android:id="@+id/activity_main_fragment_setting_account_transtype_rl"
+				style="@style/activity_main_fragment_setting_advance_rl">
+				<TextView
+					android:id="@+id/activity_main_fragment_setting_account_transtypelable"
+					style="@style/textAccountLableStyle"
+					android:text="@string/activity_main_fragment_setting_account_siptranstype"/>
+
+				<TextView
+					android:id="@+id/activity_main_fragment_setting_account_transtype"
+					android:layout_toRightOf="@id/activity_main_fragment_setting_account_transtypelable"
+					style="@style/textAccountStyle"/>
+			</RelativeLayout>
+			<RelativeLayout
+				android:visibility="gone"
+				style="@style/activity_main_fragment_setting_advance_rl">
+				<TextView
+					android:id="@+id/activity_main_fragment_setting_account_userbalance_lable"
+					style="@style/textAccountLableStyle"
+					android:text="@string/activity_main_fragment_setting_account_userbalance"/>
+
+				<TextView
+					android:id="@+id/activity_main_fragment_setting_account_userbalance"
+					android:layout_toRightOf="@id/activity_main_fragment_setting_account_userbalance_lable"
+					style="@style/textAccountStyle"/>
+			</RelativeLayout>
+		</LinearLayout>
+
+            <LinearLayout
+				android:id="@+id/fragment_account_nodistrub_ll"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/account_item_height"
+                android:background="@color/portgo_color_white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/fragment_account_nodistrub_rl"
+                    style="@style/activity_main_fragment_setting_advance_rl">
+
+                    <TextView
+                        style="@style/textAccountLableStyle"
+                        android:text="@string/lable_fragment_account_nodistrub" />
+                    <!--ToggleButton,默认为true，如果初始化为false。就会启用onchange，从而更改关联EditText的焦点 -->
+                    <ToggleButton
+                        android:id="@+id/fragment_account_nodistrub_switch"
+                        style="@style/portgo_toggle_style"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:checked="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+			<LinearLayout
+				android:id="@+id/activity_main_fragment_setting_account_callrule_ll"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/account_item_height"
+				android:orientation="vertical"
+				android:background="@color/portgo_color_white">
+
+				<RelativeLayout
+					android:id="@+id/activity_main_fragment_setting_account_callrule_rl"
+					style="@style/activity_main_fragment_setting_advance_rl"
+					android:background="@drawable/list_selector">
+
+					<TextView
+						android:id="@+id/activity_main_fragment_setting_account_callrulelable"
+						style="@style/textAccountLableStyle"
+						android:text="@string/callrules_tilte" />
+
+					<ImageView
+						android:id="@+id/activity_main_fragment_setting_account_callrule"
+						android:src="@drawable/linkman_group_more_ico"
+						android:layout_centerVertical="true"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true" />
+				</RelativeLayout>
+			</LinearLayout>
+
+			<!--<LinearLayout-->
+				<!--android:layout_width="fill_parent"-->
+				<!--android:layout_height="wrap_content"-->
+				<!--android:layout_marginTop="@dimen/account_item_height"-->
+				<!--android:orientation="vertical"-->
+				<!--android:background="@color/portgo_color_white">-->
+
+				<!--<RelativeLayout-->
+					<!--android:id="@+id/activity_main_fragment_setting_account_transfer"-->
+					<!--style="@style/activity_main_fragment_setting_advance_rl">-->
+
+					<!--<TextView-->
+						<!--style="@style/textAccountLableStyle"-->
+						<!--android:text="@string/labe_callfoward" />-->
+                    <!--&lt;!&ndash;ToggleButton,默认为true，如果初始化为false。就会启用onchange，从而更改关联EditText的焦点 &ndash;&gt;-->
+					<!--<ToggleButton-->
+						<!--android:id="@+id/activity_main_fragment_setting_account_forward_switch"-->
+						<!--style="@style/portgo_toggle_style"-->
+						<!--android:checked="true"-->
+						<!--android:layout_alignParentRight="true"-->
+						<!--android:layout_centerVertical="true" />-->
+				<!--</RelativeLayout>-->
+				<!--<include layout="@layout/view_fragment_divider" />-->
+				<!--<RelativeLayout-->
+					<!--android:id="@+id/activity_main_fragment_setting_account_forward_ll"-->
+					<!--style="@style/activity_advance_item_ll">-->
+					<!--<TextView-->
+						<!--android:id="@+id/activity_main_fragment_setting_advance_forwardlabel"-->
+						<!--style="@style/textAccountLableStyle"-->
+						<!--android:text="@string/callfoward_to"/>-->
+					<!--<EditText-->
+						<!--android:id="@+id/activity_main_fragment_setting_account_forward_editor"-->
+						<!--style="@style/blueCursorEditText"-->
+                        <!--android:gravity="right|center_vertical"-->
+						<!--android:background="@null"-->
+						<!--android:layout_width="match_parent"-->
+						<!--android:layout_height="wrap_content"-->
+						<!--android:layout_toRightOf="@id/activity_main_fragment_setting_advance_forwardlabel"-->
+						<!--android:layout_centerVertical="true"-->
+						<!--android:maxLines="1"-->
+						<!--android:textSize="16sp" />-->
+				<!--</RelativeLayout>-->
+			<!--</LinearLayout>-->
+
+			<LinearLayout
+				android:id="@+id/activity_main_fragment_setting_account_forward_ll"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/account_item_height"
+				android:orientation="vertical"
+				android:background="@color/portgo_color_white">
+
+				<RelativeLayout
+					android:id="@+id/activity_main_fragment_setting_account_forward"
+					style="@style/activity_main_fragment_setting_advance_rl"
+					android:background="@drawable/list_selector">
+
+					<TextView
+						style="@style/textAccountLableStyle"
+						android:text="@string/labe_callfoward"/>
+
+					<ImageView
+						android:src="@drawable/linkman_group_more_ico"
+						android:layout_centerVertical="true"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true" />
+				</RelativeLayout>
+			</LinearLayout>
+
+
+			<LinearLayout
+				android:id="@+id/activity_main_fragment_setting_account_voicemail_ll"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/account_item_height"
+				android:orientation="vertical"
+				android:background="@color/portgo_color_white">
+
+				<RelativeLayout style="@style/activity_main_fragment_setting_advance_rl">
+
+					<TextView
+						android:id="@+id/activity_main_fragment_setting_account_voicemaillabel"
+						style="@style/textAccountLableStyle"
+						android:text="@string/labe_voicemail" />
+
+					<com.portgo.view.CursorEndEditTextView
+						android:id="@+id/activity_main_fragment_setting_account_voicemail"
+						style="@style/blueCursorEditText"
+						android:layout_toRightOf="@id/activity_main_fragment_setting_account_voicemaillabel"
+                        android:gravity="right|center_vertical"
+						android:layout_centerVertical="true"
+						android:background="@null"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:maxLines="1"
+						android:textSize="16sp" />
+				</RelativeLayout>
+			</LinearLayout>
+
+
+
+			<TextView
+            android:id="@+id/activity_main_fragment_setting_account_unregister"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/account_item_height"
+            android:layout_marginTop="@dimen/account_item_height"
+			android:gravity="center"
+            android:background="@drawable/setting_item_selector"
+			android:textColor="@color/portgo_color_red"
+			android:text="@string/activity_main_fragment_setting_account_unregister"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/scroll_padding_bottom"
+                android:background="@null"
+            />
+
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>

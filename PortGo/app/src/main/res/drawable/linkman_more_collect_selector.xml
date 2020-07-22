@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="false" android:drawable="@drawable/contact_mid_favorites_ico_def" />
+    <item android:state_checked="true" android:drawable="@drawable/contact_mid_favorites_ico_pre" />
+</selector>

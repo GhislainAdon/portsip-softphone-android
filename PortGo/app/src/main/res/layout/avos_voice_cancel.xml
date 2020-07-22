@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:background="#000000"
+    android:alpha="0.6"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/id_text_cancel_hint"
+        android:padding="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:text="@string/string_release_tips"
+        android:textColor="@android:color/white" />
+    <ImageView
+        android:id="@+id/id_voice_cancel_hint"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/id_text_cancel_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rcd_cancel_icon"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_favorite_select"
+        app:showAsAction="always|withText"
+        android:title="@string/select_favorite"/>
+    <item
+        android:id="@+id/menu_favorite_add"
+        app:showAsAction="always|withText"
+        android:title="@string/add_favorite">
+    </item>
+    <item
+        android:id="@+id/menu_favorite_delete"
+        app:showAsAction="always|withText"
+        android:visible="false"
+        android:title="@string/del_favorite">
+    </item>
+</menu>

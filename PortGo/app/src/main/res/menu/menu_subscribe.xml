@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+        <item
+            android:id="@+id/menu_subscribe_select"
+            app:showAsAction="always|withText"
+            android:visible="false"
+            android:title="@string/select_all"/>
+</menu>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_callout_bottombar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="6"
+    android:paddingBottom="@dimen/avcall_bottom_margin"
+    android:background="@android:color/transparent"
+    android:layout_alignParentBottom="true"
+    android:gravity="center">
+    <View
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="1px" />
+
+    <CheckBox
+        android:id="@+id/fragment_callout_mute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:button="@null"
+        android:background="@drawable/callout_mute_selector" />
+    <View
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="1px" />
+    <ImageButton android:layout_gravity="center"
+        android:id="@+id/fragment_dialing_hanup"
+        android:background="@drawable/pending_hangup_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/call_hangup_ico"
+        />
+    <View
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="1px" />
+    <ImageButton android:layout_gravity="center"
+        android:id="@+id/fragment_callout_speaker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/call_speaker_ico"
+        android:background="@null" />
+    <View
+        android:layout_weight="2"
+        android:layout_width="0dp"
+        android:layout_height="1px" />
+</LinearLayout>

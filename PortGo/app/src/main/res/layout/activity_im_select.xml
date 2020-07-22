@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screen_imselect"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/portgo_color_set_gray"
+    android:gravity="center_horizontal"
+    android:weightSum="4"
+    android:orientation="vertical">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBar"
+        style="@style/PortActionBarTheme"/>
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fragment_marginLeft"
+        android:text="@string/select_im_address"/>
+    <ListView
+        android:id="@+id/im_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/portgo_color_white"
+        android:choiceMode="singleChoice"
+        android:divider="@drawable/divider_line"/>
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fragment_marginLeft"
+        android:text="@string/select_im_addresstips"/>
+
+</LinearLayout>

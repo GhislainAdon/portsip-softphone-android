@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/user_avatar_left_right_margin"
+    android:paddingRight="@dimen/user_avatar_left_right_margin"
+    android:paddingTop="@dimen/detail_top_bottom_padding"
+    android:paddingBottom="@dimen/detail_top_bottom_padding">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/portgo_color_blue"
+        android:singleLine="true"
+        android:id="@+id/tx_title"
+        android:layout_weight="3"
+        android:layout_alignParentLeft="true" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contact_favorite_more"
+        android:src="@drawable/more_details"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/user_avatar_left_right_margin"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:singleLine="true"
+        android:textColor="@color/portgo_color_darkgray"
+        android:id="@+id/tx_content"
+        android:layout_weight="1"
+        android:layout_alignTop="@+id/tx_title"
+        android:layout_toLeftOf="@+id/contact_favorite_more"
+        android:layout_toStartOf="@+id/contact_favorite_more"
+        android:layout_toEndOf="@id/tx_title" />
+</RelativeLayout>

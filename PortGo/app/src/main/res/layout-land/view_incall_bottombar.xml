@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_incall_bottombar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:background="@android:color/transparent"
+    android:layout_alignParentBottom="true">
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:id="@+id/vPager"
+        android:background="#00000000"
+        android:persistentDrawingCache="animation" />
+
+    <LinearLayout
+        android:id="@+id/avcall_pager_indicate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="2dp">
+        <ImageView android:id="@+id/avcall_pager_indicate_left"
+            android:layout_gravity="center"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:src="@drawable/indicate_current_selector"
+            android:layout_marginRight="7dp"/>
+        <ImageView android:id="@+id/avcall_pager_indicate_right"
+            android:layout_gravity="center"
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:src="@drawable/indicate_default_selector" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_incall_baseline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="2"
+        android:weightSum="4"
+        android:layout_gravity="center_vertical">
+        <View
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="1px" />
+        <CheckBox android:layout_gravity="center"
+            android:id="@+id/fragment_incall_mute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:background="@drawable/callout_mute_selector" />
+        <View
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="1px" />
+        <ImageButton android:layout_gravity="center"
+            android:id="@+id/fragment_incall_hanup"
+            android:background="@drawable/pending_hangup_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/call_hangup_ico"
+            />
+        <View
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="1px" />
+        <ImageButton android:layout_gravity="center"
+            android:id="@+id/fragment_incall_speaker"
+            android:layout_width="wrap_content"
+            android:background="@null"
+            android:src="@drawable/call_speaker_ico"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="1px" />
+    </LinearLayout>
+</LinearLayout>

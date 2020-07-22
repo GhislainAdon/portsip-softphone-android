@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/callrule_item"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/codec_item_height"
+    android:paddingLeft="@dimen/fragment_marginLeft"
+    android:paddingRight="@dimen/fragment_marginRight"
+    android:background="@drawable/list_selector"
+    android:orientation="horizontal">
+    <CheckBox
+        android:id="@+id/recordfile_item_radiobox"
+        android:button="@drawable/checkbox_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/contact_item_radiobox_marginright"
+        android:focusable="false"
+        android:visibility="gone"
+        android:clickable="false"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/recordfile_item_radiobox"
+        android:layout_toLeftOf="@id/recordfile_item_len"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/recordfile_item_name"
+            android:textSize="@dimen/recordfile_item_name"
+            android:textColor="@color/portgo_color_black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"/>
+
+        <TextView
+            android:id="@+id/recordfile_item_description"
+            android:textSize="@dimen/recordfile_item_dsc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/portgo_color_light_black"
+            android:maxLines="1"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/recordfile_item_len"
+        android:textSize="@dimen/recordfile_item_time"
+        android:textColor="@color/portgo_color_light_black"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:drawablePadding="15dp"
+        android:drawableRight="@drawable/midcontent_right_more_ico" />
+
+</RelativeLayout>

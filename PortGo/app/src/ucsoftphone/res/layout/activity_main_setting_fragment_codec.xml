@@ -1,0 +1,46 @@
+<LinearLayout
+    android:id="@+id/activity_main_fragment_setting_codec"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent" android:orientation="vertical">
+	<androidx.appcompat.widget.Toolbar
+		android:id="@+id/toolBar"
+		style="@style/PortActionBarTheme"/>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+		android:background="@color/portgo_color_set_gray"
+        android:id="@+id/activity_main_fragment_setting_codec_scroll">
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView style="@style/fragment_codec_title"
+                android:text = "@string/audio_option"/>
+            <com.portgo.view.DragListView
+				android:headerDividersEnabled="true"
+                android:id="@+id/activity_main_fragment_setting_codec_audio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+				android:divider="@drawable/divider_line"
+				android:background="@color/portgo_color_white"/>
+
+            <TextView style="@style/fragment_codec_title"
+                android:text = "@string/video_option"/>
+            <com.portgo.view.DragListView
+                android:id="@+id/activity_main_fragment_setting_codec_video"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+				android:headerDividersEnabled="true"
+				android:divider="@drawable/divider_line"
+				android:background="@color/portgo_color_white"/>
+			<View
+				android:layout_width="match_parent"
+				android:layout_height="@dimen/scroll_padding_bottom"
+				android:background="@null"
+				/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

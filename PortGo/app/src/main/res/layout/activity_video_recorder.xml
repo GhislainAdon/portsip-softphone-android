@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:orientation="vertical"-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="fill_parent"-->
+    <!--&gt;-->
+
+    <!--<RelativeLayout android:id="@+id/Title"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content" >-->
+        <!--<Button-->
+            <!--android:id="@+id/back"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:clickable="true"-->
+            <!--android:text="Play"-->
+            <!--android:onClick="fin"-->
+            <!--android:visibility="gone"-->
+            <!--/>-->
+        <!--<Button-->
+            <!--android:id="@+id/cameraswitch"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:clickable="true"-->
+            <!--android:text="switch"-->
+            <!--android:onClick="playVideo"-->
+            <!--android:visibility="gone"-->
+            <!--/>-->
+    <!--</RelativeLayout>-->
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_below="@+id/Title"-->
+        <!--android:layout_above="@+id/recordBtn"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:padding="30dp"-->
+        <!--&gt;-->
+        <!--<SurfaceView-->
+            <!--android:id="@+id/surfaceview"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="fill_parent" />-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/videoPlay"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:gravity="center"-->
+        <!--&gt;-->
+        <!--<Button-->
+            <!--android:id="@+id/recordPlayIv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:clickable="true"-->
+            <!--android:text="Play"-->
+            <!--android:visibility="gone"-->
+            <!--/>-->
+    <!--</RelativeLayout>-->
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/recordBtn"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_alignParentBottom="true">-->
+        <!--<Button-->
+            <!--android:text="Start"-->
+            <!--android:id="@+id/recordIv"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:clickable="true"-->
+            <!--/>-->
+    <!--</RelativeLayout>-->
+
+
+<!--</RelativeLayout>-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SurfaceView
+        android:id="@+id/surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <com.portgo.view.VideoPress
+        android:id="@+id/btnStartStop"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:circleWidth="8dp"
+        app:excicleMagnification="1.5"
+        app:innerCircleShrinks="0.7"
+        app:annulusColor="@color/portgo_color_gray"
+        app:innerCircleColor="@color/portgo_color_white"
+        app:progressColor="@color/portgo_color_blue"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true" />
+    <Button
+        android:id="@+id/btnSwitchCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toLeftOf="@id/btnStartStop"
+        android:text="@string/switch_camera"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/btnStartStop"
+        android:text="Cancel"
+        android:visibility="invisible"
+        android:layout_marginRight="20dp"/>
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@id/btnStartStop"
+        android:text="OK"
+        android:visibility="invisible"
+        android:layout_marginLeft="20dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <inset xmlns:android="http://schemas.android.com/apk/res/android"
+        android:insetLeft="@dimen/fragment_marginLeft">
+        <shape>
+            <solid android:color="@color/portgo_color_divide_lightgray" />
+            <size android:height="@dimen/portgo_devide_height" />
+        </shape>
+</inset>

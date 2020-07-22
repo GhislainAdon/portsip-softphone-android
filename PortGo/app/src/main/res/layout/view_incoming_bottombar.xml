@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_incoming_bottombar"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:clickable="true"
+    android:paddingBottom="@dimen/avcall_bottom_margin"
+    android:background="@android:color/transparent"
+    android:layout_alignParentBottom="true">
+
+    <View
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="1px" />
+    <ImageButton android:layout_gravity="center"
+        android:id="@+id/fragment_incoming_hanup"
+        android:background="@drawable/pending_hangup_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/call_hangup_ico" />
+    <View
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="1px" />
+
+    <ImageButton
+        android:id="@+id/fragment_incoming_videocall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/pending_avanswer_btn"
+        android:src="@drawable/call_video_answer_ico" />
+
+    <View
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="1px" />
+    <ImageButton android:layout_gravity="center"
+        android:id="@+id/fragment_incoming_audiocall"
+        android:background="@drawable/pending_avanswer_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/call_audio_answer_ico" />
+    <View
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="1px" />
+</LinearLayout>

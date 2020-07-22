@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "856330108",
+    "firebase_url": "https://portgo-26bb1.firebaseio.com",
+    "project_id": "portgo-26bb1",
+    "storage_bucket": "portgo-26bb1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:856330108:android:a85eb24b0615a59c",
+        "android_client_info": {
+          "package_name": "com.portgo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "856330108-3k91b12t1ootf9uvklgvie0eskukmfmu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ67iGzmYrKQgPjyVUPgO9Q2RSHa1dSYo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

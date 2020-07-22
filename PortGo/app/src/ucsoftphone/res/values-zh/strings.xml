@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">UCSoftPhone</string>
+
+    <string name="app_online">在线</string>
+    <string name="app_offline">离线</string>
+    <string name="app_login">登录</string>
+    <string name="app_incall">通话中</string>
+    //Login
+    <string name="activity_login_advance">高级选项</string>
+    <string name="activity_login_username_hint">用户名</string>
+    <string name="activity_login_pwd_hint">密码</string>
+    <string name="activity_login_domain_hint" translatable="false">SIP Domain</string>                               
+    <string name="activity_login_rememberme">保存密码</string>
+
+    <string name="login_input_tips">请输入所有必填项</string>
+    <string name="login_login_tips">登录中...</string>
+    <string name="network_not_availabe">网络不可用！</string>
+
+    <string name="turn_on_flashlight">打开</string>
+    <string name="turn_off_flashlight">关闭</string>
+    <string name="msg_camera_framework_bug">抱歉，Android相机出现问题。您可能需要重启设备。</string>
+    <string name="scanner_tilte">账号扫描</string>
+    /////about
+    <string name="title_about">关于</string>
+    <string name="activity_about_ver">V8.0.0</string>
+    <string name="activity_about_homeurl"></string>
+    <string name="activity_about_sdk_ver">基于 SDK </string>
+    <string name="activity_about_company"></string>
+    
+    <string name="activity_about_company_copyright"></string>
+
+
+    //////////advance
+    <string name="activity_advance_category_displayname">显示名</string>
+    <string name="activity_advance_category_additional">更多信息</string>
+    <string name="activity_advance_category_proxy">出站代理</string>
+    <string name="activity_advance_category_transport">传输协议</string>
+    <string name="activity_advance_category_stun" translatable="false">STUN</string>                             
+    <string name="activity_advance_category_impresence" translatable="false">IM 和在线状态</string>            
+    <string name="activity_advance_category_tlscert" translatable="false">TLS 证书管理</string>           
+    <string name="category_allowvoip">移动网络</string>
+    <string name="title_allowvoip">移动网络</string>
+    <string name="minmax_limit">min:90 max:3600</string>
+
+    <string name="activity_advance_title_displayname">显示名</string>
+    <string name="activity_advance_title_tlscert" translatable="false">验证 TLS 证书</string>
+    <string name="activity_advance_title_proxy_server">出站代理</string>
+    <string name="activity_advance_title_proxy_authname">授权名</string>
+    <string name="activity_advance_title_transport_udp" translatable="false">UDP</string>
+    <string name="activity_advance_title_transport_tcp" translatable="false">TCP</string>
+    <string name="activity_advance_title_transport_tls" translatable="false">TLS</string>
+    <string name="activity_advance_title_transport_pers_udp" translatable="false">PERS_UDP</string>
+    <string name="activity_advance_title_transport_pers_tcp" translatable="false">PERS_TCP</string>
+    <string name="activity_advance_title_proxy_tips">[默认值为域名]</string>
+    <string name="activity_advance_title_author_tips">[默认值为用户名]</string>
+    <string name="activity_advance_title_disname_tips">[默认值为用户名]</string>
+
+    <string name="activity_advance_title_stun_enable">开启 STUN</string>
+    <string name="activity_advance_title_stun_server">服务器地址</string>
+    <string name="activity_advance_title_stun_port">端口号</string>
+
+    <string name="activity_advance_title_presence_enable">在线状态代理</string>
+    <string name="activity_advance_title_publish_refresh">状态发布刷新 (seconds)</string>
+    <string name="activity_advance_title_sub_refresh">状态订阅刷新 (seconds)</string>
+
+    <string name="activity_advance_title_enable_log">启用日志</string>
+    <string name="activity_advance_title_about">关于</string>
+
+    <string name="toomanycalls">最多同时拥有两路通话.</string>
+
+    //主界面tab页标签
+    <string name="portgo_title_contact">联系人</string>
+    <string name="portgo_title_history">最近通话</string>
+    <string name="portgo_title_numberpad">拨号盘</string>
+    <string name="portgo_title_message">信息</string>
+    <string name="portgo_title_setting">设置</string>
+
+    ///联系人主界面
+    //分页标签
+    <string name="contact_tab_all">全部</string>
+    <string name="contact_tab_favorite">收藏</string>
+    <string name="contact_tab_friend">好友</string>
+    <!--编辑状态-->
+    <string name="contact_select_contact">请选择联系人</string>
+    <string name="contact_selected_contact">已选择 %d 个</string>
+    <!--编辑状态-->
+    <string name="contact_clear">清除</string>
+    <string name="contact_all">全选</string>
+
+    <string name="permission_help_title">权限</string>
+    <string name="permission_help_content">允许%1$s:\n  读写通讯录\n  启用录音\n  启用摄像头\n  写外部存储\n  显示在其它窗口上</string>
+    <string name="permission_help_quit">退出</string>
+    <string name="permission_help_setting">设置</string>
+
+    <string name="refer_title">呼叫转移</string>
+    <string name="refer_tips">%1$s 请求将呼叫转移到 %2$s</string>
+
+    ///联系人详情界面
+    <string name="contact_detail">联系人详情</string>
+    <string name="activity_main_contact_fragment_detail_edit">编辑</string>
+    <string name="activity_main_contact_fragment_detail_addfavorite">添加到收藏夹</string>
+    <string name="activity_main_contact_fragment_detail_rmfavorite">从收藏夹删除</string>
+    <string name="friend_detail">好友详情</string>
+
+    <string name="hisroty_fragment_detail_newcontact">新建联系人</string>
+    <string name="hisroty_fragment_detail_addtocontact">添加到现有联系人</string>
+
+    //联系人编辑
+    <string name="edit_fragment_editcontact">编辑联系人</string>
+    <string name="edit_fragment_editfriend">编辑好友</string>
+    <string name="edit_fragment_addcontact">新建联系人</string>
+    <string name="edit_fragment_addfriend">新建好友</string>
+    <string name="edit_fragment_finish">保存</string>
+    <string name="select_no_number">无</string>
+    <string name="request_friend_im">必须输入至少一个 SIP 账号，并选择好友 IM 字段</string>
+    <string name="invalidate_contact_data">联系人信息无效，无法保存。</string>
+    
+    <string name="activity_main_contact_no_name">无姓名</string>
+
+    <string name="activity_main_contact_fragment_edit_sipim">即时信息/短信</string>
+
+
+    <string name="activity_main_contact_fragment_edit_addphone">添加号码</string>
+    <string name="activity_main_contact_fragment_edit_addsip">添加 VoIP 号码</string>
+    <string name="contact_fragment_edit_delete">删除联系人</string>
+    <string name="contact_name_null">联系人姓名不能为空</string>
+    <string name="contact_fragment_edit_numtype">请选择号码类型</string>
+    <string name="activity_main_contact_fragment_edit_newType">自定义标签</string>
+
+    <string name="phone_selected">选择收件人</string>
+    <string name="invalidate_phone_number">请至少选择一个有效号码</string>
+    ////////////
+    <string name="tab_history_all">全部通话</string>
+    <string name="tab_history_unreceived">未接来电</string>
+
+    //通话详情
+    <string name="phone_type_sip">VoIP 电话</string>
+    <string name="phone_type_phone">手机</string>
+    <string name="title_historydetail">通话详情</string>
+    <string name="history_fragment_detail_newcontact">新建联系人</string>
+    <string name="history_fragment_detail_showmore">查看更多</string>
+    <string name="history_fragment_detail_showless">收起</string>
+    <string name="history_fragment_detail_limit" translatable="false">_id desc LIMIT %1$d OFFSET 0</string>
+    <string name="callin">呼入电话</string>
+    <string name="callout">呼出电话</string>
+    <string name="unconnect">未接通电话</string>
+    <string name="history_fragment_detail_not_favorite">收藏</string>
+    <string name="history_fragment_detail_in_favorite">收藏</string>
+    //
+    <!--DTMF界面，按键数字 不翻译-->
+    
+
+    //编码
+    <string name="title_codec">编码器</string>
+    <string name="activity_main_fragment_setting_codec_edit_finish">完成</string>
+    <string name="activity_main_fragment_setting_codec_edit_edit">编辑</string>
+
+    <string name="setting_fragment_codec_premum_desc">购买后可用</string>
+
+    //设置界面
+    <string name="set_status">状态</string>
+    <string name="set_account">帐户</string>
+    <string name="set_balance">余额</string>
+    <string name="set_set">高级</string>
+    <string name="set_codecs">编码器</string>
+    <string name="set_about">关于</string>
+    <string name="set_premium">高级功能</string>
+
+    //
+    <string name="title_premium">高级</string>
+    <string name="premium_price">$9.99</string>
+    <string name="not_premium">购买失败。</string>
+
+
+    //设置-帐户
+    <string name="title_account">账户</string>
+    <string name="activity_main_fragment_setting_account_username">用户名</string>
+    <string name="activity_main_fragment_setting_account_userpsw">密码</string>
+    <string name="activity_main_fragment_setting_account_userbalance">余额</string>
+
+    <string name="activity_main_fragment_setting_account_sipserver">SIP 服务器</string>
+    <string name="activity_main_fragment_setting_account_sipport">端口</string>
+    <string name="activity_main_fragment_setting_account_siptranstype">传输协议</string>
+
+    <string name="activity_main_fragment_setting_account_userdomain">用户域名</string>
+    <string name="activity_main_fragment_setting_account_userdisname">显示为</string>
+    <string name="activity_main_fragment_setting_account_userauth">认证名</string>
+    <string name="activity_main_fragment_setting_account_unregister">退出登录</string>
+    
+    <string name="empty_numaber_tips">请输入号码</string>
+    <string name="empty_voicemail_tips">请先设置语音邮箱地址！</string>
+    
+
+     //拨号计划   
+    <string name="activity_main_fragment_callrulelable_name">名称</string>
+    <string name="activity_main_fragment_callrulelable_match_prefix">匹配前缀</string>
+    <string name="activity_main_fragment_callrulelable_remove_prefix">删除前缀</string>
+    <string name="activity_main_fragment_callrulelable_add_prefix">添加前缀</string>
+
+    <string name="activity_main_fragment_callrule_name_hint">示例</string>
+    <string name="activity_main_fragment_callrule_match_hint">例如 +173</string>
+    <string name="activity_main_fragment_callrule_add_hint">例如 +1</string>
+    <string name="activity_main_fragment_callrule_remove_hint">例如 8</string>
+
+    ////////呼叫转移
+
+    <string name="category_callfoward">客户端呼叫转移</string>
+    <string name="labe_callfoward">转移呼叫</string>
+    <string name="callfoward_to">转移至：</string>
+    <string name="labe_voicemail">语音邮箱：</string>
+    <string name="string_voicemail">语音邮箱</string>
+    <string name="lable_fragment_account_foward_noanswer">无应答转移</string>
+    <string name="title_forward">呼叫转移</string>
+    <string name="lable_fragment_account_foward_close">禁止转移</string>
+    <string name="lable_fragment_account_foward_all">全部转移</string>
+    <string name="lable_fragment_account_foward_busy">遇忙转移</string>
+    <string name="lable_fragment_account_nodistrub">勿扰</string>
+    <string name="nodisturb_tips">勿扰模式开启后，您将不会收到任何呼叫和消息！</string>
+    <string name="lable_fragment_account_foward_noanswertime">无应答时间：</string>
+    <string name="hint_fragment_setting_advance_redirect">min:max:</string>
+    <string name="hint_min_sencod">无应答时间最小为 3 秒</string>
+    <string name="category_premium">高级功能</string>
+    <string name="fragment_setting_advance_premium_title">H.264、AMR-WB 编码器</string>
+    <string name="fragment_setting_advance_premium_desc">H.264 优质/低带宽视频编码器
+    \n使用 AMRWB，在网络较差的情况下添加卓越的高清音质。</string>
+    <string name="fragment_setting_advance_premium_sync">同步高级功能</string>
+    <string name="fragment_setting_advance_sync_desc">如果您已购买高级功能，但该功能显示未安装，请使用以上按钮与应用商店同步</string>
+
+
+
+    //设置-高级设置
+    <string name="title_preference">高级设置</string>
+    <string name="category_allowvoip_detail">启用以允许程序在无 Wi-Fi 环境下使用您的移动数据套餐</string>
+    <string name="category_audio">音频选项</string>
+    <string name="labe_rtp_start">RTP 起始端口</string>
+    <string name="labe_aec">回音消除</string>
+    <string name="labe_vad">静音检测</string>
+    <string name="labe_nr">噪音消除</string>
+    <string name="labe_cng">舒适噪音</string>
+    <string name="labe_agc">自动增益控制</string>
+
+
+    <string name="category_video">视频选项</string>
+    <string name="labe_video_bitrate">码流</string>
+    <string name="labe_video_resolution">分辨率</string>
+    <string name="labe_video_fps">帧率</string>
+    <string name="labe_video_nack">NACK (RFC4585)</string>
+
+    <string name="category_srtp">通话加密 SRTP</string>
+    <string name="labe_srtp">通话加密 SRTP</string>
+
+
+
+    <string name="category_dtmf">DTMF</string>
+    <string name="labe_dtmf_type">DTMF 类型</string>
+    <string name="labe_dtmf_back">播放 DTMF 回音</string>
+
+    <string name="category_miscellaneous">其他 SIP 设置</string>
+    <string name="label_prack">启用 PRACK</string>
+    <string name="label_earlymedia">Enable EarlyMedia</string>
+    <string name="label_ims">启用 IMS</string>
+    <string name="label_sessiontime">会话计时器</string>
+
+    <string name="category_autorec">自动通话录音</string>
+    <string name="label_autorec">自动通话录音</string>
+    <string name="label_rec_dir">录音文件路径</string>
+
+    <string name="category_ring">自定义铃声</string>
+    <string name="label_call_ring">来电铃声</string>
+    <string name="label_im_ring">短信提示</string>
+    <string name="label_enable_ring">开启铃声</string>
+    <string name="label_enable_vibrate">开启振动</string>
+    <string name="category_intergrate">通话集成</string>
+    <string name="label_dialer_intergrate">允许使用App呼出本地通话</string>
+    <string name="label_default_account">默认使用App呼出本地通话</string>
+    //消息
+    <string name="unknow_message_format">未知的消息格式</string>
+    <string name="subscrib_tips">您有一条来自%1$s的订阅消息：%2$s</string>
+    <string name="message_tips">您有一条来自%1$s的消息。</string>
+    <string name="please_select">请选择</string>
+    <string name="select_sum">"已选择 %d 个"</string>
+    <string name="clear_all">"清除"</string>
+    <string name="select_all">"全选"</string>
+    <string name="already_read">"已读"</string>
+    <string name="chat_transfer">转发</string>
+    <string name="chat_transfer_style">转发方式</string>
+
+    <string name="chat_transfer_failed">转发失败</string>
+    <string name="chat_transfer_success">转发成功</string>
+    <string name="message_search_hint">搜索消息</string>
+    <string name="message_search_lable">""</string>
+    <!--<string name="please_select_contact">请选择联系人</string>-->
+    <string name="send_to">收件人：</string>
+    <string name="chat_send">发送</string>
+    <string name="missed_call">&#160;未接来电</string>
+
+    <string name="voice_too_short">Voice message too short!</string>
+
+    ///拨号界面
+    <string name="call_failed_tips">呼叫失败</string>
+    <string name="fragment_dialing_digits_hide">隐藏</string>
+    <string name="tring">正在呼叫...</string>
+    <string name="please_inputorselect_transfer_dest">请输入或选择转接对象</string>
+    <string name="please_inputorselect_correct_dest">请输入有效的转接对象</string>
+
+
+
+    <string name="changeto_video">视频</string>
+    <string name="changeto_audio">音频</string>
+    <string name="show_dialpad">拨号盘</string>
+    <string name="add_call">添加通话</string>
+    <string name="create_conference">创建会议</string>
+    <string name="destory_conference">解散会议</string>
+    <string name="resume_call">恢复通话</string>
+    <string name="hold_call">暂停通话</string>
+    <string name="close_camera">关闭摄像头</string>
+    <string name="open_camera">打开摄像头</string>
+    <string name="switch_camera">切换摄像头</string>
+    <string name="start_record">开始录制</string>
+    <string name="record_cannot_find">文件已删除！</string>
+    <string name="stop_record">停止录制</string>
+    <string name="transfer_call">呼叫转移</string>
+    <string name="remote_hold">对方暂停</string>
+    //im消息账号选择界面
+    <string name="select_im_address">请选择即时消息地址</string>
+    <string name="select_im_addresstips">所选网络电话号码 (SIP URI) 用于即时消息地址和在线信息订阅，
+        您可以通过编辑联系人来修改网络电话地址列表。</string>
+    <string name="select_im_tilte">在线信息和即时消息地址</string>
+    <string name="contact_fragment_edit_im_lable">即时消息/短信</string>
+
+    <!--好友订阅-->
+    <string name="subscribe_title">好友请求</string>
+    <string name="no_subscrib_message">无好友请求</string>
+    <!--关于-->
+    <string name="about_mail" translatable="false"></string>
+    <string name="about_netaddr" ></string>
+    <string name="about_introduction"></string>
+    <string name="privacy_netaddr" translatable="false"></string>
+    <string name="login_introduction" translatable="false"></string>
+    <string name="invalidate_qrcode">无效的二维码</string>
+    <string name="permission_decline">拒绝</string>
+    <string name="permission_accept">接受</string>
+    <string name="scanning" >"正在扫描..."</string>
+    <string name="rec_fail" >"识别失败"</string>
+
+    ////////////////////
+    <string name="callrules_tilte">拨号计划</string>
+    <string name="add_callrule_tilte">添加拨号计划</string>
+    <string name="null_name">名称不能为空</string>
+、   <string name="null_matchprefix">匹配前缀不能为空</string>
+    <string name="null_add_removeprefix">添加前缀和删除前缀不能同时为空</string>
+    <string name="wrong_removeprefix">删除前缀必须是匹配前缀的开头一部分</string>
+    /////////////
+
+    <string name="prefrence_record_filepath">录制文件保存路径</string>
+    <string name="prefrence_record_filepath_default" translatable="false">record</string>
+    <string name="prefrence_record_filepath_title">录制文件保存路径</string>
+    <string name="can_not_openfile">文件无法打开！</string>
+    <string name="title_record">录音文件</string>
+    ////////////////////
+
+    <string name="dtmf_select_title">DTMF 发送</string><!-- dtmf发送方式选择页面标题-->
+    <string name="fps_select_title">视频帧率</string><!-- 视频帧率选择页面标题-->
+    <string name="vbr_select_title">视频码流</string><!-- 视频码流选择页面标题-->
+    <string name="vr_select_title">视频分辨率</string><!-- 视频分辨率选择页面标题-->
+    <string name="srtp_select_title">通话加密</string><!-- 通话加密方式选择页面标题-->
+
+    <string name="status_title">在线状态</string>
+    <string name="status_online">在线</string>
+    <string name="status_away">离开</string>
+    <string name="status_nodistrub">勿扰</string>
+    <string name="status_busy">忙碌</string>
+    <string name="status_offline">离线</string>
+
+
+
+    ////////////////////////
+
+    <string name="time_number_format" translatable="false">yyyyMMdd HH:mm:ss</string>
+    <string name="str_login">登录</string>
+
+    <string name="day_today">今天</string>
+    <string name="day_yesterday">昨天</string>
+
+    <string name="this_week">本周</string>
+    <string name="this_month">本月</string>
+
+    <string name="string_company">公司</string>
+    <string name="string_dept">部门</string>
+    <string name="string_job">职位</string>
+    <string name="string_familyname">姓</string>
+    <string name="string_givingname">名</string>
+
+    <string name="string_edit">编辑</string>
+    <string name="string_Message">信息</string>
+    <string name="string_Delete">删除</string>
+    <string name="string_Forward">转发</string>
+    <string name="string_Copy">复制</string>
+    <string name="string_More">更多</string>
+
+    <string name="string_resend">重发</string>
+    <string name="string_down">下载</string>
+
+    <string name="string_audio">语音</string>
+    <string name="string_Video">视频</string>
+
+    <string name="string_image_message">图片消息</string>
+    <string name="string_audio_message">语音消息</string>
+    <string name="string_video_message">视频消息</string>
+
+    <string name="string_camera">拍摄</string>
+    <string name="string_abulmn">照片</string>
+
+    <string name="string_uptips">松开结束</string>
+    <string name="string_downtips">按住说话</string>
+    <string name="string_permission_error">录音失败，可能是没有给权限</string>
+    <string name="string_unknow_error">发生了未知错误</string>
+    <string name="string_incall_error">正在通话中，无法发送音视频消息</string>
+    <string name="string_flip_tips">手指上滑，取消发送</string>
+    <string name="string_release_tips">手指松开，取消发送</string>
+
+    <string name="audio_option">音频</string>
+    <string name="video_option">视频</string>
+    <string name="string_accept">接受</string>
+    <string name="string_reject">拒绝</string>
+
+    <string name="string_accepted">已接受</string>
+    <string name="string_rejected">已拒绝</string>
+
+    <string name="string_installed">已安装</string>
+
+    <string name="string_Audio_Call">语音呼叫</string>
+    <string name="string_Video_Call">视频呼叫</string>
+    <string name="string_all">全选</string>
+    <string name="string_finish">完成</string>
+    <string name="string_clear">清除</string>
+    <string name="string_new">新建</string>
+    <string name="string_add">添加</string>
+    <string name="string_save">保存</string>
+
+    <string name="string_tips">提示</string>
+    <string name="string_sure">确认</string>
+    <string name="string_preview">预览</string>
+    <string name="string_sdcard">手机内存</string>
+    <string name="string_portfile">应用文件</string>
+
+    <string name="string_pv">所有图片</string>
+    <string name="please_login_tips">请先登录账号</string>
+    <string name="str_set_avarta">设置头像</string>
+
+    <string name="seach_result_empty">没有找到匹配的消息!</string>
+
+    <string name="inlongin_tips">登录中，请稍候...</string>
+    <string name="input_number_tips">请输入号码</string>
+    <string name="register_failed_tips">注册失败。</string>
+
+    <string name="select_friend">选择好友</string>
+    <string name="add_friend">添加好友</string>
+    <string name="del_friend">删除好友</string>
+
+    <string name="select_favorite">选择收藏</string>
+    <string name="add_favorite">添加收藏</string>
+    <string name="del_favorite">删除收藏</string>
+    <string name="quit">退出</string>
+
+    <!--命令，不要翻译-->
+    <string name="cmd_presence_online" translatable="false">Available</string>
+    <string name="cmd_presence_away" translatable="false">Away</string>
+    <string name="cmd_presence_nodisturb" translatable="false">Do not disturb</string>
+    <string name="cmd_presence_busy" translatable="false">Busy</string>
+    <string name="cmd_presence_offline" translatable="false">offline</string>
+
+    <string name="string_presence" translatable="false">Presence</string>                                          //给新来的订阅消息菜单使用，不会显示出来，keep
+    <string name="local_invisible_directory" translatable="false">invisible_directory</string>                   //给数据库使用的，keep
+    <string name="default_directory" translatable="false">default_directory</string>                               //给数据库使用的，keep
+    
+        <!--DTMF界面，按键数字 不翻译-->
+    <string name="activity_main_fragment_dial_1" translatable="false">1</string>
+    <string name="activity_main_fragment_dial_2" translatable="false">2</string>
+    <string name="activity_main_fragment_dial_3" translatable="false">3</string>
+    <string name="activity_main_fragment_dial_4" translatable="false">4</string>
+    <string name="activity_main_fragment_dial_5" translatable="false">5</string>
+    <string name="activity_main_fragment_dial_6" translatable="false">6</string>
+    <string name="activity_main_fragment_dial_7" translatable="false">7</string>
+    <string name="activity_main_fragment_dial_8" translatable="false">8</string>
+    <string name="activity_main_fragment_dial_9" translatable="false">9</string>
+    <string name="activity_main_fragment_dial_star" translatable="false">*</string>
+    <string name="activity_main_fragment_dial_0" translatable="false">0</string>
+    <string name="activity_main_fragment_dial_sharp" translatable="false">#</string>
+
+    //////////////
+    ////
+    <string name="string_select">选择</string>
+    <string name="string_file">文件</string>
+    <string name="string_empty">没有文件</string>
+    <string name="timeformat_md">MM月dd日</string>
+    <string name="string_huge">太大了</string>
+</resources>

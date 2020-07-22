@@ -1,0 +1,348 @@
+<resources>
+    <dimen name="min_item_height">48dip</dimen>
+    <dimen name="min_item_width">48dip</dimen>
+    <dimen name="portgo_devide_height">1px</dimen>
+
+
+    <dimen name="scroll_padding_bottom">40dip</dimen>
+
+
+    <dimen name="slide_item_width">86dip</dimen>
+    <dimen name="slide_item_titlesize">14sp</dimen>
+
+    <dimen name="tab_paddingTop">10dp</dimen>
+    <dimen name="message_num_tips_size">12dp</dimen>
+    <dimen name="message_num_tips_l">12dp</dimen>
+    <dimen name="message_num_tips_t">8dp</dimen>
+    <dimen name="message_num_tips_r">0dp</dimen>
+    <dimen name="message_num_tips_b">14dp</dimen>
+
+    <dimen name="vm_paddingTop">0dp</dimen>
+    <dimen name="vm_num_tips_size">15dp</dimen>
+    <dimen name="vm_num_tips_l">36dp</dimen>
+    <dimen name="vm_num_tips_t">-6dp</dimen>
+    <dimen name="vm_num_tips_r">-10dp</dimen>
+    <dimen name="vm_num_tips_b">11dp</dimen>
+
+
+    <dimen name="min_call_item_height">26dip</dimen>
+    <dimen name="contactphone_item_height">44dip</dimen>
+
+    <dimen name="setting_item_height">49dip</dimen> <!--主设置界面项高度-->
+    <dimen name="status_item_height">44dip</dimen>   <!--在线状态项高度-->
+    <dimen name="account_item_height">44dip</dimen>   <!--账号项高度-->
+    <dimen name="prefrence_item_height">44dip</dimen>   <!--prefrence项高度-->
+    <dimen name="codec_item_height">44dip</dimen>   <!--codec项高度-->
+    <dimen name="codec_category_margintop">20dip</dimen>   <!--codec项高度-->
+
+    <dimen name="message_item_height">75dip</dimen>   <!--codec项高度-->
+    <dimen name="message_avatar_size">44dip</dimen>   <!--codec项高度-->
+
+    <dimen name="setting_item_statustitle_size">18sp</dimen>
+    <dimen name="setting_item_statusvalue_size">16sp</dimen>
+    <dimen name="setting_item_balance_size">16sp</dimen>
+
+    <dimen name="contact_useravatar_size">44dip</dimen>
+    <dimen name="contact_item_height">68dip</dimen>
+    <dimen name="contact_group_item_paddingLeft">10dip</dimen>
+    <dimen name="contact_group_title_paddingLeft">10dip</dimen>
+    <dimen name="contact_group_item_height">31dip</dimen>
+    <dimen name="contact_group_textsize">18sp</dimen>
+    <dimen name="contact_item_radiobox_marginright">15dip</dimen>
+    <dimen name="contact_item_name_marginleft">15dip</dimen>
+    <dimen name="contact_item_namesize">18sp</dimen>
+    <dimen name="contact_item_marginLeft">15dip</dimen>
+
+
+    <dimen name="history_item_height">85dip</dimen>
+    <dimen name="history_detailitem_name_margintop">20dip</dimen>
+    <dimen name="history_detailitem_name_textsize">16sp</dimen>
+    <dimen name="history_detailitem_name_drawablepadding">7dip</dimen>
+    <dimen name="history_detailitem_number_textsize">13sp</dimen>
+    <dimen name="history_detailitem_starttime_textsize">10sp</dimen>
+    <dimen name="history_detailitem_number_drawablepadding">9dip</dimen>
+    <dimen name="history_detailitem_number_margin_v">4dip</dimen>
+
+
+
+    <dimen name="history_detailitem_secondline_paddingbt">21dip</dimen>
+    <dimen name="history_detailitem_firsline_paddingbt">5dip</dimen>
+    <dimen name="history_detailitem_calltype_marginleft">10dip</dimen>
+    <dimen name="history_detailitem_inout_marginright">10dip</dimen>
+    <dimen name="history_detail_useravatar_marginright">15dip</dimen>
+    <dimen name="history_detail_more_marginlleft">15dip</dimen>
+
+    <dimen name="numpand_input_marginleft">9dip</dimen>
+    <dimen name="numpand_input_marginright">9dip</dimen>
+
+    <dimen name="activity_login_dlg_width">310dip</dimen>
+    <dimen name="activity_login_dlg_height">390dip</dimen>
+    <dimen name="activity_login_logo_margin_top">26dip</dimen>
+    <dimen name="activity_login_logo_margin_bottom">15dip</dimen>
+    <dimen name="activity_login_logo_width">129dip</dimen>
+    <dimen name="activity_login_logo_height">37dip</dimen>
+    <dimen name="activity_login_edittext_height">35dip</dimen>
+    <dimen name="activity_login_text_size">16sp</dimen>
+    <dimen name="activity_login_btregist_height">40dip</dimen>
+    <dimen name="activity_login_cbremember_margin_top">15dip</dimen>
+    <dimen name="activity_login_advance_margin_top">20dip</dimen>
+    <dimen name="activity_login_dlg_margin_width">40dip</dimen>
+    <dimen name="activity_login_item_user_textsize">16sp</dimen>
+
+    <dimen name="activity_login_item_margin">15dip</dimen>
+
+    <dimen name="activity_login_item_user_padding_left">10dip</dimen>
+    <dimen name="activity_login_item_user_padding_right">10dip</dimen>
+
+
+    <dimen name="message_name_textsize">18sp</dimen>
+    <dimen name="message_time_textsize">14sp</dimen>
+    <dimen name="message_content_textsize">16sp</dimen>
+/////////
+    <dimen name="recordfile_item_name">16sp</dimen>
+    <dimen name="recordfile_item_dsc">12sp</dimen>
+    <dimen name="recordfile_item_time">12sp</dimen>
+
+    <dimen name="recordfile_play_marginLeft">14dp</dimen>
+    <dimen name="recordfile_play_marginRight">30dp</dimen>
+    <dimen name="recordfile_timesize">14dp</dimen>
+
+    /////////
+    <dimen name="activity_advance_item_height">44dip</dimen>
+    <dimen name="activity_advance_item_textsize">12sp</dimen>
+    <dimen name="activity_advance_item_edit_textsize">16sp</dimen>
+    <dimen name="activity_advance_item_label_textsize">16sp</dimen>
+
+    <dimen name="activity_advance_padding_left">15dip</dimen>
+    <dimen name="activity_advance_padding_right">15dip</dimen>
+    <dimen name="activity_advance_padding_top">4dip</dimen>
+    <dimen name="activity_advance_padding_bottom">4dip</dimen>
+    <dimen name="activity_advance_padding_category">40dip</dimen>
+
+    <dimen name="activity_advance_category_margin_top">40dip</dimen>
+    <dimen name="activity_advance_category_margin_bottom">8dip</dimen>
+
+    <dimen name="toolbar_title_size">16sp</dimen>
+
+    /////////activity_main_contact_fragment_edit
+    <dimen name="activity_main_contact_fragment_edit_photo_margin">10dip</dimen>
+    <dimen name="activity_main_contact_fragment_edit_namepaddingtopbottom">10dip</dimen>
+    <dimen name="activity_main_contact_fragment_edit_name_textsize">20sp</dimen>
+    <dimen name="fragment_detail_useravatar_margin_top">20dp</dimen>
+    <dimen name="fragment_detail_useravatar_margin_bt">10dp</dimen>
+    <dimen name="contact_detail_useravatar_size">80dp</dimen>
+    <dimen name="contact_detail_username_margintop">10dp</dimen>
+    <dimen name="contact_detail_username_marginbottom">10dp</dimen>
+
+    <dimen name="contact_detail_listview_marginleft">15dip</dimen>
+    <dimen name="contact_detail_listview_marginright">15dip</dimen>
+
+    <dimen name="activity_main_contact_fragment_edit_name_height">60dip</dimen>
+    <dimen name="activity_main_contact_fragment_edit_paddingleft">20dip</dimen>
+    <dimen name="activity_main_contact_fragment_phones_margin_top">15dip</dimen>
+    <dimen name="activity_main_contact_fragment_edit_addphone_size">18dip</dimen>
+    <dimen name="contact_edit_actionicon_marginright">10dip</dimen>
+    <dimen name="activity_main_contact_fragment_edit_addphone_margin">10dip</dimen>
+    <dimen name="activity_main_contact_fragment_lvitem_delete_width">100dip</dimen>
+    <dimen name="activity_main_contact_fragment_lvitem_type_width">80dip</dimen>
+    <dimen name="activity_main_contact_fragment_lvitem_im_marginleft">38dip</dimen>
+    /////////activity_main_contact_fragment_groups
+    <dimen name="activity_main_contact_fragment_groups_lvitem_paddingtopbottom">5dip</dimen>
+    <dimen name="activity_main_contact_fragment_groups_groupname_textsize">20sp</dimen>
+    <dimen name="activity_main_contact_fragment_groups_padding_h">10dp</dimen>
+
+
+    /////////activity_main_contact_fragment_detail_audio_iconsize
+    <dimen name="activity_main_contact_fragment_detail_audio_iconsize">30dp</dimen>
+    //activitymain
+    <dimen name="activity_main_tab_textsize">11sp</dimen>
+    //activity main fragment dial
+    <dimen name="activity_main_fragment_dial_textsize_large">36sp</dimen>
+    <dimen name="activity_main_fragment_dial_textsize_small">14sp</dimen>
+    <dimen name="activity_main_fragment_dial_textsize_contactname">16sp</dimen>
+    <dimen name="activity_main_fragment_dial_textsize_phonenumber">12sp</dimen>
+    <dimen name="activity_main_fragment_dial_item_margin">5dp</dimen>
+    <dimen name="activity_main_fragment_dial_item_margin_l">15dp</dimen>
+
+    //activity main fragment setting ->advance
+    <dimen name="activity_main_fragment_setting_advance_marginLeft">20dp</dimen>
+    <dimen name="activity_main_fragment_setting_advance_marginRight">20dp</dimen>
+
+    <dimen name="fragment_marginLeft">15dip</dimen>
+    <dimen name="fragment_marginRight">15dip</dimen>
+
+    /////////String input dialog
+    <dimen name="input_dlg_width">250dp</dimen>
+    <dimen name="input_dlg_height">144dp</dimen>
+    <dimen name="input_dlg_edit_margin_h">20dp</dimen>
+    <dimen name="input_dlg_button_height">48dp</dimen>
+
+    /////////fragment message chat
+    <dimen name="round_corner_radius">20dp</dimen>
+    <dimen name="message_text_margin_right">120dp</dimen>
+    <dimen name="message_text_margin_left">90dp</dimen>
+    <dimen name="message_text_margin_failed">5dp</dimen>
+
+    <dimen name="chat_time_margin_top">15dp</dimen>
+    <dimen name="chat_time_margin_bottom">15dp</dimen>
+    <dimen name="chat_item_height">36dp</dimen>
+    <dimen name="chat_item_gap">25dip</dimen>
+
+    <dimen name="message_time_padding_h">5dp</dimen>
+    <dimen name="message_content_margin_top">25dp</dimen>
+
+    <dimen name="chat_text_padding_v">5dp</dimen>
+    <dimen name="chat_text_padding_h">10dp</dimen>
+    <dimen name="chat_avatar_size">36dp</dimen>
+    <dimen name="chat_text_radius">15dp</dimen>
+    <dimen name="chat_avatar_content_margin">10dp</dimen>
+    <dimen name="chat_content_textsize">16sp</dimen>
+    <dimen name="chat_voice_textsize">12sp</dimen>
+    <dimen name="chat_content_minwidth">40dp</dimen>
+
+    /////////fragment incall
+    <dimen name="fragment_dailing_useravatar_width">96dp</dimen>
+    <dimen name="fragment_dailing_useravatar_height">96dp</dimen>
+    <dimen name="fragment_dailing_useravatar_textsize">36sp</dimen>
+    <dimen name="fragment_dialing_avatar_marginBottom">15dip</dimen>
+    <dimen name="fragment_dialing_name_textsize">20sp</dimen>
+    <dimen name="fragment_dialing_number_textsize">16sp</dimen>
+    <dimen name="fragment_dialing_time_textsize">16sp</dimen>
+    <dimen name="fragment_dialing_stage_textsize">16sp</dimen>
+    <dimen name="fragment_dialing_time_marginTop">15dip</dimen>
+    <dimen name="fragment_dialing_number_marginTop">9dip</dimen>
+    <dimen name="fragment_dialing_stage_marginTop">7dip</dimen>
+
+    /////////fragment_incoming_type
+    <dimen name="fragment_incoming_action_margin_bottom">40dp</dimen>
+    <dimen name="fragment_incoming_action_btn_radius">30dp</dimen>
+    <dimen name="fragment_incoming_action_btn_size">60dp</dimen>
+    <dimen name="dial_call_btn_height">40dp</dimen>
+    <dimen name="dial_call_btn_radius">20dp</dimen>
+    /////////fragment_setting
+    <dimen name="fragment_setting_avatar_size">100dp</dimen>
+    <dimen name="fragment_setting_listview_margintop">20dp</dimen>
+    <dimen name="fragment_username_margintop">10dp</dimen>
+    <dimen name="fragment_username_marginbottom">8dp</dimen>
+
+    <dimen name="toggle_button_height">25dp</dimen>
+    <dimen name="toggle_button_width">48dp</dimen>
+
+    <dimen name="contact_detail_namesize">18sp</dimen>
+    <dimen name="contact_detail_statussize">14sp</dimen>
+    <dimen name="contact_detail_subtoolbar_height">64dip</dimen>
+    <dimen name="contact_detail_item_height">64dip</dimen>
+    <dimen name="contact_detail_item_stylesize">14sp</dimen>
+    <dimen name="contact_detail_item_numbersize">14sp</dimen>
+    <dimen name="contact_detail_item_style_margintop">14dip</dimen>
+    <dimen name="contact_detail_item_style_marginbottom">10dip</dimen>
+
+
+    <dimen name="contact_edit_item_height">64dip</dimen>
+
+    //premium
+    <dimen name="fragment_premium_desc_marginTop">15dip</dimen>
+
+    /////////////////////////////old ui
+    <dimen name="activity_horizontal_margin">16dip</dimen>
+    <dimen name="activity_vertical_margin">16dip</dimen>
+    <dimen name="avhistory_icon_margin_left">20dip</dimen>
+    <dimen name="avhistory_icon_margin_right">20dip</dimen>
+    <dimen name="avhistory_icon_name_margin">10dip</dimen>
+    <dimen name="avhistory_name_icon_margin">12dip</dimen>
+    <dimen name="callitem_list_textsize">16sp</dimen>
+    <dimen name="connected_funcbutton_margin">10dip</dimen>
+    <dimen name="connected_round_indicate_size">10dip</dimen>
+    <dimen name="default_list_marginleft">14dip</dimen>
+    <dimen name="default_list_textsize">14sp</dimen>
+    <dimen name="default_magin_bottom">8dip</dimen>
+    <dimen name="default_magin_top">8dip</dimen>
+    <dimen name="detail_hangup_btn_radius">25dip</dimen>
+    <dimen name="detail_round_btn_radius">60dip</dimen>
+    <dimen name="devider_height">1dip</dimen>
+    <dimen name="dial_btn_text_sizea">25sp</dimen>
+    <dimen name="dial_btn_text_sizeb">12sp</dimen>
+    <dimen name="labletxsize">20sp</dimen>
+    <dimen name="layer_width">300dip</dimen>
+    <dimen name="login_advance_item_height">100dip</dimen>
+    <dimen name="login_advance_textsize">18sp</dimen>
+    <dimen name="login_advance_textview_padding">10dip</dimen>
+    <dimen name="login_setting_item_padding">4dip</dimen>
+
+    <dimen name="login_left_magin">20dip</dimen>
+    <dimen name="login_right_margin">20dip</dimen>
+    <dimen name="login_login_btn_padding">10dip</dimen>
+    <dimen name="login_port_margin_left">10dip</dimen>
+    <dimen name="login_logo_margin_top">40dip</dimen>
+    <dimen name="login_logo_margin_bottom">20dip</dimen>
+    <dimen name="login_signin_textsize">16sp</dimen>
+
+    <dimen name="names_paddingLeft">10dip</dimen>
+
+    <dimen name="history_detail_namesize">18sp</dimen>
+    <dimen name="history_detail_timesize">14sp</dimen>
+
+
+
+    <dimen name="friend_detail_namesize">16sp</dimen>
+    <dimen name="friend_detail_staussize">12sp</dimen>
+
+    <dimen name="home_btncall_margin_top">10dip</dimen>
+    <dimen name="home_btncall_margin_bottom">15dip</dimen>
+
+    <dimen name="pending_state_margin_bottom">30dip</dimen>
+    <dimen name="main_callbutton_margin">20dip</dimen>
+    <dimen name="min_listview_height">50dip</dimen>
+    <dimen name="navibar_height">50dip</dimen>
+    <dimen name="offset_width">56dip</dimen>
+    <dimen name="pending_callbutton_margin">10dip</dimen>
+    <dimen name="shadow_width">8dip</dimen>
+    <dimen name="widget_margin">8dip</dimen>
+
+    <dimen name="avcall_left_magin">10dip</dimen>
+    <dimen name="avcall_right_margin">10dip</dimen>
+    <dimen name="avcall_bottom_margin">40dip</dimen>
+
+    <dimen name="avcall_bottom_margin_land">15dip</dimen>
+
+    <dimen name="avcall_indicate_margin_bottom">20dip</dimen>
+    <dimen name="avcall_indicate_margin_Top">5dip</dimen>
+    <dimen name="avcall_textsize">20sp</dimen>
+    <dimen name="avcall_lines_marginbottom">50dp</dimen>
+
+    <dimen name="user_avatar_top_margin">20dip</dimen>
+    <dimen name="user_avatar_left_right_margin">30dip</dimen>
+
+    <dimen name="user_detail_left_margin">15dip</dimen>
+    <dimen name="user_top_margin">40dip</dimen>
+    <dimen name="user_bottom_margin">20dip</dimen>
+
+
+    <dimen name="chat_top_bottom_padding">10dip</dimen>
+
+
+    <dimen name="account_singout_bottom_margin">40dip</dimen>
+
+    <dimen name="detail_top_bottom_padding">10dip</dimen>
+
+    <dimen name="transport_title_topbottom_padding">5dip</dimen>
+
+    <dimen name="message_textsize">14sp</dimen>
+    <dimen name="message_left_right_margin">20dip</dimen>
+    <dimen name="message_top_margin">10dip</dimen>
+
+    <dimen name="about_logo_size">85dip</dimen>
+    <dimen name="about_logo_marginTop">5dip</dimen>
+    <dimen name="about_logo_tixesize">25sp</dimen>
+
+    <dimen name="avcall_time_padingright">10dip</dimen>
+    <dimen name="avcall_name_padingleft">15dip</dimen>
+
+    <dimen name="input_padding_left">10dip</dimen>
+    <dimen name="input_padding_right">10dip</dimen>
+
+    <dimen name="textsize_unsee">8sp</dimen>
+    <dimen name="textsize_16sp">16sp</dimen>
+    <dimen name="textsize_14sp">14sp</dimen>
+    <dimen name="tablerow_min_width">32dip</dimen>
+</resources>

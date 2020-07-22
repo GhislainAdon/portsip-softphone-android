@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:width="60dp" android:height="60dp">
+        <shape xmlns:android="http://schemas.android.com/apk/res/android"
+            android:shape="oval"
+            android:useLevel="true">
+            <!-- angle调整渐变角度，只能是45的倍数，centerX, centerY是百分百（0-1） -->
+            <gradient
+                android:angle="315"
+                android:centerX="0.4"
+                android:centerY="0.4"
+                android:centerColor="#00abf2"
+                android:endColor="#00ffa8"
+                android:startColor="#00abf2"
+                android:type="linear" />
+        </shape>
+    </item>
+    <item android:bottom="10dp" android:top="10dp" android:left="10dp" android:right="10dp">
+        <bitmap android:src="@drawable/dial_video_ico"></bitmap>
+    </item>
+</layer-list>

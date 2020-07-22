@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:layout_width="fill_parent">
+<LinearLayout
+    android:id="@+id/screen_chat_item_linearLayout_left"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:layout_marginLeft="@dimen/message_left_right_margin"
+    android:layout_marginRight="@dimen/message_left_right_margin"
+    android:layout_marginTop="@dimen/message_top_margin"
+    android:background="@drawable/chat_receive_bk">
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView android:layout_height="wrap_content"
+            android:id="@+id/chat_date"
+            android:layout_width="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:textColor="@android:color/darker_gray"
+            android:textStyle="bold"
+            android:text="Vendredi 25, 2001 8:09 PM"
+            android:textSize="@dimen/message_textsize" android:layout_margin="3px"/>
+        <TextView android:layout_height="wrap_content" android:id="@+id/chat_with"
+            android:layout_toLeftOf="@id/chat_date"
+            android:layout_alignParentLeft="true"
+            android:layout_width="wrap_content"
+            android:textColor="@color/portgo_color_blue"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:text="XXX" android:textSize="@dimen/message_textsize" android:layout_margin="3px"/>
+    </RelativeLayout>
+    <TextView android:layout_height="wrap_content" android:id="@+id/chat_content"
+        android:layout_width="wrap_content"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="bold"
+        android:textSize="@dimen/message_textsize"
+        android:text="sajfajtreojaAFJSADJFIdddddddddddddddddddddddddddddddddddddddddddddddddd"
+        android:layout_margin="3px"></TextView>
+</LinearLayout>
+</LinearLayout>

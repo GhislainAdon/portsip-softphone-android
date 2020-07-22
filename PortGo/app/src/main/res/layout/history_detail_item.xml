@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/list_selector"
+    android:minHeight="@dimen/history_item_height"
+    android:paddingLeft="@dimen/contact_item_marginLeft"
+    android:paddingRight="@dimen/contact_item_marginLeft">
+    <CheckBox
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="10dip"
+        android:id="@+id/history_item_radiobox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:button="@drawable/checkbox_bg"
+        android:visibility="gone"
+        android:focusable="false"
+        android:clickable="false" />
+    <include layout="@layout/view_avatar"
+        android:id="@+id/history_detail_useravatar"
+        android:layout_toRightOf="@id/history_item_radiobox"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/history_detail_useravatar_marginright"
+        android:layout_width="@dimen/contact_useravatar_size"
+        android:layout_height="@dimen/contact_useravatar_size"/>
+
+    <ImageView
+        android:id="@+id/history_detail_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dip"
+        android:layout_marginLeft="5dip"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/recent_details_ico" >
+    </ImageView>
+
+
+    <LinearLayout
+        android:id="@+id/history_detail_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:descendantFocusability="afterDescendants"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:gravity="center_vertical"
+        android:layout_toEndOf="@id/history_detail_useravatar"
+        android:layout_toStartOf="@id/history_detail_more">
+        <TextView
+            android:id="@+id/history_detail_call_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="@dimen/history_detailitem_name_drawablepadding"
+            android:drawableRight="@drawable/recent_call_style_audio_ico"
+            android:lines="1"
+            android:ellipsize="middle"
+            android:text="ewurewroewfoidsoifdsafsadjfadsjfpajfdjsof"
+            android:textSize="@dimen/history_detailitem_name_textsize" />
+        <TextView
+            android:id="@+id/history_detail_call_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:ellipsize="middle"
+            android:drawablePadding="@dimen/history_detailitem_number_drawablepadding"
+            android:layout_marginTop="@dimen/history_detailitem_number_margin_v"
+            android:layout_marginBottom="@dimen/history_detailitem_number_margin_v"
+            android:textSize="@dimen/history_detailitem_number_textsize"
+
+            android:text="ewurewroewfoidsoifdsafsadjfadsjfpajfdjsof"
+            android:drawableLeft="@drawable/recent_call_outr_ico" />
+
+        <TextView
+            android:id="@+id/history_detail_starttime"
+            android:gravity="right"
+            android:lines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ewurewroewfoidsoifdsafsadjfadsjfpajfdjsof"
+            android:textColor="@color/portgo_color_darkgray"
+            android:textSize="@dimen/history_detailitem_starttime_textsize" />
+    </LinearLayout>
+</RelativeLayout>
