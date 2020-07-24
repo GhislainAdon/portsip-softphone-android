@@ -38,9 +38,6 @@ android {
         buildConfigField "String", "PORT_ACTION_DIALERVIEW", "\"com.portsip.portgo.action.DIALERVIEW\""
         buildConfigField "String", "PORT_ACTION_ALTERVIEW", "\"com.portsip.portgo.action.ALTERVIEW\""
 
-        buildConfigField "String", "_dddXFEFEFE", "\"9ANDyR03NTVFM0MxQUMzODMwMTg4QjMzNDBCRDI1Q0EyMEFGQkBBMkU0OTZFRkFGNEIwRjI4Qjg4MjNBOEY3NEI2NjJGMkAyQzFCRjEzMTcyRjk5MjUzNUQ0RkMyRUNBOTc3M0NFNEBFRjQ1RUQ0N0NGMzU2RDBBNEQ5Mjk4MzRBMTM2NjZBOQ\""
-        buildConfigField "String", "_dddXafdsaf", "\"PortSIP UC Client\""
-
     }
     sourceSets {
         main {
