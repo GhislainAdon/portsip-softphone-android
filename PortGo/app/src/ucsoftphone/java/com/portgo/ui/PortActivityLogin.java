@@ -374,6 +374,7 @@ public class PortActivityLogin extends Activity implements Observer,View.OnClick
             }
             break;
             case R.id.activity_login_login:{
+                autoLogin = false;
                 if(mUserAccount==null){
                     mUserAccount = new UserAccount();
                 }
@@ -600,6 +601,7 @@ public class PortActivityLogin extends Activity implements Observer,View.OnClick
         ((ImageView)findViewById(R.id.activity_login_logo)).setImageBitmap(null);
         //.fontSize(60)
         TextDrawable drawable = TextDrawable.builder().beginConfig().textColor(getColor(R.color.portgo_color_blue)).bold().useFont(Typeface.SANS_SERIF).endConfig().buildRect(getString(R.string.app_name),getColor(android.R.color.transparent));
+        findViewById(R.id.activity_login_login).setOnClickListener(this);
 
         ((ImageView)findViewById(R.id.activity_login_logo)).setImageDrawable(drawable);
         mUserNameWatcher = new MyTextWatcher(findViewById(R.id.activity_login_username_rl));
@@ -639,7 +641,7 @@ public class PortActivityLogin extends Activity implements Observer,View.OnClick
         bundle.putString("filter","%"+charSequence+"%");
         PortLoaderManager.restartLoader(this,loadMgr,LOADER_ID, bundle, this);
 
-        return mAdapter.getCursor();
+        return null;
     }
 
     @Override

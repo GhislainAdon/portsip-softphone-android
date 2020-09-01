@@ -237,7 +237,7 @@ public class PortSipService extends Service implements OnPortSIPEvent,Observer, 
         try {
             result = sdk.initialize(this, defaultUser.getTransType(), localIP, AccountManager.mLocalPort,
             logMod, logpath,
-            maxLine, BuildConfig._dddXafdsaf, 0,
+            maxLine, "", 0,
             0, null, null, tlsCert, null, this);
         }catch (RuntimeException e){
             e.printStackTrace();
