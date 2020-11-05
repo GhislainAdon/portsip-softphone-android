@@ -41,11 +41,8 @@ public class BootBroadcastReceiver extends BroadcastReceiver {
                     context.getResources().getBoolean(R.bool.start_at_boottime_default))) {
                 Intent srvIntent = new Intent(context, PortSipService.class);
                 srvIntent.setAction(BuildConfig.PORT_ACTION_AUTOLOGIN);
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
-                    context.startForegroundService(srvIntent);
-                }else {
-                    context.startService(srvIntent);
-                }
+
+                PortSipService.startServiceCompatibility(context,srvIntent);
             }
         }
     }

@@ -62,6 +62,7 @@ import com.portgo.util.OkHttpHelper;
 
 import com.portgo.util.Ring;
 import com.portgo.view.emotion.data.EmotionDataManager;
+import com.portsip.OnAudioManagerEvents;
 import com.portsip.OnPortSIPEvent;
 import com.portsip.PortSipEnumDefine;
 import com.portsip.PortSipErrorcode;
@@ -94,7 +95,7 @@ import static com.portgo.BuildConfig.PORT_ACTION_REJECT;
 import static com.portgo.manager.Contact.INVALIDE_ID;
 import static com.portgo.manager.ContactManager.PORTSIP_IM_PROTOCAL;
 
-public class PortSipService extends Service implements OnPortSIPEvent,Observer, AppRTCAudioManager.AudioManagerEvents,
+public class PortSipService extends Service implements OnPortSIPEvent,Observer, OnAudioManagerEvents,
         MediaPlayer.OnCompletionListener, MediaPlayer.OnErrorListener,MediaPlayer.OnPreparedListener {
     InComingMessageProcessor messageProcessor;
     PortSipSdk sipSdk = null;
@@ -193,7 +194,7 @@ public class PortSipService extends Service implements OnPortSIPEvent,Observer, 
     }
 
     @Override
-    public void onAudioDeviceChanged(AppRTCAudioManager.AudioDevice audioDevice, Set<AppRTCAudioManager.AudioDevice> set) {
+    public void onAudioDeviceChanged(PortSipEnumDefine.AudioDevice audioDevice, Set<PortSipEnumDefine.AudioDevice> set) {
         Intent intent = new Intent();
         intent.setAction(BuildConfig.PORT_ACTION_AUDIODEVICE);
         sendBroadcast(intent);
@@ -1587,13 +1588,20 @@ public class PortSipService extends Service implements OnPortSIPEvent,Observer, 
         }
     }
 
+    public static void startServiceCompatibility(@NonNull Context context,@NonNull Intent intent){
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            context.startForegroundService(intent);
+        }else {
+            context.startService(intent);
+        }
+    }
+
+
     final String SUBSCRIBE_ID = "subscribe_id";
     final String SUBSCRIBE_CONTACT_ID = "subscribe_contactid";
     final String SUBSCRIBE_FROM = "subscribe_from";
     final String SUBSCRIBE_DISNAME = "subscribe_disname";
     public static final String TOKEN_REFRESH = "token";
-
-
 
     class MyNetWorkChangerListener implements  NetworkManager.NetWorkChangeListner{
         @Override

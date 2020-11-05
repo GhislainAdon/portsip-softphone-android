@@ -73,14 +73,14 @@ public class CallManager implements Observer{
         return true;
     }
 
-	Set<AppRTCAudioManager.AudioDevice> audioDevices=new HashSet<>();
+	Set<PortSipEnumDefine.AudioDevice> audioDevices=new HashSet<>();
 
-	public void setAudioDevices(Set<AppRTCAudioManager.AudioDevice> audioDevices) {
+	public void setAudioDevices(Set<PortSipEnumDefine.AudioDevice> audioDevices) {
 		this.audioDevices.clear();
 		this.audioDevices.addAll(audioDevices);
 	}
 
-	public Set<AppRTCAudioManager.AudioDevice> getAudioDevices() {
+	public Set<PortSipEnumDefine.AudioDevice> getAudioDevices() {
 		return audioDevices;
 	}
 

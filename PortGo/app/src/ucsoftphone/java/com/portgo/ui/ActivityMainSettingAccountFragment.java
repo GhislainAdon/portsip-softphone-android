@@ -6,7 +6,10 @@ import android.content.ContentUris;
 import android.content.ContentValues;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import android.text.InputFilter;
 import android.text.TextUtils;
@@ -129,9 +132,10 @@ public class ActivityMainSettingAccountFragment extends PortBaseFragment impleme
     @Override
     public void onClick(View view) {
         AccountManager accountManager = AccountManager.getInstance();
-        Intent unregistItent;
+
         switch (view.getId()) {
             case R.id.activity_main_fragment_setting_account_unregister:
+                Intent svrIntent=null;
                 switch (accountManager.getLoginState()) {
                     case UserAccount.STATE_NOTONLINE:
 //                        baseActivity.mAccountMgr.register(baseActivity,baseActivity.mNetworkMgr,
@@ -146,16 +150,19 @@ public class ActivityMainSettingAccountFragment extends PortBaseFragment impleme
                             Long val = (Long) entry.getValue();
                             baseActivity.mSipMgr.presenceTerminateSubscribe(val);
                         }
-                        unregistItent = new Intent(baseActivity,PortSipService.class);
-                        unregistItent.setAction(BuildConfig.PORT_ACTION_UNREGIEST);
-                        baseActivity.startService(unregistItent);//
+                        svrIntent = new Intent(baseActivity,PortSipService.class);
+                        svrIntent.setAction(BuildConfig.PORT_ACTION_UNREGIEST);
                         break;
                     case UserAccount.STATE_LOGIN:
-                        unregistItent = new Intent(baseActivity,PortSipService.class);
-                        unregistItent.setAction(BuildConfig.PORT_ACTION_UNREGIEST);
-                        baseActivity.startService(unregistItent);
+                        svrIntent = new Intent(baseActivity,PortSipService.class);
+                        svrIntent.setAction(BuildConfig.PORT_ACTION_UNREGIEST);
                         break;
                 }
+
+               if(svrIntent!=null) {
+                   PortSipService.startServiceCompatibility(baseActivity,svrIntent);
+               }
+
                 baseActivity.mApp.closeActivitys();
                 Intent intent = new Intent(getActivity(), PortActivityLogin.class);
                 intent.setAction(BuildConfig.PORT_ACTION_UNREGIEST);

@@ -1,7 +1,10 @@
 package com.portgo.manager;
 
 import android.content.Intent;
+import android.os.Build;
 import android.text.TextUtils;
+
+import androidx.annotation.NonNull;
 
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
@@ -50,7 +53,8 @@ public class PortFirebaseMessagingService extends FirebaseMessagingService {
             if ("audio".equals(data.get("msg_type"))||"call".equals(data.get("msg_type"))||"video".equals(data.get("msg_type"))) {
                 Intent sipService = new Intent(this, PortSipService.class);
                 sipService.setAction(BuildConfig.PORT_ACTION_REGIEST);
-                this.startService(sipService);
+
+                PortSipService.startServiceCompatibility(this,sipService);
             }else if ("im".equals(data.get("msg_type"))) {
                 String content = data.get("msg_content");
                 String from = data.get("send_from");
@@ -110,6 +114,8 @@ public class PortFirebaseMessagingService extends FirebaseMessagingService {
         Intent intent = new Intent(this,PortSipService.class);
         intent.setAction(BuildConfig.PORT_ACTION_TOKEN);
         intent.putExtra(PortSipService.TOKEN_REFRESH,token);
-        startService(intent);
+
+        PortSipService.startServiceCompatibility(this,intent);
     }
+
 }

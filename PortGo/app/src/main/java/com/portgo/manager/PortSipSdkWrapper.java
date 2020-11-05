@@ -6,7 +6,7 @@ import android.content.Context;
 
 import com.portsip.PortSipSdk;
 
-import org.webrtc.apprtc.AppRTCAudioManager;
+import com.portsip.OnAudioManagerEvents;
 
 import java.util.Random;
 
@@ -16,7 +16,7 @@ import java.util.Random;
  */
 public class PortSipSdkWrapper extends PortSipSdk {
 	static private PortSipSdkWrapper sdkxxx= null;
-	AppRTCAudioManager.AudioManagerEvents mAudioManagerEvents;
+    OnAudioManagerEvents mAudioManagerEvents;
 	private PortSipSdkWrapper() {
 		super();
 	}
@@ -31,7 +31,7 @@ public class PortSipSdkWrapper extends PortSipSdk {
     public synchronized int  initialize(Context context,int enum_transport, String localIP, int localSIPPort, int enum_LogLevel,
                                         String LogPath, int maxLines, String agent,
                                         int audioDeviceLayer, int videoDeviceLayer, String TLSCertificatesRootPath,
-                                        String TLSCipherList, boolean verifyTLSCertificate, String dnsServers,AppRTCAudioManager.AudioManagerEvents audioManagerEvents){
+                                        String TLSCipherList, boolean verifyTLSCertificate, String dnsServers,OnAudioManagerEvents audioManagerEvents){
 
         if(initialized) {
             uninitialize();
@@ -50,7 +50,7 @@ public class PortSipSdkWrapper extends PortSipSdk {
 
     public synchronized int  initialize(Context context,int enum_transport,int localSIPPort, int enum_LogLevel,
                                         String LogPath, int maxLines, String agent,
-                                        String dnsServers,AppRTCAudioManager.AudioManagerEvents audioManagerEvents){
+                                        String dnsServers,OnAudioManagerEvents audioManagerEvents){
 
         return initialize(context,enum_transport, "0.0.0.0",localSIPPort, enum_LogLevel,LogPath,
                 maxLines, agent,

@@ -110,20 +110,20 @@ public class AduioDeviceAdapter extends BaseAdapter{
         button.setImageResource(resId);
     }
 
-    public static List<PortSipEnumDefine.AudioDevice> audioDeviceSort(Set<AppRTCAudioManager.AudioDevice> devices){
+    public static List<PortSipEnumDefine.AudioDevice> audioDeviceSort(Set<PortSipEnumDefine.AudioDevice> devices){
 
         List<PortSipEnumDefine.AudioDevice> audioDeviceList = new ArrayList<>();
         if(devices!=null){
-            if(devices.contains(AppRTCAudioManager.AudioDevice.EARPIECE)){
+            if(devices.contains(PortSipEnumDefine.AudioDevice.EARPIECE)){
                 audioDeviceList.add(PortSipEnumDefine.AudioDevice.EARPIECE);
             }
-            if(devices.contains(AppRTCAudioManager.AudioDevice.SPEAKER_PHONE)){
+            if(devices.contains(PortSipEnumDefine.AudioDevice.SPEAKER_PHONE)){
                 audioDeviceList.add(PortSipEnumDefine.AudioDevice.SPEAKER_PHONE);
             }
-            if(devices.contains(AppRTCAudioManager.AudioDevice.BLUETOOTH)){
+            if(devices.contains(PortSipEnumDefine.AudioDevice.BLUETOOTH)){
                 audioDeviceList.add(PortSipEnumDefine.AudioDevice.BLUETOOTH);
             }
-            if(devices.contains(AppRTCAudioManager.AudioDevice.WIRED_HEADSET)){
+            if(devices.contains(PortSipEnumDefine.AudioDevice.WIRED_HEADSET)){
                 audioDeviceList.add(PortSipEnumDefine.AudioDevice.WIRED_HEADSET);
             }
         }

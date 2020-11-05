@@ -38,6 +38,8 @@ import android.widget.FilterQueryProvider;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 import com.portgo.BuildConfig;
@@ -233,7 +235,8 @@ public class PortActivityLogin extends Activity implements Observer,View.OnClick
                 CursorHelper.closeCursor(cursor);
                 Intent registItent = new Intent(this,PortSipService.class);
                 registItent.setAction(BuildConfig.PORT_ACTION_REGIEST);
-                startService(registItent);
+
+                PortSipService.startServiceCompatibility(this,registItent);
                 break;
             case UserAccount.STATE_ONLINE:
                 dismissLoginProgress();
@@ -648,7 +651,8 @@ public class PortActivityLogin extends Activity implements Observer,View.OnClick
     public void onCancel(DialogInterface dialog) {
         Intent unregistItent = new Intent(this,PortSipService.class);
         unregistItent.setAction(BuildConfig.PORT_ACTION_UNREGIEST);
-        startService(unregistItent);
+
+        PortSipService.startServiceCompatibility(this,unregistItent);
     }
 
     class MyTextWatcher implements TextWatcher {
@@ -719,5 +723,4 @@ public class PortActivityLogin extends Activity implements Observer,View.OnClick
             }
         }
     }
-
 }
